@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ItemProtoset" load_steps=2 format=3 uid="uid://b7ph8mtfopx0n"]
+
+[ext_resource type="Script" path="res://addons/gloot/core/item_protoset.gd" id="1_kr6mo"]
+
+[resource]
+script = ExtResource("1_kr6mo")
+json_data = "[
+    {
+        \"height\": 1,
+        \"id\": \"smol\",
+        \"image\": \"res://images/item_book_blue.png\",
+        \"width\": 1
+    },
+    {
+        \"height\": 2,
+        \"id\": \"item_2x2\",
+        \"image\": \"res://images/item_armour_silver.png\",
+        \"width\": 2
+    }
+]"
