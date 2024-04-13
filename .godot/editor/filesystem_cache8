@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713031237
+::res://::1713040973
 default_env.tres::Environment::-1::1713027989::0::1::::<><>::
-icon.png::CompressedTexture2D::4296582037975965739::1713031237::1713031237::1::::<><>::
-icon.svg::CompressedTexture2D::9096153217048267743::1713022876::1713022887::1::::<><>::
-inventory_grid_stacked_transfer.gd::GDScript::-1::1713029046::0::1::::<>Control<>::
-test.tscn::PackedScene::6892108887029408187::1713031174::0::1::::<><>::uid://di20p4si6o1p8::::res://Prefabs/PlayableCharacter.tscn
+icon.png::CompressedTexture2D::4296582037975965739::1713031237::1713032305::1::::<><>::
+icon.svg::CompressedTexture2D::9096153217048267743::1713022876::1713032305::1::::<><>::
+inventory_grid_stacked_transfer.gd::GDScript::-1::1713031948::0::1::::<>Control<>::
+README.md::TextFile::-1::1713032353::0::1::::<><>::
+test.tscn::PackedScene::6892108887029408187::1713040973::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://di20p4si6o1p8::::res://Prefabs/PlayableCharacter.tscn<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png
 ::res://addons/::1713027010
-::res://addons/gloot/::1713027012
+::res://addons/gloot/::1713032353
 gloot.gd::GDScript::-1::1713027011::0::1::::<>EditorPlugin<>::
 plugin.cfg::TextFile::-1::1713027012::0::1::::<><>::
 ::res://addons/gloot/core/::1713031155
@@ -28,55 +29,55 @@ inventory_constraint.gd::GDScript::-1::1713027010::0::1::::<>Object<>::
 item_map.gd::GDScript::-1::1713027010::0::1::::<>RefCounted<>::
 stacks_constraint.gd::GDScript::-1::1713027010::0::1::::<>Object<>::
 weight_constraint.gd::GDScript::-1::1713027010::0::1::::<>Object<>::
-::res://addons/gloot/editor/::1713027011
-gloot_undo_redo.gd::GDScript::-1::1713027011::0::1::::<>Object<>::
-inventory_inspector_plugin.gd::GDScript::-1::1713027011::0::1::::<>EditorInspectorPlugin<>::
-::res://addons/gloot/editor/common/::1713031174
-choice_filter.gd::GDScript::-1::1713027011::0::1::::<>Control<>::
-choice_filter.tscn::PackedScene::7854893254355240221::1713027011::0::1::::<><>::res://addons/gloot/editor/common/choice_filter.gd
-choice_filter_test.tscn::PackedScene::1204119548238174497::1713027011::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn
-dict_editor.gd::GDScript::-1::1713027011::0::1::::<>Control<>::
-dict_editor.tscn::PackedScene::7734348584714944863::1713027011::0::1::::<><>::res://addons/gloot/editor/common/dict_editor.gd
-dict_editor_test.tscn::PackedScene::5099112465951325035::1713027011::0::1::::<><>::uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn
-editor_icons.gd::GDScript::-1::1713031174::0::1::::<>RefCounted<>::
-multivalue_editor.gd::GDScript::-1::1713027011::0::1::::<>GridContainer<>::
-value_editor.gd::GDScript::-1::1713027011::0::1::::<>MarginContainer<>::
-::res://addons/gloot/editor/inventory_editor/::1713031174
-inventory_editor.gd::GDScript::-1::1713027580::0::1::::<>Control<>::
-inventory_editor.tscn::PackedScene::6958718636451268440::1713031174::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>res://addons/gloot/editor/inventory_editor/inventory_editor.gd
-inventory_inspector.gd::GDScript::-1::1713027580::0::1::::<>Control<>::
-inventory_inspector.tscn::PackedScene::2679306934048890949::1713031174::0::1::::<><>::uid://c6e4cxvjdxhdo::::res://addons/gloot/editor/inventory_editor/inventory_editor.tscn<>res://addons/gloot/editor/inventory_editor/inventory_inspector.gd
-::res://addons/gloot/editor/item_editor/::1713027011
-edit_properties_button.gd::GDScript::-1::1713027011::0::1::::<>EditorProperty<>::
-edit_prototype_id_button.gd::GDScript::-1::1713027011::0::1::::<>EditorProperty<>::
-properties_editor.gd::GDScript::-1::1713027011::0::1::::<>Window<>::
-properties_editor.tscn::PackedScene::7495929731415007114::1713027011::0::1::::<><>::res://addons/gloot/editor/item_editor/properties_editor.gd<>uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn
-prototype_id_editor.gd::GDScript::-1::1713027011::0::1::::<>Window<>::
-prototype_id_editor.tscn::PackedScene::2516219392460464606::1713027011::0::1::::<><>::res://addons/gloot/editor/item_editor/prototype_id_editor.gd<>uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn
-::res://addons/gloot/editor/item_slot_editor/::1713027011
-item_ref_slot_button.gd::GDScript::-1::1713027011::0::1::::<>EditorProperty<>::
-item_slot_editor.gd::GDScript::-1::1713027011::0::1::::<>Control<>::
-item_slot_editor.tscn::PackedScene::2846272729827502616::1713027011::0::1::::<><>::res://addons/gloot/editor/item_slot_editor/item_slot_editor.gd<>uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>res://addons/gloot/ui/ctrl_item_slot.gd
-item_slot_inspector.gd::GDScript::-1::1713027011::0::1::::<>Control<>::
-item_slot_inspector.tscn::PackedScene::4706048794480739670::1713027011::0::1::::<><>::res://addons/gloot/editor/item_slot_editor/item_slot_inspector.gd<>uid://bgs0xwufm4k6k::::res://addons/gloot/editor/item_slot_editor/item_slot_editor.tscn
-::res://addons/gloot/editor/protoset_editor/::1713027011
-edit_protoset_button.gd::GDScript::-1::1713027011::0::1::::<>Button<>::
-edit_protoset_button.tscn::PackedScene::3043193274934973525::1713027011::0::1::::<><>::uid://cyj0avrwjowl::::res://addons/gloot/editor/protoset_editor/protoset_editor.tscn<>res://addons/gloot/editor/protoset_editor/edit_protoset_button.gd
-protoset_editor.gd::GDScript::-1::1713027011::0::1::::<>Control<>::
-protoset_editor.tscn::PackedScene::190513884399084983::1713027011::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn<>res://addons/gloot/editor/protoset_editor/protoset_editor.gd
-::res://addons/gloot/images/::1713027012
-icon_ctrl_inventory.svg::CompressedTexture2D::9157596189335037714::1713027011::1713027012::1::::<><>::
-icon_ctrl_inventory_grid.svg::CompressedTexture2D::5103274744402376442::1713027011::1713027012::1::::<><>::
-icon_ctrl_inventory_stacked.svg::CompressedTexture2D::1399845517947300506::1713027011::1713027012::1::::<><>::
-icon_ctrl_item_slot.svg::CompressedTexture2D::8608204587864019740::1713027011::1713027012::1::::<><>::
-icon_inventory.svg::CompressedTexture2D::7566787367365729465::1713027011::1713027012::1::::<><>::
-icon_inventory_grid.svg::CompressedTexture2D::710079148510373814::1713027011::1713027012::1::::<><>::
-icon_inventory_grid_stacked.svg::CompressedTexture2D::3428875610026013606::1713027011::1713027012::1::::<><>::
-icon_inventory_stacked.svg::CompressedTexture2D::5318195602800605156::1713027011::1713027012::1::::<><>::
-icon_item.svg::CompressedTexture2D::1146928391406240771::1713027011::1713027012::1::::<><>::
-icon_item_protoset.svg::CompressedTexture2D::7238659847283508006::1713027011::1713027012::1::::<><>::
-icon_item_ref_slot.svg::CompressedTexture2D::7172641346762328375::1713027011::1713027012::1::::<><>::
-icon_item_slot.svg::CompressedTexture2D::7202957951616897209::1713027012::1713027012::1::::<><>::
+::res://addons/gloot/editor/::1713032354
+gloot_undo_redo.gd::GDScript::-1::1713032353::0::1::::<>Object<>::
+inventory_inspector_plugin.gd::GDScript::-1::1713032353::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/gloot/editor/common/::1713032353
+choice_filter.gd::GDScript::-1::1713032353::0::1::::<>Control<>::
+choice_filter.tscn::PackedScene::7854893254355240221::1713032353::0::1::::<><>::res://addons/gloot/editor/common/choice_filter.gd
+choice_filter_test.tscn::PackedScene::1204119548238174497::1713032353::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn
+dict_editor.gd::GDScript::-1::1713032353::0::1::::<>Control<>::
+dict_editor.tscn::PackedScene::7734348584714944863::1713032353::0::1::::<><>::res://addons/gloot/editor/common/dict_editor.gd
+dict_editor_test.tscn::PackedScene::5099112465951325035::1713032353::0::1::::<><>::uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn
+editor_icons.gd::GDScript::-1::1713032353::0::1::::<>RefCounted<>::
+multivalue_editor.gd::GDScript::-1::1713032353::0::1::::<>GridContainer<>::
+value_editor.gd::GDScript::-1::1713032353::0::1::::<>MarginContainer<>::
+::res://addons/gloot/editor/inventory_editor/::1713032353
+inventory_editor.gd::GDScript::-1::1713032353::0::1::::<>Control<>::
+inventory_editor.tscn::PackedScene::6958718636451268440::1713032353::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>res://addons/gloot/editor/inventory_editor/inventory_editor.gd
+inventory_inspector.gd::GDScript::-1::1713032353::0::1::::<>Control<>::
+inventory_inspector.tscn::PackedScene::2679306934048890949::1713032353::0::1::::<><>::uid://c6e4cxvjdxhdo::::res://addons/gloot/editor/inventory_editor/inventory_editor.tscn<>res://addons/gloot/editor/inventory_editor/inventory_inspector.gd
+::res://addons/gloot/editor/item_editor/::1713032353
+edit_properties_button.gd::GDScript::-1::1713032353::0::1::::<>EditorProperty<>::
+edit_prototype_id_button.gd::GDScript::-1::1713032353::0::1::::<>EditorProperty<>::
+properties_editor.gd::GDScript::-1::1713032353::0::1::::<>Window<>::
+properties_editor.tscn::PackedScene::7495929731415007114::1713032353::0::1::::<><>::res://addons/gloot/editor/item_editor/properties_editor.gd<>uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn
+prototype_id_editor.gd::GDScript::-1::1713032353::0::1::::<>Window<>::
+prototype_id_editor.tscn::PackedScene::2516219392460464606::1713032353::0::1::::<><>::res://addons/gloot/editor/item_editor/prototype_id_editor.gd<>uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn
+::res://addons/gloot/editor/item_slot_editor/::1713032354
+item_ref_slot_button.gd::GDScript::-1::1713032353::0::1::::<>EditorProperty<>::
+item_slot_editor.gd::GDScript::-1::1713032353::0::1::::<>Control<>::
+item_slot_editor.tscn::PackedScene::2846272729827502616::1713032354::0::1::::<><>::res://addons/gloot/editor/item_slot_editor/item_slot_editor.gd<>uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>res://addons/gloot/ui/ctrl_item_slot.gd
+item_slot_inspector.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+item_slot_inspector.tscn::PackedScene::4706048794480739670::1713032354::0::1::::<><>::res://addons/gloot/editor/item_slot_editor/item_slot_inspector.gd<>uid://bgs0xwufm4k6k::::res://addons/gloot/editor/item_slot_editor/item_slot_editor.tscn
+::res://addons/gloot/editor/protoset_editor/::1713032354
+edit_protoset_button.gd::GDScript::-1::1713032354::0::1::::<>Button<>::
+edit_protoset_button.tscn::PackedScene::3043193274934973525::1713032354::0::1::::<><>::uid://cyj0avrwjowl::::res://addons/gloot/editor/protoset_editor/protoset_editor.tscn<>res://addons/gloot/editor/protoset_editor/edit_protoset_button.gd
+protoset_editor.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+protoset_editor.tscn::PackedScene::190513884399084983::1713032354::0::1::::<><>::uid://dj577duf8yjeb::::res://addons/gloot/editor/common/choice_filter.tscn<>uid://digtudobrw3xb::::res://addons/gloot/editor/common/dict_editor.tscn<>res://addons/gloot/editor/protoset_editor/protoset_editor.gd
+::res://addons/gloot/images/::1713032305
+icon_ctrl_inventory.svg::CompressedTexture2D::9157596189335037714::1713027011::1713032305::1::::<><>::
+icon_ctrl_inventory_grid.svg::CompressedTexture2D::5103274744402376442::1713027011::1713032305::1::::<><>::
+icon_ctrl_inventory_stacked.svg::CompressedTexture2D::1399845517947300506::1713027011::1713032305::1::::<><>::
+icon_ctrl_item_slot.svg::CompressedTexture2D::8608204587864019740::1713027011::1713032305::1::::<><>::
+icon_inventory.svg::CompressedTexture2D::7566787367365729465::1713027011::1713032305::1::::<><>::
+icon_inventory_grid.svg::CompressedTexture2D::710079148510373814::1713027011::1713032305::1::::<><>::
+icon_inventory_grid_stacked.svg::CompressedTexture2D::3428875610026013606::1713027011::1713032305::1::::<><>::
+icon_inventory_stacked.svg::CompressedTexture2D::5318195602800605156::1713027011::1713032305::1::::<><>::
+icon_item.svg::CompressedTexture2D::1146928391406240771::1713027011::1713032305::1::::<><>::
+icon_item_protoset.svg::CompressedTexture2D::7238659847283508006::1713027011::1713032305::1::::<><>::
+icon_item_ref_slot.svg::CompressedTexture2D::7172641346762328375::1713027011::1713032305::1::::<><>::
+icon_item_slot.svg::CompressedTexture2D::7202957951616897209::1713027012::1713032305::1::::<><>::
 ::res://addons/gloot/ui/::1713028052
 ctrl_dragable.gd::GDScript::-1::1713027012::0::1::::<>Control<>::
 ctrl_drop_zone.gd::GDScript::-1::1713027012::0::1::::<>Control<>::
@@ -88,21 +89,260 @@ ctrl_inventory_item_rect.gd::GDScript::-1::1713027012::0::1::::CtrlInventoryItem
 ctrl_inventory_stacked.gd::GDScript::-1::1713027012::0::1::::CtrlInventoryStacked<>CtrlInventory<>res://addons/gloot/images/icon_ctrl_inventory_stacked.svg::
 ctrl_item_slot.gd::GDScript::-1::1713027012::0::1::::CtrlItemSlot<>Control<>res://addons/gloot/images/icon_ctrl_item_slot.svg::
 ctrl_item_slot_ex.gd::GDScript::-1::1713027012::0::1::::CtrlItemSlotEx<>CtrlItemSlot<>res://addons/gloot/images/icon_ctrl_item_slot.svg::
-::res://images/::1713027991
-field_background.png::CompressedTexture2D::3464242305412553553::1713027990::1713027991::1::::<><>::
-field_highlighted_background.png::CompressedTexture2D::4999113497827289991::1713027990::1713027991::1::::<><>::
-field_selected_background.png::CompressedTexture2D::9070327000681956549::1713027990::1713027991::1::::<><>::
-gloot_logo_128x128.png::CompressedTexture2D::8973924260253721339::1713027990::1713027991::1::::<><>::
-gloot_logo_256x256.png::CompressedTexture2D::6198820342028868540::1713027990::1713027991::1::::<><>::
-gloot_logo_512x512.png::CompressedTexture2D::3088794131689144060::1713027990::1713027991::1::::<><>::
-item_armour_silver.png::CompressedTexture2D::1560561598343858558::1713027990::1713027991::1::::<><>::
-item_book_blue.png::CompressedTexture2D::843337291627351538::1713027990::1713027991::1::::<><>::
-item_key.png::CompressedTexture2D::3061303305556543008::1713027990::1713027991::1::::<><>::
-item_scroll_blue.png::CompressedTexture2D::4770035527959100396::1713027990::1713027991::1::::<><>::
-::res://Prefabs/::1713031174
-inventory.tscn::PackedScene::866402894060552259::1713031174::0::1::::<><>::res://inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd
-PlayableCharacter.tscn::PackedScene::7778057262660035559::1713031174::0::1::::<><>::res://Prefabs/PlayableCharacterMove.gd<>uid://d2uikxt5vgnfb::::res://icon.svg
-PlayableCharacterMove.gd::GDScript::-1::1713027580::0::1::::<>Area2D<>::
-inventoryReference.tscn::PackedScene::9083939541269386277::1713031174::0::1::::<><>::res://inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>res://addons/gloot/core/item_protoset.gd
-invProtoset.tres::Resource/ItemProtoset::4663913956447249267::1713030843::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
+::res://Assets/::1713040973
+::res://Assets/Pixel Crawler - FREE - 1.8/::1713037449
+Terms.txt::TextFile::-1::1713037449::0::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::5979201067531417010::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::3792248168242076217::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::3421146017411763382::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::9128160297842082182::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::4935884014126618565::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::3031455123212798640::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::3342822366977625985::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::237836818472995125::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::106242050357780959::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/::1713037448
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::8851094327378638350::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::3843491638770549562::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::8952484057508416204::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::5783819607647835914::1713037448::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::7183505674585621879::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::4991608519061194721::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::649845037783042407::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::6991719121986685989::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::320145616873354702::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::2298010403702886473::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::449751100541307503::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::1750986357903446235::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::6587154539998403315::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::2573613876106384741::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::3497118704787878134::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/::1713037449
+Props.png::CompressedTexture2D::5483968047601051307::1713037449::1713040974::1::::<><>::
+Tiles.png::CompressedTexture2D::1797328051791281697::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/::1713037449
+Props.png::CompressedTexture2D::3413936169494817246::1713037449::1713040974::1::::<><>::
+Tiles.png::CompressedTexture2D::6027389621953332728::1713037449::1713040974::1::::<><>::
+Trees.png::CompressedTexture2D::5357066210383673331::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::2959071254894613320::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::9093098798547310736::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::7073631796481382065::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::2703774268005002337::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::2031303162866014802::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::356913098908965475::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Death/::1713037449
+Death-Sheet.png::CompressedTexture2D::1296140577920817455::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/::1713037449
+Idle-Sheet.png::CompressedTexture2D::5789173914937144791::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Run/::1713037449
+Run-Sheet.png::CompressedTexture2D::4447310460099846377::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/::1713037449
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Bone/::1713037449
+Bone.png::CompressedTexture2D::7539410740740930567::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Hands/::1713037449
+Hands.png::CompressedTexture2D::511678584262561943::1713037449::1713040974::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Wood/::1713037449
+Wood.png::CompressedTexture2D::7413128850412678117::1713037449::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/::1713040937
+Terms.txt::TextFile::-1::1713040937::0::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/::1713040948
+freelavatileset-Sheet.png::CompressedTexture2D::369053104737260704::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/::1713040936
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/Burning Lava/::1713040949
+burninglava1.png::CompressedTexture2D::6998024181361101512::1713040936::1713040974::1::::<><>::
+burninglava2.png::CompressedTexture2D::8597288187038288025::1713040936::1713040974::1::::<><>::
+burninglava3.png::CompressedTexture2D::1866314068669626139::1713040936::1713040974::1::::<><>::
+burninglava4.png::CompressedTexture2D::853861232317625536::1713040936::1713040974::1::::<><>::
+burninglava5.png::CompressedTexture2D::2958715632338791628::1713040936::1713040974::1::::<><>::
+burninglava6.png::CompressedTexture2D::243700584070396277::1713040936::1713040974::1::::<><>::
+burninglava7.png::CompressedTexture2D::3740132872760394919::1713040936::1713040974::1::::<><>::
+spritesheet-burninglava.png::CompressedTexture2D::7793173990667396665::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/Land on Lava Tile/::1713040949
+lavaonland1.png::CompressedTexture2D::4857872955907027495::1713040936::1713040974::1::::<><>::
+lavaonland2.png::CompressedTexture2D::4096671506032396268::1713040936::1713040974::1::::<><>::
+lavaonland3.png::CompressedTexture2D::6931132050310083249::1713040936::1713040974::1::::<><>::
+lavaonland4.png::CompressedTexture2D::6899483196364477916::1713040936::1713040974::1::::<><>::
+lavaonland5.png::CompressedTexture2D::460411702125407265::1713040936::1713040974::1::::<><>::
+lavaonland6.png::CompressedTexture2D::7905800760311391234::1713040936::1713040974::1::::<><>::
+lavaonland7.png::CompressedTexture2D::2931323121235957592::1713040936::1713040974::1::::<><>::
+spritesheet-lavaland.png::CompressedTexture2D::4511170299529319400::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/Lava Rock 1/::1713040949
+lavarock1.png::CompressedTexture2D::8347553274273494640::1713040936::1713040974::1::::<><>::
+lavarock2.png::CompressedTexture2D::5800387494399337082::1713040936::1713040974::1::::<><>::
+lavarock3.png::CompressedTexture2D::2827938653831437127::1713040936::1713040974::1::::<><>::
+lavarock4.png::CompressedTexture2D::5168781485560304786::1713040936::1713040974::1::::<><>::
+lavarock5.png::CompressedTexture2D::4547264394553784185::1713040936::1713040974::1::::<><>::
+lavarock6.png::CompressedTexture2D::3758862802382458689::1713040936::1713040974::1::::<><>::
+lavarock7.png::CompressedTexture2D::8907814152251576306::1713040936::1713040974::1::::<><>::
+spritesheet-lavarock1.png::CompressedTexture2D::3573697648605258616::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/Lava Rock 2/::1713040949
+lavarock2.png::CompressedTexture2D::9031861882784699952::1713040936::1713040974::1::::<><>::
+lavarock3.png::CompressedTexture2D::1775966990172296134::1713040936::1713040974::1::::<><>::
+lavarock4.png::CompressedTexture2D::1492514247740875438::1713040936::1713040974::1::::<><>::
+lavarock5.png::CompressedTexture2D::8718993343500107016::1713040936::1713040974::1::::<><>::
+lavarock6.png::CompressedTexture2D::8437532243585500866::1713040936::1713040974::1::::<><>::
+lavarock7.png::CompressedTexture2D::7837728943488067109::1713040936::1713040974::1::::<><>::
+lavarock8.png::CompressedTexture2D::2664429611957533718::1713040936::1713040974::1::::<><>::
+spritesheet-lavarock2.png::CompressedTexture2D::799635227980330662::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( No Animations )/::1713040936
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( No Animations )/Rock1/::1713040949
+Rock1.png::CompressedTexture2D::1205413675669773896::1713040936::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( No Animations )/Rock2/::1713040949
+Rock2.png::CompressedTexture2D::2976175574348326615::1713040937::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/::1713040937
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Chest GOLD/::1713040949
+goldchest1.png::CompressedTexture2D::9127981755655604687::1713040937::1713040974::1::::<><>::
+goldchest2.png::CompressedTexture2D::4356332532848523342::1713040937::1713040974::1::::<><>::
+goldchest3.png::CompressedTexture2D::5721776503302272135::1713040937::1713040974::1::::<><>::
+goldchest4.png::CompressedTexture2D::5254365652718442786::1713040937::1713040974::1::::<><>::
+goldchest5.png::CompressedTexture2D::5158837663996893363::1713040937::1713040974::1::::<><>::
+goldchest6.png::CompressedTexture2D::1699836221290679479::1713040937::1713040974::1::::<><>::
+goldchest7.png::CompressedTexture2D::4230126024252867840::1713040937::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Hints/::1713040949
+closehint1.png::CompressedTexture2D::383665179706271904::1713040937::1713040974::1::::<><>::
+closehint2.png::CompressedTexture2D::1744719950966895709::1713040937::1713040974::1::::<><>::
+closehint3.png::CompressedTexture2D::9077311417589273404::1713040937::1713040974::1::::<><>::
+closehint4.png::CompressedTexture2D::5795595079353945881::1713040937::1713040974::1::::<><>::
+closehint5.png::CompressedTexture2D::6465046987521717099::1713040937::1713040974::1::::<><>::
+closehint6.png::CompressedTexture2D::2944153161414935351::1713040937::1713040974::1::::<><>::
+closehint7.png::CompressedTexture2D::2125310458104973665::1713040937::1713040974::1::::<><>::
+exclamationhint1.png::CompressedTexture2D::5848323408954003355::1713040937::1713040974::1::::<><>::
+exclamationhint2.png::CompressedTexture2D::7470125494503692809::1713040937::1713040974::1::::<><>::
+exclamationhint3.png::CompressedTexture2D::4145893544868991554::1713040937::1713040974::1::::<><>::
+exclamationhint4.png::CompressedTexture2D::3608295057049524330::1713040937::1713040974::1::::<><>::
+exclamationhint5.png::CompressedTexture2D::3244830159592105533::1713040937::1713040974::1::::<><>::
+exclamationhint6.png::CompressedTexture2D::1957134335521452888::1713040937::1713040974::1::::<><>::
+exclamationhint7.png::CompressedTexture2D::952818719824194138::1713040937::1713040974::1::::<><>::
+interrogationhint1.png::CompressedTexture2D::167458389587292056::1713040937::1713040974::1::::<><>::
+interrogationhint2.png::CompressedTexture2D::4866949292380135569::1713040937::1713040974::1::::<><>::
+interrogationhint3.png::CompressedTexture2D::5692679126729917740::1713040937::1713040974::1::::<><>::
+interrogationhint4.png::CompressedTexture2D::8964430577831988447::1713040937::1713040974::1::::<><>::
+interrogationhint5.png::CompressedTexture2D::2172375890717171262::1713040937::1713040974::1::::<><>::
+interrogationhint6.png::CompressedTexture2D::1420462570426442132::1713040937::1713040974::1::::<><>::
+interrogationhint7.png::CompressedTexture2D::3319455863743661105::1713040937::1713040974::1::::<><>::
+keyhint1.png::CompressedTexture2D::4165563195223847388::1713040937::1713040974::1::::<><>::
+keyhint2.png::CompressedTexture2D::5507388915716263993::1713040937::1713040974::1::::<><>::
+keyhint3.png::CompressedTexture2D::4792108412044697827::1713040937::1713040974::1::::<><>::
+keyhint4.png::CompressedTexture2D::5232875773034506523::1713040937::1713040974::1::::<><>::
+keyhint5.png::CompressedTexture2D::440626079291112311::1713040937::1713040974::1::::<><>::
+keyhint6.png::CompressedTexture2D::5950050579141859185::1713040937::1713040974::1::::<><>::
+keyhint7.png::CompressedTexture2D::7881028041875506991::1713040937::1713040974::1::::<><>::
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( With Animations )/Torch ( No Light )/::1713040948
+torch1.png::CompressedTexture2D::5933360172579220094::1713040937::1713040974::1::::<><>::
+torch2.png::CompressedTexture2D::2489618753694246418::1713040937::1713040974::1::::<><>::
+torch3.png::CompressedTexture2D::9139763617352185184::1713040937::1713040974::1::::<><>::
+torch4.png::CompressedTexture2D::5872498035596217695::1713040937::1713040974::1::::<><>::
+torch5.png::CompressedTexture2D::3367549552949381772::1713040937::1713040974::1::::<><>::
+torch6.png::CompressedTexture2D::5519027328356285637::1713040937::1713040974::1::::<><>::
+torch7.png::CompressedTexture2D::3675573016603840920::1713040937::1713040974::1::::<><>::
+::res://examples/::1713032354
+inventory_grid_ex_transfer.tscn::PackedScene::7872321490746640795::1713032354::0::1::::<><>::uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_grid.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>res://examples/inventory_grid_transfer.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/ui/ctrl_item_slot_ex.gd<>res://addons/gloot/core/inventory_item.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/item_slot.gd
+inventory_grid_stacked_ex_transfer.tscn::PackedScene::1047060584163595217::1713032354::0::1::::<><>::res://examples/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/ui/ctrl_item_slot_ex.gd<>res://addons/gloot/core/inventory_grid_stacked.gd<>uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_item.gd<>res://addons/gloot/core/item_slot.gd
+inventory_grid_stacked_transfer.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+inventory_grid_transfer.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+inventory_grid_transfer.tscn::PackedScene::661526273016628303::1713032354::0::1::::<><>::uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_grid.gd<>res://addons/gloot/ui/ctrl_inventory_grid.gd<>res://examples/inventory_grid_transfer.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/ui/ctrl_item_slot.gd<>res://addons/gloot/core/inventory_item.gd<>res://addons/gloot/core/item_slot.gd
+inventory_stacked_transfer.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+inventory_stacked_transfer.tscn::PackedScene::4311795717936853728::1713032354::0::1::::<><>::res://addons/gloot/ui/ctrl_inventory_stacked.gd<>res://addons/gloot/core/inventory_stacked.gd<>uid://c1fip2r65xx12::::res://tests/data/item_definitions_stack.tres<>res://examples/inventory_stacked_transfer.gd<>uid://bju6hohmp15ua::::res://images/item_key.png<>res://addons/gloot/ui/ctrl_item_slot.gd<>res://addons/gloot/core/inventory_item.gd<>res://addons/gloot/core/item_slot.gd
+inventory_transfer.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+inventory_transfer.tscn::PackedScene::8746502829911248906::1713032354::0::1::::<><>::res://addons/gloot/ui/ctrl_inventory.gd<>res://addons/gloot/core/inventory.gd<>uid://nnxjxxu47mtj::::res://tests/data/item_definitions_basic.tres<>res://examples/inventory_transfer.gd<>uid://bju6hohmp15ua::::res://images/item_key.png<>res://addons/gloot/ui/ctrl_item_slot.gd<>res://addons/gloot/core/inventory_item.gd<>res://addons/gloot/core/item_slot.gd
+::res://images/::1713032305
+field_background.png::CompressedTexture2D::3464242305412553553::1713027990::1713032305::1::::<><>::
+field_highlighted_background.png::CompressedTexture2D::4999113497827289991::1713027990::1713032305::1::::<><>::
+field_selected_background.png::CompressedTexture2D::9070327000681956549::1713027990::1713032305::1::::<><>::
+gloot_logo_128x128.png::CompressedTexture2D::8973924260253721339::1713027990::1713032305::1::::<><>::
+gloot_logo_256x256.png::CompressedTexture2D::6198820342028868540::1713027990::1713032305::1::::<><>::
+gloot_logo_512x512.png::CompressedTexture2D::3088794131689144060::1713027990::1713032305::1::::<><>::
+item_armour_silver.png::CompressedTexture2D::1560561598343858558::1713027990::1713032305::1::::<><>::
+item_book_blue.png::CompressedTexture2D::843337291627351538::1713027990::1713032305::1::::<><>::
+item_key.png::CompressedTexture2D::3061303305556543008::1713027990::1713032305::1::::<><>::
+item_scroll_blue.png::CompressedTexture2D::4770035527959100396::1713027990::1713032305::1::::<><>::
+::res://Prefabs/::1713040948
+inventory.tscn::PackedScene::866402894060552259::1713040405::0::1::::<><>::res://inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd
+inventoryReference.tscn::PackedScene::9083939541269386277::1713040405::0::1::::<><>::res://inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>res://addons/gloot/core/item_protoset.gd
+invProtoset.tres::Resource/ItemProtoset::4663913956447249267::1713032915::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
+PlayableCharacter.tscn::PackedScene::7778057262660035559::1713040405::0::1::::<><>::res://Prefabs/PlayableCharacterMove.gd<>uid://d2uikxt5vgnfb::::res://icon.svg
+PlayableCharacterMove.gd::GDScript::-1::1713040404::0::1::::<>Area2D<>::
 ::res://Resources/::1713028699
+::res://tests/::1713032354
+gloot_test.tscn::PackedScene::2192966487956548182::1713032354::0::1::::<><>::res://tests/item_definitions_test.gd<>res://tests/item_count_test.gd<>res://tests/inventory_stacked_tests.gd<>res://tests/constraint_tests/weight_constraint_tests.gd<>res://tests/constraint_tests/stacks_constraint_tests.gd<>res://tests/inventory_grid_tests.gd<>res://tests/constraint_tests/grid_constraint_tests.gd<>res://tests/inventory_tests.gd<>res://tests/constraint_tests/constraint_manager_tests.gd<>res://tests/inventory_grid_stacked_tests.gd<>res://tests/inventory_item_tests.gd<>res://tests/verification_test.gd<>res://tests/item_ref_slot_tests.gd<>res://tests/item_slot_tests.gd<>res://tests/test_runner.gd
+inventory_grid_stacked_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+inventory_grid_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+inventory_item_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+inventory_stacked_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+inventory_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+item_count_test.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+item_definitions_test.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+item_ref_slot_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+item_slot_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+test_runner.gd::GDScript::-1::1713032354::0::1::::<>Node<>::
+test_suite.gd::GDScript::-1::1713032354::0::1::::TestSuite<>Node<>::
+verification_test.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+::res://tests/constraint_tests/::1713032354
+constraint_manager_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+grid_constraint_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+stacks_constraint_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+weight_constraint_tests.gd::GDScript::-1::1713032354::0::1::::<>TestSuite<>::
+::res://tests/ctrl_tests/::1713032354
+test_ctrl_inventory.tscn::PackedScene::8096654155687922631::1713032354::0::1::::<><>::uid://nnxjxxu47mtj::::res://tests/data/item_definitions_basic.tres<>res://addons/gloot/core/inventory.gd<>res://addons/gloot/ui/ctrl_inventory.gd<>uid://bju6hohmp15ua::::res://images/item_key.png<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_inventory_grid.tscn::PackedScene::621030747076956064::1713032354::0::1::::<><>::uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/ui/ctrl_inventory_grid.gd<>res://addons/gloot/core/inventory_grid.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_inventory_grid_ex.tscn::PackedScene::6981936958759430398::1713032354::0::1::::<><>::uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>res://addons/gloot/core/inventory_grid.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/core/inventory_item.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://d2hy7wl46ki5j::::res://images/field_selected_background.png
+test_ctrl_inventory_grid_stacked.tscn::PackedScene::8995284885494052214::1713032354::0::1::::<><>::res://addons/gloot/ui/ctrl_inventory_grid.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_inventory_grid_stacked_ex.tscn::PackedScene::7796969043792908059::1713032354::0::1::::<><>::res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://d2hy7wl46ki5j::::res://images/field_selected_background.png<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_inventory_stacked.tscn::PackedScene::7349721231299803713::1713032354::0::1::::<><>::res://addons/gloot/core/inventory_stacked.gd<>res://addons/gloot/ui/ctrl_inventory_stacked.gd<>uid://c1fip2r65xx12::::res://tests/data/item_definitions_stack.tres<>uid://bju6hohmp15ua::::res://images/item_key.png<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_item_slot.tscn::PackedScene::5124024507930501136::1713032354::0::1::::<><>::uid://nnxjxxu47mtj::::res://tests/data/item_definitions_basic.tres<>res://addons/gloot/core/inventory.gd<>res://addons/gloot/ui/ctrl_item_slot.gd<>res://addons/gloot/core/item_ref_slot.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/core/inventory_item.gd
+test_ctrl_item_slot_ex.tscn::PackedScene::4438666779204093885::1713032354::0::1::::<><>::uid://nnxjxxu47mtj::::res://tests/data/item_definitions_basic.tres<>res://addons/gloot/core/inventory.gd<>res://addons/gloot/ui/ctrl_item_slot_ex.gd<>res://addons/gloot/core/item_ref_slot.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>res://addons/gloot/core/inventory_item.gd<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png
+::res://tests/ctrl_tests/drag_test/::1713032354
+dragable.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+drag_test.gd::GDScript::-1::1713032354::0::1::::<>Control<>::
+drag_test.tscn::PackedScene::2384208188536385652::1713032354::0::1::::<><>::res://tests/ctrl_tests/drag_test/drag_test.gd<>res://addons/gloot/ui/ctrl_drop_zone.gd<>res://tests/ctrl_tests/drag_test/dragable.gd<>uid://b2hkcwwq10cut::::res://icon.png
+::res://tests/data/::1713032354
+item_definitions_basic.tres::Resource/Resource::940705685592260175::1713032354::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
+item_definitions_grid.tres::Resource/Resource::7405681354215661091::1713032354::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
+item_definitions_stack.tres::Resource/Resource::6608587159437696803::1713032354::0::1::::<><>::res://addons/gloot/core/item_protoset.gd

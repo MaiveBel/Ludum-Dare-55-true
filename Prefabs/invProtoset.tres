@@ -9,7 +9,7 @@ json_data = "[
         \"height\": 1,
         \"id\": \"smol\",
         \"image\": \"res://images/item_book_blue.png\",
-        \"width\": 1
+        \"width\": 2
     },
     {
         \"height\": 2,
