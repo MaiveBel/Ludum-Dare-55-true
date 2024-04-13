@@ -1,1 +1,9 @@
+res://Prefabs/PlayableCharacter.tscn
+res://Prefabs/PlayableCharacterMove.gd
 res://test.tscn
+res://Prefabs/inventory.tscn
+res://addons/gloot/ui/ctrl_inventory_grid.gd
+res://addons/gloot/ui/ctrl_inventory_grid_basic.gd
+res://addons/gloot/ui/ctrl_inventory_grid_ex.gd
+res://addons/gloot/editor/inventory_editor/inventory_editor.gd
+res://addons/gloot/editor/inventory_editor/inventory_inspector.gd

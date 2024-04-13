@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://di20p4si6o1p8"]
+
+[ext_resource type="Script" path="res://Prefabs/PlayableCharacterMove.gd" id="1_byeo0"]
+[ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="2_tkgey"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_676hh"]
+size = Vector2(128, 129)
+
+[node name="PlayerArea" type="Area2D"]
+script = ExtResource("1_byeo0")
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_tkgey")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_676hh")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

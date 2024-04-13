@@ -1,5 +1,10 @@
-[gd_scene format=3 uid="uid://c5gua5snsvt1t"]
+[gd_scene load_steps=2 format=3 uid="uid://c5gua5snsvt1t"]
+
+[ext_resource type="PackedScene" uid="uid://di20p4si6o1p8" path="res://Prefabs/PlayableCharacter.tscn" id="1_njeo6"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="PlayerArea" parent="." instance=ExtResource("1_njeo6")]
