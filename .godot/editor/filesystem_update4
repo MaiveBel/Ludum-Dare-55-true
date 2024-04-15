@@ -1,9 +1,9 @@
-res://Prefabs/PlayableCharacter.tscn
-res://Prefabs/PlayableCharacterMove.gd
-res://Prefabs/slime_spawner.tscn
-res://Prefabs/slime_spawner.gd
 res://test.tscn
 res://Prefabs/inventory.tscn
 res://Prefabs/inventoryReference.tscn
+res://Prefabs/PlayableCharacter.tscn
+res://Prefabs/slime_spawner.tscn
 res://Prefabs/PlayableCharacterMinion.tscn
-res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd
+res://Prefabs/PlayableCharacterMove.gd
+res://Prefabs/moveModule.gd
+res://Prefabs/moveModule.tscn

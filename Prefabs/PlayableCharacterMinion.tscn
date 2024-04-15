@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://q6jjt2ick1i4"]
+[gd_scene load_steps=12 format=3 uid="uid://q6jjt2ick1i4"]
 
 [ext_resource type="Script" path="res://Prefabs/PlayableCharacterMove.gd" id="1_22ext"]
 [ext_resource type="Texture2D" uid="uid://c6u3ue4d1ycin" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png" id="2_8qagv"]
 [ext_resource type="Texture2D" uid="uid://coqk337g2ho1d" path="res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png" id="2_s0myg"]
 [ext_resource type="Texture2D" uid="uid://etc0s1mw212y" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png" id="3_r6ows"]
+[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/moveModule.tscn" id="5_ov60u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
 
@@ -278,11 +279,12 @@ _data = {
 "Walk": SubResource("Animation_1ulrr")
 }
 
-[node name="PlayerArea" type="Area2D"]
+[node name="PlayerArea" type="Area2D" node_paths=PackedStringArray("moveModule")]
 scale = Vector2(0.25, 0.25)
 script = ExtResource("1_22ext")
 isSelected = false
 selectionId = 2
+moveModule = NodePath("MoveModule")
 
 [node name="ShapeCast2D" type="ShapeCast2D" parent="." groups=["raycastMinion"]]
 modulate = Color(0.541176, 0, 0.231373, 1)
@@ -306,3 +308,5 @@ shape = SubResource("RectangleShape2D_676hh")
 libraries = {
 "": SubResource("AnimationLibrary_ujlvi")
 }
+
+[node name="MoveModule" parent="." instance=ExtResource("5_ov60u")]
