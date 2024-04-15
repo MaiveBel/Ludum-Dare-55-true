@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Prefabs/PlayableCharacterMove.gd" id="1_byeo0"]
 [ext_resource type="Texture2D" uid="uid://etc0s1mw212y" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png" id="2_uow3o"]
 [ext_resource type="Texture2D" uid="uid://c6u3ue4d1ycin" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png" id="3_ptya6"]
-[ext_resource type="PackedScene" uid="uid://c32x3tyv5phtw" path="res://Prefabs/slime_spawner.tscn" id="4_whhp0"]
-[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/moveModule.tscn" id="5_40p15"]
+[ext_resource type="PackedScene" uid="uid://c32x3tyv5phtw" path="res://Prefabs/SlimeAbilities/slime_spawner.tscn" id="4_tqdf0"]
+[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/SlimeAbilities/moveModule.tscn" id="5_yhfl6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
 
@@ -306,7 +306,7 @@ libraries = {
 "": SubResource("AnimationLibrary_ujlvi")
 }
 
-[node name="SlimeSpawner" parent="." instance=ExtResource("4_whhp0")]
+[node name="SlimeSpawner" parent="." instance=ExtResource("4_tqdf0")]
 
-[node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("5_40p15")]
+[node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("5_yhfl6")]
 ray = NodePath("../ShapeCast2D")

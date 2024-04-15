@@ -7,3 +7,11 @@ res://Prefabs/PlayableCharacterMinion.tscn
 res://Prefabs/PlayableCharacterMove.gd
 res://Prefabs/moveModule.gd
 res://Prefabs/moveModule.tscn
+res://Prefabs/MovableObject.tscn
+res://Prefabs/MovableObject.gd
+res://pushModule.gd
+res://Prefabs/SlimeAbilities/moveModule.tscn
+res://Prefabs/SlimeAbilities/moveModule.gd
+res://Prefabs/SlimeAbilities/push_module.tscn
+res://Prefabs/SlimeAbilities/slime_spawner.tscn
+res://Prefabs/SlimeAbilities/slime_spawner.gd

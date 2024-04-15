@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddgq7jusp7uu3"]
+
+[ext_resource type="Script" path="res://Prefabs/MovableObject.gd" id="1_gld1n"]
+[ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="1_xd8ov"]
+[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/SlimeAbilities/moveModule.tscn" id="3_ja408"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q73gw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8wavi"]
+size = Vector2(127, 128)
+
+[node name="Object" type="Area2D" node_paths=PackedStringArray("moveModule", "ray") groups=["movableObject"]]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_gld1n")
+moveModule = NodePath("MoveModule")
+ray = NodePath("ShapeCast2D")
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_q73gw")
+target_position = Vector2(0, 116)
+collide_with_areas = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_8wavi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xd8ov")
+
+[node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("3_ja408")]
+ray = NodePath("../ShapeCast2D")
+strength = 1

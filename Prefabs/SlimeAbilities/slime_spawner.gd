@@ -46,7 +46,7 @@ func _unhandled_input(event):
 # HACK stop manually selecting first minion
 func spawn_slime(type,modifiers,selection_id):
 	ray.force_shapecast_update()
-	if !ray.is_colliding():
+	if !ray.is_colliding() && !lich.moving:
 		var newSlime = slimePrefabs[type].instantiate()
 		tileMap.add_child(newSlime)
 		newSlime.global_position = ray.global_position + ray.get_target_position()/4
