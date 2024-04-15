@@ -309,4 +309,5 @@ libraries = {
 "": SubResource("AnimationLibrary_ujlvi")
 }
 
-[node name="MoveModule" parent="." instance=ExtResource("5_ov60u")]
+[node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("5_ov60u")]
+ray = NodePath("../ShapeCast2D")
