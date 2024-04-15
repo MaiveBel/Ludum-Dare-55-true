@@ -3432,13 +3432,13 @@ sources/4 = SubResource("TileSetAtlasSource_ri0gu")
 sources/5 = SubResource("TileSetScenesCollectionSource_6g50l")
 sources/7 = SubResource("TileSetAtlasSource_fpooj")
 
-[node name="Node2D" type="Node2D"]
+[node name="test" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="." groups=["tileMap"]]
 texture_filter = 1
 tile_set = SubResource("TileSet_o1ius")
 format = 2
 layer_0/name = "Floor"
-layer_0/tile_data = PackedInt32Array(-65533, 0, 15, 3, 0, 16, 65539, 0, 17, -262144, 0, 15, -196608, 0, 16, -131072, 0, 17, -262143, 0, 15, -196607, 0, 16, -131071, 0, 17, 131071, 5, 65536, 131075, 458759, 11, 131076, 458759, 11, 196612, 458759, 11, 196611, 458759, 11)
+layer_0/tile_data = PackedInt32Array(-65533, 0, 15, 3, 0, 16, 65539, 0, 17, -262144, 0, 15, -196608, 0, 16, -131072, 0, 17, -262143, 0, 15, -196607, 0, 16, -131071, 0, 17, 131075, 458759, 11, 131076, 458759, 11, 196612, 458759, 11, 196611, 458759, 11, 131071, 5, 65536)
 layer_1/name = "Props"
 layer_1/tile_data = PackedInt32Array()

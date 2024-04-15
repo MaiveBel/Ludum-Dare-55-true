@@ -1,7 +1,14 @@
 extends Area2D
 
-@onready var ray = $ShapeCast2D
+# todo - make positional save system
+# todo - animation player for entities
+# next - make slime abilities module
+# next - make movable obj
 
+@onready var ray = $ShapeCast2D
+@export var isSelected = true
+@export var selectionId = 1
+@onready var slimeSpawner = get_tree().get_first_node_in_group("slimeSpawner")
 
 var tile_size = 16
 var inputs = {"right": Vector2.RIGHT,
@@ -15,16 +22,18 @@ var moving = false
 func _ready():
 	position = position.snapped(Vector2.ONE * tile_size)
 	position += Vector2.ONE * tile_size
+	slimeSpawner.characterSelected.connect(selectionCheck)
 
 func _unhandled_input(event):
-	if moving:
-		return
-	for dir in inputs.keys():
-		if event.is_action_pressed(dir):
-				move(dir)
+	if isSelected:
+		if !moving:
+			for dir in inputs.keys():
+				if event.is_action_pressed(dir):
+						move(dir)
 
+# bug 2 of the same character cant move together when touching
 func move(dir):
-	ray.target_position = inputs[dir] * 116
+	ray.target_position = inputs[dir] * 128
 	ray.force_shapecast_update()
 	if !ray.is_colliding():
 		position += inputs[dir] * tile_size
@@ -37,3 +46,8 @@ func move(dir):
 	else:
 		return
 
+func selectionCheck(num):
+	if num == selectionId:
+		isSelected = true
+	else:
+		isSelected = false
