@@ -2,25 +2,36 @@
 
 [ext_resource type="Script" path="res://Prefabs/MovableObject.gd" id="1_gld1n"]
 [ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="1_xd8ov"]
-[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/SlimeAbilities/moveModule.tscn" id="3_ja408"]
+[ext_resource type="PackedScene" uid="uid://c1k2wyqf7of58" path="res://Prefabs/SlimeAbilities/moveBoxModule.tscn" id="2_np5jk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q73gw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8wavi"]
 size = Vector2(127, 128)
 
-[node name="Object" type="Area2D" node_paths=PackedStringArray("moveModule", "ray") groups=["movableObject"]]
+[node name="Object" type="Area2D" node_paths=PackedStringArray("moveModule", "ray", "boxDetectorRay") groups=["movableObject"]]
 scale = Vector2(0.25, 0.25)
-collision_layer = 2
+collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_gld1n")
-moveModule = NodePath("MoveModule")
+moveModule = NodePath("MoveBoxModule")
 ray = NodePath("ShapeCast2D")
+boxDetectorRay = NodePath("ShapeCast2DBoxSearch")
+
+[node name="MoveBoxModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("2_np5jk")]
+position = Vector2(32, -348)
+ray = NodePath("../ShapeCast2D")
 
 [node name="ShapeCast2D" type="ShapeCast2D" parent="."]
 shape = SubResource("RectangleShape2D_q73gw")
 target_position = Vector2(0, 128)
-collision_mask = 3
+collision_mask = 11
+collide_with_areas = true
+
+[node name="ShapeCast2DBoxSearch" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_q73gw")
+target_position = Vector2(0, 128)
+collision_mask = 9
 collide_with_areas = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -29,7 +40,3 @@ shape = SubResource("RectangleShape2D_8wavi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xd8ov")
-
-[node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("3_ja408")]
-ray = NodePath("../ShapeCast2D")
-strength = 1

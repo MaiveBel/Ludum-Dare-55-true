@@ -14,3 +14,5 @@ res://Prefabs/SlimeAbilities/abilityModule.gd
 res://Prefabs/PlayableCharacterMove.gd
 res://Prefabs/SlimeAbilities/moveModule.gd
 res://Prefabs/MovableObject.gd
+res://Prefabs/SlimeAbilities/moveBoxModule.tscn
+res://Prefabs/SlimeAbilities/moveBoxModule.gd

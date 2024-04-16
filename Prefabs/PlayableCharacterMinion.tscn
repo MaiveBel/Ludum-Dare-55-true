@@ -295,7 +295,7 @@ modulate = Color(0.541176, 0, 0.231373, 1)
 shape = SubResource("RectangleShape2D_ceg27")
 target_position = Vector2(0, 128)
 margin = 3.0
-collision_mask = 3
+collision_mask = 11
 collide_with_areas = true
 
 [node name="PlayerSprite" type="Sprite2D" parent="."]

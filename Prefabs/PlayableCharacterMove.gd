@@ -34,9 +34,9 @@ func _unhandled_input(event):
 	if isSelected:
 		for dir in inputs.keys():
 			if event.is_action_pressed(dir):
+				if !moving:
 					moveModule.move(dir)
 
-# bug 2 of the same character cant move together when touching
 
 
 func selectionCheck(num):

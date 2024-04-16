@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var ray:Node2D
+
 @onready var parent = self.get_parent()
 @export var pushableTarget = false
 @export var strength = 0
@@ -21,7 +22,7 @@ func _ready():
 
 
 func move(dir):
-	ray.target_position = inputs[dir] * 128
+	ray.target_position = inputs[dir] * 16*8
 	ray.force_shapecast_update()
 	
 	if !ray.is_colliding() && !moving:

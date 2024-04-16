@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1k2wyqf7of58"]
+
+[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/moveBoxModule.gd" id="1_1biws"]
+
+[node name="MoveBoxModule" type="Node2D" groups=["moveBoxModule"]]
+script = ExtResource("1_1biws")
