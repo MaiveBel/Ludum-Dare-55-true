@@ -17,7 +17,7 @@ extends Area2D
 @export var type = 0
 @export var dead = false
 
-signal characterDied(selectionId)
+signal characterDied(selectionId,entity)
 
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
@@ -66,4 +66,5 @@ func tile_map_collision(body,body_rid):
 
 func die():
 	dead = true
-	characterDied.emit(selectionId)
+	characterDied.emit(selectionId,self)
+	queue_free()

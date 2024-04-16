@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://di20p4si6o1p8"]
+[gd_scene load_steps=13 format=3 uid="uid://di20p4si6o1p8"]
 
 [ext_resource type="Script" path="res://Prefabs/PlayableCharacterMove.gd" id="1_byeo0"]
 [ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player_cam.tscn" id="2_2cvbl"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://c6u3ue4d1ycin" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png" id="3_ptya6"]
 [ext_resource type="PackedScene" uid="uid://c32x3tyv5phtw" path="res://Prefabs/SlimeAbilities/slime_spawner.tscn" id="4_tqdf0"]
 [ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/SlimeAbilities/moveModule.tscn" id="5_yhfl6"]
-[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/moveModule.gd" id="7_07013"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
 
@@ -317,7 +316,6 @@ libraries = {
 [node name="SlimeSpawner" parent="." instance=ExtResource("4_tqdf0")]
 
 [node name="MoveModule" parent="." node_paths=PackedStringArray("ray") instance=ExtResource("5_yhfl6")]
-script = ExtResource("7_07013")
 ray = NodePath("../ShapeCast2D")
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

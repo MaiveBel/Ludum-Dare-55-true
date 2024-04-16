@@ -288,7 +288,6 @@ script = ExtResource("1_22ext")
 isSelected = false
 selectionId = 2
 moveModule = NodePath("MoveModule")
-type = 1
 
 [node name="ShapeCast2D" type="ShapeCast2D" parent="." groups=["raycastMinion"]]
 modulate = Color(0.541176, 0, 0.231373, 1)

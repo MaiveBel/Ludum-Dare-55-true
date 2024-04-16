@@ -54,4 +54,10 @@ func spawn_slime(type,modifiers,selection_id):
 		var newSlime = slimePrefabs[type].instantiate()
 		tileMap.add_child(newSlime)
 		newSlime.global_position = ray.global_position + ray.get_target_position()/4
+		newSlime.characterDied.connect(dead_character)
+		slimes.append(newSlime)
 		#newSlime.selectionId = selection_id
+
+func dead_character(id,entity):
+	characterSelected.emit(1)
+	slimes.erase(entity)
