@@ -7544,3 +7544,5 @@ layer_2/tile_data = PackedInt32Array(-65533, 0, 15, 3, 0, 16, 65539, 0, 17, -262
 
 [node name="CanvasLayer" parent="." instance=ExtResource("9_c6jma")]
 visible = false
+
+[connection signal="body_shape_entered" from="TileMap/PlayerArea" to="TileMap/PlayerArea" method="_on_body_shape_entered"]

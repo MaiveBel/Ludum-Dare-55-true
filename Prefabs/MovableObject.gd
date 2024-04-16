@@ -15,13 +15,13 @@ var inputs = {"right": Vector2.RIGHT,
 func move_object(dir):
 	ray.target_position = inputs[dir] * 128
 	ray.force_shapecast_update()
-	if ray.get_collider(0)== null:
-		moveModule.move(dir)
 	if ray.get_collider(0)!= null && ray.get_collider(0).is_in_group("movableObject"):
 		if ray.get_collider(0).move_object(dir) != false:
 			moveModule.move(dir)
 		else:
 			return false
+	elif ray.get_collider(0)== null:
+		moveModule.move(dir)
 	else:
 		return false
 
