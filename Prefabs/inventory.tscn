@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://mlxr8vbq6j7h"]
+[gd_scene load_steps=12 format=3 uid="uid://mlxr8vbq6j7h"]
 
 [ext_resource type="Script" path="res://inventory_grid_stacked_transfer.gd" id="1_7aklj"]
 [ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_4rajv"]
+[ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="3_2sbjd"]
 [ext_resource type="Texture2D" uid="uid://bpmdtgysdm2tp" path="res://images/field_background.png" id="3_6llu2"]
 [ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://images/field_highlighted_background.png" id="4_nlg3g"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="5_017ab"]
@@ -52,9 +53,11 @@ layout_mode = 2
 [node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer"]
 unique_name_in_owner = true
 texture_filter = 1
+custom_minimum_size = Vector2(160, 160)
 layout_mode = 2
 script = ExtResource("2_4rajv")
 inventory_path = NodePath("../../../../../CtrlInventoryGrid")
+default_item_texture = ExtResource("3_2sbjd")
 field_style = SubResource("StyleBoxTexture_kcmb0")
 field_highlighted_style = SubResource("2")
 selection_style = SubResource("5")

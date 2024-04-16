@@ -60,5 +60,4 @@ func move(dir):
 
 
 
-#todo make weights chain togetherd
 #bug moving inside boxes

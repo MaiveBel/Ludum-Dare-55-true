@@ -29,14 +29,18 @@ func _process(delta):
 
 #HACK god forgive me for elif cycling inputs
 func _unhandled_input(event):
-	if event.is_action_pressed("slime_1"):
+	if event.is_action_pressed("slime_1") && get_tree().get_first_node_in_group("Id_1"):
 		characterSelected.emit(1)
-	elif event.is_action_pressed("slime_2"):
+		get_tree().get_first_node_in_group("Cam_Id_1").make_current()
+	elif event.is_action_pressed("slime_2") && get_tree().get_first_node_in_group("Id_2"):
 		characterSelected.emit(2)
-	elif event.is_action_pressed("slime_3"):
+		get_tree().get_first_node_in_group("Cam_Id_2").make_current()
+	elif event.is_action_pressed("slime_3") && get_tree().get_first_node_in_group("Id_3"):
 		characterSelected.emit(3)
-	elif event.is_action_pressed("slime_4"):
+		get_tree().get_first_node_in_group("Cam_Id_3").make_current()
+	elif event.is_action_pressed("slime_4") && get_tree().get_first_node_in_group("Id_4"):
 		characterSelected.emit(4)
+		get_tree().get_first_node_in_group("Cam_Id_4").make_current()
 	if event.is_action_pressed("interact"):
 		if lich.isSelected:
 			spawn_slime(0,0,1)

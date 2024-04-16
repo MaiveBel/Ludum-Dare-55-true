@@ -11,13 +11,16 @@ size = Vector2(127, 128)
 
 [node name="Object" type="Area2D" node_paths=PackedStringArray("moveModule", "ray") groups=["movableObject"]]
 scale = Vector2(0.25, 0.25)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_gld1n")
 moveModule = NodePath("MoveModule")
 ray = NodePath("ShapeCast2D")
 
 [node name="ShapeCast2D" type="ShapeCast2D" parent="."]
 shape = SubResource("RectangleShape2D_q73gw")
-target_position = Vector2(0, 116)
+target_position = Vector2(0, 128)
+collision_mask = 3
 collide_with_areas = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

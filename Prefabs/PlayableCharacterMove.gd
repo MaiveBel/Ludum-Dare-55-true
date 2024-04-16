@@ -14,7 +14,10 @@ extends Area2D
 @export var selectionId = 1
 @onready var slimeSpawner = get_tree().get_first_node_in_group("slimeSpawner")
 @export var moveModule:Node2D
+@export var type = 0
+@export var dead = false
 
+signal characterDied(selectionId)
 
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
@@ -42,3 +45,25 @@ func selectionCheck(num):
 	else:
 		isSelected = false
 
+
+
+func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	tile_map_collision(body, body_rid)
+
+
+func tile_map_collision(body,body_rid):
+	var current_tilemap = body
+	
+	var collided_tile_coords = current_tilemap.get_coords_for_body_rid(body_rid)
+	
+	
+	var tile_data = current_tilemap.get_cell_tile_data(2, collided_tile_coords)
+	if tile_data:
+		
+		var terrain_mask = tile_data.get_custom_data("Danger")
+		if terrain_mask != type:
+			die()
+
+func die():
+	dead = true
+	characterDied.emit(selectionId)
