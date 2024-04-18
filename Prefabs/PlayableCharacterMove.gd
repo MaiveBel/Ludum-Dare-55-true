@@ -2,11 +2,11 @@ extends Area2D
 
 # todo - make positional save system
 # todo - animation player for entities
-# next - make slime abilities module
-# todo - add character deletion
+# todo - make slime abilities module
 # todo - make levels
 # todo - make lightable torches
 # todo - make scene manager
+# next - make slime item combination 
 
 
 @onready var ray = $ShapeCast2D

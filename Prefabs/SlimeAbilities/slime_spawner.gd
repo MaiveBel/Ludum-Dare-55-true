@@ -14,13 +14,14 @@ var slimePrefabs = [
 var tile_size = 16
 @onready var ray = get_tree().get_first_node_in_group("raycastLich")
 @onready var tileMap = get_tree().get_first_node_in_group("tileMap")
+@onready var inventory_grid = get_tree().get_first_node_in_group("InventoryGrid")
 @onready var lich = get_parent()
 
 var slimes = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	inventory_grid.spawn_slime_from_item_signal.connect(spawn_slime)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -48,7 +49,7 @@ func _unhandled_input(event):
 
 # TODO implement selection id giving and piling
 # HACK stop manually selecting first minion
-func spawn_slime(type,modifiers,selection_id):
+func spawn_slime(type : int,modifiers : int,selection_id : int):
 	ray.force_shapecast_update()
 	if !ray.is_colliding() && !lich.moving:
 		var newSlime = slimePrefabs[type].instantiate()

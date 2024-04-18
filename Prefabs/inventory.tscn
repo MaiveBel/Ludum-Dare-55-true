@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://mlxr8vbq6j7h"]
+[gd_scene load_steps=16 format=3 uid="uid://mlxr8vbq6j7h"]
 
 [ext_resource type="Script" path="res://inventory_grid_stacked_transfer.gd" id="1_7aklj"]
 [ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_4rajv"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://images/field_highlighted_background.png" id="4_nlg3g"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="5_017ab"]
 [ext_resource type="Resource" uid="uid://b7ph8mtfopx0n" path="res://Prefabs/invProtoset.tres" id="6_bfj0r"]
+[ext_resource type="FontFile" uid="uid://dhhi2guccowqd" path="res://misc/m6x11.ttf" id="6_lrxvf"]
+[ext_resource type="Texture2D" uid="uid://d3qajhvbxfn0u" path="res://addons/gloot/images/icon_ctrl_inventory.svg" id="7_1n2y5"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="7_udtyx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kcmb0"]
@@ -25,7 +27,17 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 0.92549, 0.152941, 1)
 
-[node name="InventoryGrid" type="Control"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hgs2"]
+content_margin_left = 7.0
+texture = ExtResource("3_6llu2")
+expand_margin_top = 2.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="Theme" id="Theme_8rxij"]
+default_font = ExtResource("6_lrxvf")
+Label/styles/normal = SubResource("StyleBoxTexture_3hgs2")
+
+[node name="InventoryGrid" type="Control" node_paths=PackedStringArray("ctrl_inventory_left", "inventory_grid") groups=["InventoryGrid"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,11 +45,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7aklj")
+ctrl_inventory_left = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft")
+inventory_grid = NodePath("CtrlInventoryGrid")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 160.0
+offset_bottom = 234.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -50,7 +64,7 @@ layout_mode = 2
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer"]
+[node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer" groups=["CtrlInventoryGrid"]]
 unique_name_in_owner = true
 texture_filter = 1
 custom_minimum_size = Vector2(160, 160)
@@ -62,6 +76,17 @@ field_style = SubResource("StyleBoxTexture_kcmb0")
 field_highlighted_style = SubResource("2")
 selection_style = SubResource("5")
 
+[node name="LblInfo" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme = SubResource("Theme_8rxij")
+text = "test text"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("7_1n2y5")
+
 [node name="CtrlInventoryGrid" type="Control" parent="."]
 anchors_preset = 0
 offset_right = 40.0
@@ -70,10 +95,41 @@ script = ExtResource("5_017ab")
 size = Vector2i(5, 5)
 item_protoset = ExtResource("6_bfj0r")
 
-[node name="Control" type="Control" parent="CtrlInventoryGrid"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="_Node_21900" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("7_udtyx")
+protoset = ExtResource("6_bfj0r")
+prototype_id = "smoler"
+properties = {
+"grid_position": Vector2i(2, 3)
+}
+
+[node name="_Node_22069" type="Node" parent="CtrlInventoryGrid"]
 script = ExtResource("7_udtyx")
 protoset = ExtResource("6_bfj0r")
 prototype_id = "smol"
+properties = {
+"grid_position": Vector2i(0, 3)
+}
+
+[node name="_Node_42357" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("7_udtyx")
+protoset = ExtResource("6_bfj0r")
+prototype_id = "smoler"
+properties = {
+"grid_position": Vector2i(0, 2)
+}
+
+[node name="_Node_42625" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("7_udtyx")
+protoset = ExtResource("6_bfj0r")
+prototype_id = "smol"
+properties = {
+"grid_position": Vector2i(1, 2)
+}
+
+[node name="_Node_62087" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("7_udtyx")
+protoset = ExtResource("6_bfj0r")
+prototype_id = "item_2x2"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_combine_button_pressed"]

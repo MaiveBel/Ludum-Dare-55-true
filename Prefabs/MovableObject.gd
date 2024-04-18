@@ -36,4 +36,4 @@ func move_check(dir):
 			return false
 	else:
 		return false
-#bug boxes phase into eachother at exacly 8 boxes
+

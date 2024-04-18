@@ -5,6 +5,7 @@ extends Control
 
 signal item_mouse_entered(item)
 signal item_mouse_exited(item)
+signal inventory_item_activated(item)
 
 const Verify = preload("res://addons/gloot/core/verify.gd")
 const CtrlInventoryGridBasic = preload("res://addons/gloot/ui/ctrl_inventory_grid_basic.gd")
@@ -242,6 +243,7 @@ func _ready() -> void:
 	_ctrl_inventory_grid_basic.item_mouse_entered.connect(_on_item_mouse_entered)
 	_ctrl_inventory_grid_basic.item_mouse_exited.connect(_on_item_mouse_exited)
 	_ctrl_inventory_grid_basic.selection_changed.connect(_on_selection_changed)
+	_ctrl_inventory_grid_basic.inventory_item_activated.connect(_inventory_item_activated)
 	_ctrl_inventory_grid_basic.select_mode = select_mode
 	add_child(_ctrl_inventory_grid_basic)
 
@@ -265,16 +267,19 @@ func _update_size() -> void:
 
 func _on_item_mouse_entered(item: InventoryItem) -> void:
 	_set_item_background(item, field_highlighted_style, PriorityPanel.StylePriority.MEDIUM)
+	item_mouse_entered.emit(item)
 
 
 func _on_item_mouse_exited(item: InventoryItem) -> void:
 	_set_item_background(item, null, PriorityPanel.StylePriority.MEDIUM)
+	item_mouse_exited.emit(item)
 
 
 func _on_selection_changed() -> void:
 	if !is_instance_valid(inventory):
 		return
 	_refresh_selection_panel()
+
 
 	if !field_selected_style:
 		return
@@ -287,6 +292,9 @@ func _on_selection_changed() -> void:
 
 func _on_inventory_resized() -> void:
 	_refresh_field_background_grid()
+
+func _inventory_item_activated(item: InventoryItem) -> void:
+	inventory_item_activated.emit(item)
 
 
 func _input(event) -> void:

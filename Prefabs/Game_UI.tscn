@@ -5,6 +5,7 @@
 [node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="InventoryGrid" parent="." instance=ExtResource("1_ossou")]
+unique_name_in_owner = true
 offset_left = 32.0
 offset_top = 32.0
 offset_right = 25.0
