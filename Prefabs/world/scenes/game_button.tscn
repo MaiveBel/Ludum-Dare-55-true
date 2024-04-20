@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceemkt8hx6nvy"]
+
+[ext_resource type="Script" path="res://Prefabs/world/scripts/game_button.gd" id="1_vm5gm"]
+[ext_resource type="Texture2D" uid="uid://b87v12g1icu3u" path="res://images/item_scroll_blue.png" id="2_120g7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qjbxq"]
+radius = 55.0
+
+[node name="Button" type="Area2D" node_paths=PackedStringArray("pressParticles")]
+scale = Vector2(0.25, 0.25)
+collision_layer = 16
+collision_mask = 10
+script = ExtResource("1_vm5gm")
+pressParticles = NodePath("GPUParticles2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qjbxq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2.86102e-06, -5.48363e-06)
+scale = Vector2(3, 3)
+texture = ExtResource("2_120g7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

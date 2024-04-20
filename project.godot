@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="Ludum-Dare-55"
-run/main_scene="res://test.tscn"
+run/main_scene="res://addons/maaacks_game_template/base/scenes/InitApp/InitApp.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+SignalBus="*res://Resources/SignalBus.tscn"
+SceneLoader="*res://addons/maaacks_game_template/base/scripts/SceneLoader.gd"
+ProjectLevelLoader="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn"
+ProjectMusicController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectMusicController.tscn"
+ProjectUiSoundController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectUISoundController.tscn"
 
 [debug]
 
@@ -85,3 +93,5 @@ slime_4={
 2d_physics/layer_1="walls"
 2d_physics/layer_2="entities"
 2d_physics/layer_3="floors"
+2d_physics/layer_4="Objects"
+2d_physics/layer_5="Interactables"

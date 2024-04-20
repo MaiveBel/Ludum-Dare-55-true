@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://q6jjt2ick1i4"]
+
+[ext_resource type="Script" path="res://Prefabs/player/scripts/PlayableCharacterMove.gd" id="1_18j20"]
+[ext_resource type="Texture2D" uid="uid://coqk337g2ho1d" path="res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png" id="2_hd4jk"]
+[ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/player/scenes/moveModule.tscn" id="3_s3amr"]
+[ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player/scenes/player_cam.tscn" id="4_ga5l6"]
+[ext_resource type="PackedScene" uid="uid://b3tcs1802gkem" path="res://Prefabs/player/scenes/walk_particles.tscn" id="5_5pujg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fkh68"]
+radius = 55.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ujlvi"]
+
+[node name="PlayerArea" type="Area2D" node_paths=PackedStringArray("moveModule") groups=["Id_2"]]
+scale = Vector2(0.25, 0.25)
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_18j20")
+isSelected = false
+selectionId = 2
+moveModule = NodePath("MoveModule")
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="." groups=["raycastMinion"]]
+modulate = Color(0.541176, 0, 0.231373, 1)
+shape = SubResource("RectangleShape2D_ceg27")
+target_position = Vector2(0, 128)
+margin = 3.0
+collision_mask = 11
+collide_with_areas = true
+
+[node name="PlayerSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_hd4jk")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -0.5)
+shape = SubResource("CircleShape2D_fkh68")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ujlvi")
+}
+
+[node name="MoveModule" parent="." node_paths=PackedStringArray("ray", "walkParticles") instance=ExtResource("3_s3amr")]
+ray = NodePath("../ShapeCast2D")
+walkParticles = NodePath("../WalkParticles")
+strength = 1
+
+[node name="PlayerCam" parent="." groups=["Cam_Id_2"] instance=ExtResource("4_ga5l6")]
+scale = Vector2(4, 4)
+
+[node name="DeathAudio" type="AudioStreamPlayer2D" parent="."]
+
+[node name="WalkParticles" parent="." instance=ExtResource("5_5pujg")]
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

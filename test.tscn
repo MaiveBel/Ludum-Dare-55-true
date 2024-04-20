@@ -1,14 +1,17 @@
-[gd_scene load_steps=22 format=3 uid="uid://c5gua5snsvt1t"]
+[gd_scene load_steps=25 format=3 uid="uid://c5gua5snsvt1t"]
 
 [ext_resource type="Texture2D" uid="uid://0uvy3mownaa0" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_awfhw"]
-[ext_resource type="PackedScene" uid="uid://di20p4si6o1p8" path="res://Prefabs/PlayableCharacter.tscn" id="1_njeo6"]
+[ext_resource type="PackedScene" uid="uid://di20p4si6o1p8" path="res://Prefabs/player/scenes/PlayableCharacter.tscn" id="1_njeo6"]
 [ext_resource type="Texture2D" uid="uid://ckeqfgk5j7fcd" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png" id="2_gwomw"]
 [ext_resource type="Texture2D" uid="uid://cr4yhx125hxxw" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png" id="3_avnjc"]
 [ext_resource type="Texture2D" uid="uid://bov0bauls0w3g" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png" id="4_adaf4"]
 [ext_resource type="Texture2D" uid="uid://ciladlciffpq6" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png" id="5_fmvaj"]
 [ext_resource type="Texture2D" uid="uid://fi1ir3env7x1" path="res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png" id="7_1y3mv"]
-[ext_resource type="PackedScene" uid="uid://ddgq7jusp7uu3" path="res://Prefabs/MovableObject.tscn" id="8_yilfm"]
-[ext_resource type="PackedScene" uid="uid://dcwdkac8laxq7" path="res://Prefabs/Game_UI.tscn" id="9_c6jma"]
+[ext_resource type="PackedScene" uid="uid://ceemkt8hx6nvy" path="res://Prefabs/world/scenes/game_button.tscn" id="8_sdgaq"]
+[ext_resource type="PackedScene" uid="uid://ddgq7jusp7uu3" path="res://Prefabs/world/scenes/MovableObject.tscn" id="8_yilfm"]
+[ext_resource type="PackedScene" uid="uid://dcwdkac8laxq7" path="res://Prefabs/Ui/Game_UI.tscn" id="9_c6jma"]
+[ext_resource type="PackedScene" uid="uid://blq86fw4nf0ch" path="res://Prefabs/world/scenes/game_openable_by_button.tscn" id="11_g1lqm"]
+[ext_resource type="Script" path="res://addons/maaacks_game_template/base/scripts/UISoundController.gd" id="12_odild"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bqsyf"]
 
@@ -6613,7 +6616,9 @@ resource_name = "Character"
 scenes/1/scene = ExtResource("1_njeo6")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uri6s"]
+resource_name = "Objects"
 scenes/1/scene = ExtResource("8_yilfm")
+scenes/2/scene = ExtResource("8_sdgaq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fpooj"]
 resource_name = "LavaSet"
@@ -7543,3 +7548,16 @@ layer_2/name = "Floor"
 layer_2/tile_data = PackedInt32Array(-65533, 0, 15, 3, 0, 16, 65539, 0, 17, -262144, 0, 15, -196608, 0, 16, -131072, 0, 17, -262143, 0, 15, -196607, 0, 16, -131071, 0, 17, 131075, 458759, 11, 131076, 458759, 11, 196612, 458759, 11, 196611, 458759, 11, 131071, 5, 65536, 262147, 458759, 11, 262148, 458759, 11, 131080, 458759, 11, 262152, 458759, 11, 262153, 458759, 11, 196617, 458759, 11, 196616, 458759, 11, 131081, 458759, 11, 393219, 393223, 11, 393220, 393223, 11, 524292, 393223, 11, 524291, 393223, 11, 458755, 393223, 11, 458756, 393223, 11)
 
 [node name="CanvasLayer" parent="." instance=ExtResource("9_c6jma")]
+
+[node name="Button" parent="." instance=ExtResource("8_sdgaq")]
+position = Vector2(64, 159)
+
+[node name="Door" parent="." instance=ExtResource("11_g1lqm")]
+position = Vector2(64, 191)
+mode = 1
+
+[node name="Button2" parent="." instance=ExtResource("8_sdgaq")]
+position = Vector2(127, 191)
+
+[node name="UISoundController" type="Node" parent="."]
+script = ExtResource("12_odild")

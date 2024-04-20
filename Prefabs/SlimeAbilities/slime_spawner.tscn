@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c32x3tyv5phtw"]
-
-[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/slime_spawner.gd" id="1_j24gb"]
-
-[node name="SlimeSpawner" type="Node2D" groups=["slimeSpawner"]]
-script = ExtResource("1_j24gb")

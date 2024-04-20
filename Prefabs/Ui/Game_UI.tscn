@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcwdkac8laxq7"]
+
+[ext_resource type="PackedScene" uid="uid://mlxr8vbq6j7h" path="res://Prefabs/Ui/inventory.tscn" id="1_ossou"]
+[ext_resource type="Script" path="res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd" id="2_n13co"]
+[ext_resource type="PackedScene" uid="uid://qeqh1euot2d0" path="res://addons/maaacks_game_template/examples/scenes/Menus/PauseMenu/PauseMenuWithScenes.tscn" id="3_26mtk"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="InventoryGrid" parent="." instance=ExtResource("1_ossou")]
+unique_name_in_owner = true
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 25.0
+offset_bottom = 39.0
+
+[node name="PauseMenuController" type="Node" parent="."]
+script = ExtResource("2_n13co")
+pause_menu_packed = ExtResource("3_26mtk")

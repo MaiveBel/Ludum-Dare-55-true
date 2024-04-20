@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c32x3tyv5phtw"]
+
+[ext_resource type="Script" path="res://Prefabs/player/scripts/slime_spawner.gd" id="1_05pwi"]
+
+[node name="SlimeSpawner" type="Node2D" groups=["slimeSpawner"]]
+script = ExtResource("1_05pwi")

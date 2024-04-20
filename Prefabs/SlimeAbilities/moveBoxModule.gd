@@ -18,7 +18,7 @@ var moving = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	parent.position = parent.position.snapped(Vector2.ONE * tile_size)
-	parent.position += Vector2.ONE * tile_size
+	
 
 
 func move(dir):

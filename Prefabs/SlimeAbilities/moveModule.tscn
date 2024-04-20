@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://66p802jr5bhv"]
-
-[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/moveModule.gd" id="1_681qv"]
-
-[node name="MoveModule" type="Node2D" groups=["moveModule"]]
-script = ExtResource("1_681qv")

@@ -1,4 +1,9 @@
-res://Prefabs/SlimeAbilities
-res://Prefabs
+res://addons/maaacks_game_template/base/scenes/Menus/MainMenu
+res://addons/maaacks_game_template/base/scenes/InitApp
 res://addons/maaacks_game_template/extras/scenes/Autoloads
+res://addons/maaacks_game_template/base/scripts
+res://Resources
+res://Prefabs/world/scripts
+res://Prefabs
+res://Prefabs/SlimeAbilities
 res://

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c30wpvvhsnqte"]
 
-[ext_resource type="Script" path="res://pushModule.gd" id="1_xi7s8"]
+[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/pushModule.gd" id="1_xi7s8"]
 
 [node name="pushModule" type="Node2D" groups=["pushModule"]]
 script = ExtResource("1_xi7s8")

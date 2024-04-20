@@ -14,13 +14,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
+game_scene_path = "res://test.tscn"
 options_packed_scene = ExtResource("2_67m86")
 credits_packed_scene = ExtResource("3_5dhvp")
 
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 autoplay = true
-bus = &"Music"
 
 [node name="BackgroundTextureRect" type="TextureRect" parent="."]
 layout_mode = 1

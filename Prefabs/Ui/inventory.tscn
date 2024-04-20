@@ -1,0 +1,113 @@
+[gd_scene load_steps=16 format=3 uid="uid://mlxr8vbq6j7h"]
+
+[ext_resource type="Script" path="res://Prefabs/Ui/inventory_grid_stacked_transfer.gd" id="1_xkekt"]
+[ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_qgvkf"]
+[ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="3_ueeaf"]
+[ext_resource type="Texture2D" uid="uid://bpmdtgysdm2tp" path="res://images/field_background.png" id="4_r3ean"]
+[ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://images/field_highlighted_background.png" id="5_uowj3"]
+[ext_resource type="FontFile" uid="uid://dhhi2guccowqd" path="res://misc/m6x11.ttf" id="6_j4okv"]
+[ext_resource type="Texture2D" uid="uid://d3qajhvbxfn0u" path="res://addons/gloot/images/icon_ctrl_inventory.svg" id="7_xtyb7"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="8_x67tx"]
+[ext_resource type="Resource" uid="uid://b7ph8mtfopx0n" path="res://Prefabs/Ui/invProtoset.tres" id="9_36mwn"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="10_fe351"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kcmb0"]
+texture = ExtResource("4_r3ean")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="2"]
+texture = ExtResource("5_uowj3")
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxFlat" id="5"]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.92549, 0.152941, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hgs2"]
+content_margin_left = 7.0
+texture = ExtResource("4_r3ean")
+expand_margin_top = 2.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="Theme" id="Theme_8rxij"]
+default_font = ExtResource("6_j4okv")
+Label/styles/normal = SubResource("StyleBoxTexture_3hgs2")
+
+[node name="InventoryGrid" type="Control" node_paths=PackedStringArray("ctrl_inventory_left", "inventory_grid") groups=["InventoryGrid"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xkekt")
+ctrl_inventory_left = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft")
+inventory_grid = NodePath("CtrlInventoryGrid")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 234.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer" groups=["CtrlInventoryGrid"]]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+script = ExtResource("2_qgvkf")
+inventory_path = NodePath("../../../../../CtrlInventoryGrid")
+default_item_texture = ExtResource("3_ueeaf")
+field_style = SubResource("StyleBoxTexture_kcmb0")
+field_highlighted_style = SubResource("2")
+selection_style = SubResource("5")
+
+[node name="LblInfo" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+theme = SubResource("Theme_8rxij")
+text = "test text"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("7_xtyb7")
+
+[node name="CtrlInventoryGrid" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_x67tx")
+size = Vector2i(5, 5)
+item_protoset = ExtResource("9_36mwn")
+
+[node name="_Node_42357" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("10_fe351")
+protoset = ExtResource("9_36mwn")
+prototype_id = "smoler"
+properties = {
+"grid_position": Vector2i(0, 2)
+}
+
+[node name="_Node_42625" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("10_fe351")
+protoset = ExtResource("9_36mwn")
+prototype_id = "smol"
+properties = {
+"grid_position": Vector2i(1, 2)
+}
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_combine_button_pressed"]
