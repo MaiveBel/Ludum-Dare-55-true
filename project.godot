@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 SignalBus="*res://Resources/SignalBus.tscn"
 SceneLoader="*res://addons/maaacks_game_template/base/scripts/SceneLoader.gd"
-ProjectLevelLoader="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn"
 ProjectMusicController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectMusicController.tscn"
 ProjectUiSoundController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectUISoundController.tscn"
 
@@ -95,3 +94,7 @@ slime_4={
 2d_physics/layer_3="floors"
 2d_physics/layer_4="Objects"
 2d_physics/layer_5="Interactables"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

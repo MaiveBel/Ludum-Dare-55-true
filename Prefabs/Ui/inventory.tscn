@@ -1,11 +1,11 @@
-[gd_scene load_steps=16 format=3 uid="uid://mlxr8vbq6j7h"]
+[gd_scene load_steps=15 format=3 uid="uid://mlxr8vbq6j7h"]
 
 [ext_resource type="Script" path="res://Prefabs/Ui/inventory_grid_stacked_transfer.gd" id="1_xkekt"]
 [ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_qgvkf"]
 [ext_resource type="Texture2D" uid="uid://d2uikxt5vgnfb" path="res://icon.svg" id="3_ueeaf"]
 [ext_resource type="Texture2D" uid="uid://bpmdtgysdm2tp" path="res://images/field_background.png" id="4_r3ean"]
 [ext_resource type="Texture2D" uid="uid://cdhuw0juxw3up" path="res://images/field_highlighted_background.png" id="5_uowj3"]
-[ext_resource type="FontFile" uid="uid://dhhi2guccowqd" path="res://misc/m6x11.ttf" id="6_j4okv"]
+[ext_resource type="Theme" uid="uid://cq6ldjm8nms0g" path="res://Prefabs/Ui/TextTheme.tres" id="6_0wmxa"]
 [ext_resource type="Texture2D" uid="uid://d3qajhvbxfn0u" path="res://addons/gloot/images/icon_ctrl_inventory.svg" id="7_xtyb7"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="8_x67tx"]
 [ext_resource type="Resource" uid="uid://b7ph8mtfopx0n" path="res://Prefabs/Ui/invProtoset.tres" id="9_36mwn"]
@@ -27,15 +27,11 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(1, 0.92549, 0.152941, 1)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hgs2"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g2727"]
 content_margin_left = 7.0
 texture = ExtResource("4_r3ean")
 expand_margin_top = 2.0
 expand_margin_bottom = 4.0
-
-[sub_resource type="Theme" id="Theme_8rxij"]
-default_font = ExtResource("6_j4okv")
-Label/styles/normal = SubResource("StyleBoxTexture_3hgs2")
 
 [node name="InventoryGrid" type="Control" node_paths=PackedStringArray("ctrl_inventory_left", "inventory_grid") groups=["InventoryGrid"]]
 layout_mode = 3
@@ -67,6 +63,7 @@ layout_mode = 2
 [node name="CtrlInventoryGridLeft" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer" groups=["CtrlInventoryGrid"]]
 unique_name_in_owner = true
 texture_filter = 1
+custom_minimum_size = Vector2(160, 160)
 layout_mode = 2
 script = ExtResource("2_qgvkf")
 inventory_path = NodePath("../../../../../CtrlInventoryGrid")
@@ -79,7 +76,8 @@ selection_style = SubResource("5")
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 2
-theme = SubResource("Theme_8rxij")
+theme = ExtResource("6_0wmxa")
+theme_override_styles/normal = SubResource("StyleBoxTexture_g2727")
 text = "test text"
 
 [node name="Button" type="Button" parent="VBoxContainer"]

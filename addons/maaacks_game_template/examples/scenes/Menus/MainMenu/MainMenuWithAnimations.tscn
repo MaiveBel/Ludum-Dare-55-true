@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://de7myf2ybhwk5"]
+[gd_scene load_steps=17 format=3 uid="uid://de7myf2ybhwk5"]
 
 [ext_resource type="PackedScene" uid="uid://byvydukidk6i2" path="res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithScenes.tscn" id="1_0i2sc"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithAnimations.gd" id="2_ncvk7"]
+[ext_resource type="Theme" uid="uid://cq6ldjm8nms0g" path="res://Prefabs/Ui/TextTheme.tres" id="3_8f1s8"]
 
 [sub_resource type="Animation" id="1"]
 resource_name = "Intro"
@@ -324,7 +325,9 @@ transitions = ["Intro", "OpenMainMenu", SubResource("11"), "OpenMainMenu", "Open
 graph_offset = Vector2(-180.277, 49)
 
 [node name="MainMenu" instance=ExtResource("1_0i2sc")]
+texture_filter = 1
 script = ExtResource("2_ncvk7")
+game_scene_path = "res://Prefabs/world/level_container.tscn"
 
 [node name="MenuAnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
@@ -339,14 +342,38 @@ tree_root = SubResource("AnimationNodeStateMachine_vikuh")
 anim_player = NodePath("../MenuAnimationPlayer")
 parameters/conditions/intro_done = false
 
-[node name="VersionNameLabel" parent="." index="3"]
+[node name="VersionNameLabel" parent="." index="4"]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
 
 [node name="Title" parent="MenuContainer/VBoxContainer/TitlesMargin/TitlesContainer" index="0"]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
+text = "Lich in Purgatory"
 
 [node name="SubTitle" parent="MenuContainer/VBoxContainer/TitlesMargin/TitlesContainer" index="1"]
 modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
+text = "Slime Summoner"
 
 [node name="MenuButtons" parent="MenuContainer/VBoxContainer/MenuMargin" index="0"]
 modulate = Color(1, 1, 1, 0)
+
+[node name="PlayButton" parent="MenuContainer/VBoxContainer/MenuMargin/MenuButtons" index="0"]
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
+
+[node name="OptionsButton" parent="MenuContainer/VBoxContainer/MenuMargin/MenuButtons" index="1"]
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
+
+[node name="CreditsButton" parent="MenuContainer/VBoxContainer/MenuMargin/MenuButtons" index="2"]
+texture_filter = 1
+theme = ExtResource("3_8f1s8")
+
+[node name="ExitButton" parent="MenuContainer/VBoxContainer/MenuMargin/MenuButtons" index="3"]
+texture_filter = 1
+theme = ExtResource("3_8f1s8")

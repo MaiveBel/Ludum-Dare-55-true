@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c5gua5snsvt1t"]
+[gd_scene load_steps=26 format=3 uid="uid://c5gua5snsvt1t"]
 
 [ext_resource type="Texture2D" uid="uid://0uvy3mownaa0" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_awfhw"]
 [ext_resource type="PackedScene" uid="uid://di20p4si6o1p8" path="res://Prefabs/player/scenes/PlayableCharacter.tscn" id="1_njeo6"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dcwdkac8laxq7" path="res://Prefabs/Ui/Game_UI.tscn" id="9_c6jma"]
 [ext_resource type="PackedScene" uid="uid://blq86fw4nf0ch" path="res://Prefabs/world/scenes/game_openable_by_button.tscn" id="11_g1lqm"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/base/scripts/UISoundController.gd" id="12_odild"]
+[ext_resource type="PackedScene" uid="uid://bs81wqai4al4f" path="res://Prefabs/world/scenes/portal_to_next.tscn" id="13_isqcl"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bqsyf"]
 
@@ -7561,3 +7562,27 @@ position = Vector2(127, 191)
 
 [node name="UISoundController" type="Node" parent="."]
 script = ExtResource("12_odild")
+
+[node name="Portal" parent="." instance=ExtResource("13_isqcl")]
+position = Vector2(-38, 56)
+nextId = 1
+
+[connection signal="body_shape_entered" from="TileMap/Object" to="TileMap/Object" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152988" to="TileMap/@Area2D@152988" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152989" to="TileMap/@Area2D@152989" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152990" to="TileMap/@Area2D@152990" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152991" to="TileMap/@Area2D@152991" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152992" to="TileMap/@Area2D@152992" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152993" to="TileMap/@Area2D@152993" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152994" to="TileMap/@Area2D@152994" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152995" to="TileMap/@Area2D@152995" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152996" to="TileMap/@Area2D@152996" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152997" to="TileMap/@Area2D@152997" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152998" to="TileMap/@Area2D@152998" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@152999" to="TileMap/@Area2D@152999" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@153000" to="TileMap/@Area2D@153000" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@153001" to="TileMap/@Area2D@153001" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@153002" to="TileMap/@Area2D@153002" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@153003" to="TileMap/@Area2D@153003" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@153004" to="TileMap/@Area2D@153004" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/PlayerArea" to="TileMap/PlayerArea" method="_on_body_shape_entered"]

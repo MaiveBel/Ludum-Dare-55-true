@@ -23,6 +23,9 @@ var slimes = []
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	inventory_grid.spawn_slime_from_item_signal.connect(spawn_slime)
+	signal_bus.characterSelected.emit(1)
+	if get_tree().get_first_node_in_group("Id_1"):
+		get_tree().get_first_node_in_group("Cam_Id_1").make_current()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

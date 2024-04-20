@@ -57,6 +57,7 @@ grow_vertical = 2
 [node name="LevelLoader" type="Node" parent="." node_paths=PackedStringArray("level_container")]
 script = ExtResource("8_g1tvw")
 level_container = NodePath("../Control")
+force_level = -1
 files = Array[String](["res://addons/maaacks_game_template/examples/scenes/GameScene/Levels/Level1.tscn", "res://addons/maaacks_game_template/examples/scenes/GameScene/Levels/Level2.tscn", "res://addons/maaacks_game_template/examples/scenes/GameScene/Levels/Level3.tscn"])
 directory = "res://addons/maaacks_game_template/examples/scenes/GameScene/Levels"
 

@@ -1,6 +1,7 @@
 @tool
 class_name LevelLoader
 extends SceneLister
+@onready var signal_bus = get_node("/root/SignalBus")
 ## Extends [SceneLister] to manage level advancement through [GameLevelLog].
 
 signal level_load_started
@@ -11,13 +12,15 @@ signal levels_finished
 @export var level_container : Node
 ## Loads a level on start.
 @export var auto_load : bool = true
+@export var reset_game : bool = false
 @export_group("Debugging")
-@export var force_level : int = -1
+@export var force_level : int = 0
 
 var current_level : Node
 
 func get_current_level_id() -> int:
-	return GameLevelLog.get_current_level() if force_level == -1 else force_level
+	print(GameLevelLog.get_current_level())
+	return GameLevelLog.get_current_level()
 
 func get_level_file(level_id : int = get_current_level_id()):
 	if files.is_empty():
@@ -57,11 +60,19 @@ func load_level(level_id : int = get_current_level_id()):
 	await(SceneLoader.scene_loaded)
 	current_level = _attach_level(SceneLoader.get_resource())
 	emit_signal("level_loaded")
+	
+func save_current_level(level_id):
+	GameLevelLog.set_current_level(level_id)
 
 func advance_and_load_level():
 	if advance_level():
 		load_level()
 
 func _ready():
+	signal_bus.nextLevel.connect(load_level)
+	signal_bus.nextLevel.connect(save_current_level)
+	if reset_game:
+		GameLevelLog.reset_game_data()
+	
 	if auto_load:
 		load_level()

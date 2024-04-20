@@ -5,4 +5,4 @@
 [node name="InitApp" type="Node"]
 script = ExtResource("1_gvtll")
 _loading_screen = "res://addons/maaacks_game_template/base/scenes/LoadingScreen/LoadingScreen.tscn"
-_next_scene = "res://addons/maaacks_game_template/base/scenes/Menus/MainMenu/MainMenu.tscn"
+_next_scene = "res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithAnimations.tscn"
