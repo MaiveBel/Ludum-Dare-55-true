@@ -16,9 +16,9 @@ var inputs = {"right": Vector2.RIGHT,
 			"up": Vector2.UP,
 			"down": Vector2.DOWN}
 
-func move_object(dir):
+func move_object(dir,sticky = false):
 	if move_check(dir):
-		moveModule.move(dir)
+		moveModule.move(dir,sticky)
 		
 
 func add_strength(str):
@@ -37,6 +37,8 @@ func move_check(dir):
 			return true
 		else:
 			return false
+	elif boxDetectorRay.is_colliding() && boxDetectorRay.get_collider(0).is_in_group("StickySlime"):
+		return true
 	else:
 		return false
 

@@ -1,5 +1,6 @@
-Node
 GPUParticles2D
+ShapeCast2D
+Node
 AudioListener2D
 AudioStreamPlayer2D
 AnimationPlayer
@@ -8,7 +9,6 @@ CollisionShape2D
 Area2D
 Button
 Label
-ShapeCast2D
 RayCast2D
 Camera2D
 CanvasLayer

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvwl11s2p0hd"]
+[gd_scene load_steps=6 format=3 uid="uid://bvwl11s2p0hd"]
 
 [ext_resource type="PackedScene" uid="uid://c8vnncjwqcpab" path="res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/Audio/AudioOptionsMenu.tscn" id="1"]
+[ext_resource type="Theme" uid="uid://cq6ldjm8nms0g" path="res://Prefabs/Ui/TextTheme.tres" id="1_ovr4u"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/MasterOptionsMenu.gd" id="1_u08d5"]
 [ext_resource type="PackedScene" uid="uid://b2numvphf2kau" path="res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/Video/VideoOptionsMenu.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://dp3rgqaehb3xu" path="res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/Input/InputOptionsMenu.tscn" id="4"]
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_ovr4u")
 script = ExtResource("1_u08d5")
 
 [node name="TabContainer" type="TabContainer" parent="."]

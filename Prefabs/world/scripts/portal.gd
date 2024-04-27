@@ -1,15 +1,11 @@
 extends Area2D
 
 @onready var signal_bus = get_node("/root/SignalBus")
-@onready var level_loader = get_node("/root/ProjectLevelLoader")
 @export var open = false
 
 @export var nextId = 0
 
 @export var tile_size = 16
-
-
-@export_enum("One-Shot","On/Off","Hold") var mode: int
 
 @export var pressParticles:Node2D
 @onready var collision_shape_2d = $CollisionShape2D

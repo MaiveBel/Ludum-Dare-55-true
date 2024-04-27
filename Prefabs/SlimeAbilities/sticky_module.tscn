@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxr1c3e5q3u04"]
+
+[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/sticky_module.gd" id="1_3jcg8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u38j2"]
+
+[node name="StickyModule" type="Node2D" groups=["stickyModule"]]
+script = ExtResource("1_3jcg8")
+
+[node name="ShapeCastUp" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_u38j2")
+target_position = Vector2(0, -160)
+collision_mask = 8
+collide_with_areas = true
+
+[node name="ShapeCastDown" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_u38j2")
+target_position = Vector2(0, 160)
+collision_mask = 8
+collide_with_areas = true
+
+[node name="ShapeCastLeft" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_u38j2")
+target_position = Vector2(-160, 0)
+collision_mask = 8
+collide_with_areas = true
+
+[node name="ShapeCastRight" type="ShapeCast2D" parent="."]
+shape = SubResource("RectangleShape2D_u38j2")
+target_position = Vector2(160, 0)
+collision_mask = 8
+collide_with_areas = true
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]

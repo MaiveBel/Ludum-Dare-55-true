@@ -1,8 +1,11 @@
 extends Node2D
 
 @export var ray:Node2D
+
+
 @export var walkParticles:Node2D
 @onready var parent = self.get_parent()
+@onready var stickyModule = get_node(str(parent.get_path())+ "/StickyModule")
 @export var pushableTarget = false
 @export var strength = 0
 
@@ -44,6 +47,8 @@ func move(dir):
 		
 
 func actuallyMove(dir):
+	if stickyModule != null:
+		stickyModule.move_box(dir,inputs[dir])
 	walkParticles.emitting = true
 	parent.position += inputs[dir] * tile_size
 	var tween = create_tween()

@@ -17,6 +17,7 @@ json_data = "[
         \"height\": 1,
         \"id\": \"smoler\",
         \"image\": \"res://images/item_book_blue.png\",
+        \"swap\": \"true\",
         \"width\": 1
     },
     {

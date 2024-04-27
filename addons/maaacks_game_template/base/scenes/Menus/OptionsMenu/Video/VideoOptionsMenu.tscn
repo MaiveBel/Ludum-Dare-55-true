@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2numvphf2kau"]
+[gd_scene load_steps=4 format=3 uid="uid://b2numvphf2kau"]
 
 [ext_resource type="Script" path="res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/Video/VideoOptionsMenu.gd" id="1"]
+[ext_resource type="Theme" uid="uid://cq6ldjm8nms0g" path="res://Prefabs/Ui/TextTheme.tres" id="1_cylmi"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd" id="2_dgrai"]
 
 [node name="Video" type="MarginContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+theme = ExtResource("1_cylmi")
 theme_override_constants/margin_top = 24
 theme_override_constants/margin_bottom = 24
 script = ExtResource("1")

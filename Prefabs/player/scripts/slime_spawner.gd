@@ -1,12 +1,11 @@
 extends Node2D
 
 
-
 @onready var signal_bus = get_node("/root/SignalBus")
 
-var slimePrefabs = [
-	preload("res://Prefabs/player/scenes/PlayableCharacterMinion.tscn")
-	
+const slimePrefabs = [
+	preload("res://Prefabs/player/scenes/PlayableCharacterMinion.tscn"),
+	preload("res://Prefabs/SlimeAbilities/sticky_module.tscn")
 	
 	
 	
@@ -22,7 +21,7 @@ var slimes = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	inventory_grid.spawn_slime_from_item_signal.connect(spawn_slime)
+	signal_bus.spawn_slime_from_item_signal.connect(spawn_slime)
 	signal_bus.characterSelected.emit(1)
 	if get_tree().get_first_node_in_group("Id_1"):
 		get_tree().get_first_node_in_group("Cam_Id_1").make_current()
@@ -51,7 +50,7 @@ func _unhandled_input(event):
 			spawn_slime([0],0,1)
 		
 
-# TODO implement selection id giving and piling
+# TODO implement adding ability nodes on spawn
 # HACK stop manually selecting first minion
 func spawn_slime(type : Array,modifiers : int,selection_id : int):
 	ray.force_shapecast_update()

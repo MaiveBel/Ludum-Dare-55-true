@@ -9,4 +9,3 @@ script = ExtResource("1_1gna5")
 [node name="ProjectLevelLoader" parent="." node_paths=PackedStringArray("level_container") instance=ExtResource("2_uctk6")]
 level_container = NodePath("..")
 auto_load = true
-reset_game = null

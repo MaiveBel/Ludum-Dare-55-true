@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://q6jjt2ick1i4"]
+[gd_scene load_steps=10 format=3 uid="uid://q6jjt2ick1i4"]
 
 [ext_resource type="Script" path="res://Prefabs/player/scripts/PlayableCharacterMove.gd" id="1_18j20"]
 [ext_resource type="Texture2D" uid="uid://coqk337g2ho1d" path="res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png" id="2_hd4jk"]
 [ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/player/scenes/moveModule.tscn" id="3_s3amr"]
 [ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player/scenes/player_cam.tscn" id="4_ga5l6"]
+[ext_resource type="PackedScene" uid="uid://bxr1c3e5q3u04" path="res://Prefabs/SlimeAbilities/sticky_module.tscn" id="4_yo4ql"]
 [ext_resource type="PackedScene" uid="uid://b3tcs1802gkem" path="res://Prefabs/player/scenes/walk_particles.tscn" id="5_5pujg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
@@ -49,6 +50,8 @@ libraries = {
 ray = NodePath("../ShapeCast2D")
 walkParticles = NodePath("../WalkParticles")
 strength = 1
+
+[node name="StickyModule" parent="." instance=ExtResource("4_yo4ql")]
 
 [node name="PlayerCam" parent="." groups=["Cam_Id_2"] instance=ExtResource("4_ga5l6")]
 scale = Vector2(4, 4)

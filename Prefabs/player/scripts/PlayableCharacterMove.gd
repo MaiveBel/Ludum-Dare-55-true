@@ -5,17 +5,19 @@ extends Area2D
 # todo - make slime abilities module
 # todo - make levels
 # todo - make lightable torches
+# todo - make pick up system
 # next - add audio
-# next - make visuals
-# next - make sticky slime
-# next - make scene manager
+# todo - make visuals
+# next - Teleport swap with slime
 
 @onready var signal_bus = get_node("/root/SignalBus")
+
 @onready var ray = $ShapeCast2D
 @export var isSelected = true
 @export var selectionId = 1
 @onready var slimeSpawner = get_tree().get_first_node_in_group("slimeSpawner")
 @export var moveModule:Node2D
+#type 0 nothing, 1 fire,2 earth,3 water, 4 sticky
 @export var type = [0]
 @export var dead = false
 

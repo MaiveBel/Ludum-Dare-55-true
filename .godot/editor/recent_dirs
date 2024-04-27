@@ -1,3 +1,4 @@
+res://Prefabs/SlimeAbilities
 res://misc
 res://Prefabs/Ui
 res://Prefabs/world
@@ -11,4 +12,3 @@ res://addons/maaacks_game_template/base/scripts
 res://Resources
 res://Prefabs/world/scripts
 res://Prefabs
-res://Prefabs/SlimeAbilities

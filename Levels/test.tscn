@@ -7566,23 +7566,3 @@ script = ExtResource("12_odild")
 [node name="Portal" parent="." instance=ExtResource("13_isqcl")]
 position = Vector2(-38, 56)
 nextId = 1
-
-[connection signal="body_shape_entered" from="TileMap/Object" to="TileMap/Object" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152988" to="TileMap/@Area2D@152988" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152989" to="TileMap/@Area2D@152989" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152990" to="TileMap/@Area2D@152990" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152991" to="TileMap/@Area2D@152991" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152992" to="TileMap/@Area2D@152992" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152993" to="TileMap/@Area2D@152993" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152994" to="TileMap/@Area2D@152994" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152995" to="TileMap/@Area2D@152995" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152996" to="TileMap/@Area2D@152996" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152997" to="TileMap/@Area2D@152997" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152998" to="TileMap/@Area2D@152998" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@152999" to="TileMap/@Area2D@152999" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@153000" to="TileMap/@Area2D@153000" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@153001" to="TileMap/@Area2D@153001" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@153002" to="TileMap/@Area2D@153002" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@153003" to="TileMap/@Area2D@153003" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/@Area2D@153004" to="TileMap/@Area2D@153004" method="_on_body_shape_entered"]
-[connection signal="body_shape_entered" from="TileMap/PlayerArea" to="TileMap/PlayerArea" method="_on_body_shape_entered"]

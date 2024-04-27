@@ -1,6 +1,7 @@
 extends Control
 
 const info_offset: Vector2 = Vector2(20, 0)
+@onready var signal_bus = get_node("/root/SignalBus")
 
 @export var ctrl_inventory_left  = CtrlInventoryGridEx
 @export var inventory_grid = Node2D
@@ -11,13 +12,12 @@ const info_offset: Vector2 = Vector2(20, 0)
 #@onready var slimeSpawner = $/root/test/TileMap/PlayerArea/SlimeSpawner
 # Hack this will mess up on scene switch
 
-signal spawn_slime_from_item_signal(type : Array,modifiers : int,selection_id : int)
 
 func _ready() -> void:
 	lbl_info.hide()
 	ctrl_inventory_left.item_mouse_entered.connect(_on_item_mouse_entered)
 	ctrl_inventory_left.item_mouse_exited.connect(_on_item_mouse_exited)
-	ctrl_inventory_left.inventory_item_activated.connect(spawn_slime_from_item)
+	ctrl_inventory_left.inventory_item_activated.connect(_on_inventory_item_activated)
 	#combine_button.pressed.connect(_on_combine_button_pressed)
 	#slimeSpawner = get_tree().get_first_node_in_group("slimeSpawner")
 
@@ -81,10 +81,18 @@ func item_distance_get(item_1: InventoryItem,item_2: InventoryItem):
 
 #todo add sound for crafting
 func _on_inventory_item_activated(item: InventoryItem):
+	if item.get_property("swap") != null:
+		
+		swap_slime_from_item(item)
 	if item.get_property("spawn") != null:
 		spawn_slime_from_item(item)
 
 func spawn_slime_from_item(item: InventoryItem):
 	var spawn_info = item.get_property("spawn")
-	spawn_slime_from_item_signal.emit(spawn_info[0],spawn_info[1],spawn_info[2])
+	
+	signal_bus.spawn_slime_from_item_signal.emit(spawn_info[0],spawn_info[1],spawn_info[2])
+
+func swap_slime_from_item(item: InventoryItem):
+	print(item.get_property("swap"))
+	signal_bus.characterSwap.emit()
 
