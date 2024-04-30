@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cbobkuuklg6a1"]
+
+[node name="ItemOnFloor" type="Node2D"]

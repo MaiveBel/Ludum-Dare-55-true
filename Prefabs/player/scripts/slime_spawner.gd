@@ -23,6 +23,7 @@ var slimes = []
 func _ready():
 	signal_bus.spawn_slime_from_item_signal.connect(spawn_slime)
 	signal_bus.characterSelected.emit(1)
+	signal_bus.characterDied.connect(dead_character)
 	if get_tree().get_first_node_in_group("Id_1"):
 		get_tree().get_first_node_in_group("Cam_Id_1").make_current()
 
@@ -54,16 +55,23 @@ func _unhandled_input(event):
 # HACK stop manually selecting first minion
 func spawn_slime(type : Array,modifiers : int,selection_id : int):
 	ray.force_shapecast_update()
-	if !ray.is_colliding() && !lich.moving:
+	if !ray.is_colliding() && !lich.moving && slimes.size() < 3:
 		var newSlime = slimePrefabs[0].instantiate()
 		for t in type:
-			pass #todo addition of slime ability modules
+			if slimePrefabs[t] != slimePrefabs[0]:
+				var newModule = slimePrefabs[t].instantiate()
+				newSlime.add_child(newModule)
 		tileMap.add_child(newSlime)
 		newSlime.global_position = ray.global_position + ray.get_target_position()/4
-		signal_bus.characterDied.connect(dead_character)
+		newSlime.type = type
 		slimes.append(newSlime)
-		#newSlime.selectionId = selection_id
+		newSlime.selectionId = slimes.size() + 1
+		signal_bus.id_change.emit(slimes.size() + 1,0)
 
 func dead_character(id,entity):
 	signal_bus.characterSelected.emit(1)
+	for slime in slimes:
+		if slime.selectionId < id:
+			signal_bus.id_change.emit(slime.selectionId - 1,slime.selectionId)
+			slime.selectionId = slime.selectionId - 1
 	slimes.erase(entity)

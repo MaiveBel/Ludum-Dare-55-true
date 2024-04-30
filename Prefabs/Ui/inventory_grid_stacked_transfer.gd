@@ -52,11 +52,14 @@ func combine_all_items():
 					var item_distance_final = item_distance_get(item,item_combines_with)
 					if item_distance_final.x <= 1 and item_distance_final.y <= 1:
 						if item.get_property("makes") != null:
-							if inventory_grid.create_and_add_item_at(item.get_property("makes"),Vector2i(0,0)):
-								inventory_grid.create_and_add_item_at(item.get_property("makes"),Vector2i(0,0))
+							var new_item = inventory_grid.create_and_add_item(item.get_property("makes"))
+							if inventory_grid.find_free_place(new_item).success:
+								inventory_grid.add_item_at(new_item,inventory_grid.find_free_place(new_item).position)
 								inventory_grid.remove_item(item)
 								inventory_grid.remove_item(item_combines_with)
 								print(item_distance_final)
+							else:
+								new_item.queue_free
 					else:
 						continue
 

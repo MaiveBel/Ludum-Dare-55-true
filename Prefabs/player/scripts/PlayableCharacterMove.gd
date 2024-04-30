@@ -11,7 +11,7 @@ extends Area2D
 # next - Teleport swap with slime
 
 @onready var signal_bus = get_node("/root/SignalBus")
-
+@onready var player_cam = $PlayerCam
 @onready var ray = $ShapeCast2D
 @export var isSelected = true
 @export var selectionId = 1
@@ -34,6 +34,8 @@ var moving = false
 
 func _ready():
 	signal_bus.characterSelected.connect(selectionCheck)
+	signal_bus.id_change.connect(on_id_change)
+	
 
 func _unhandled_input(event):
 	if isSelected:
@@ -81,3 +83,13 @@ func die():
 	await tween.finished
 	
 	queue_free()
+
+func on_id_change(new_id,old_id):
+	if old_id == selectionId:
+		remove_from_group("Id_" + str(old_id))
+		player_cam.remove_from_group("Cam_Id_" + str(old_id))
+		add_to_group("Id_" + str(new_id))
+		player_cam.add_to_group("Cam_Id_" + str(new_id))
+	elif old_id == 0:
+		add_to_group("Id_" + str(selectionId))
+		player_cam.add_to_group("Cam_Id_" + str(selectionId))
