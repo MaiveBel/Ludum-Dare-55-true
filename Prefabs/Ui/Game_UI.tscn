@@ -8,10 +8,10 @@
 
 [node name="InventoryGrid" parent="." instance=ExtResource("1_ossou")]
 unique_name_in_owner = true
-offset_left = 32.0
-offset_top = 32.0
-offset_right = 25.0
-offset_bottom = 39.0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = -89.64
+offset_bottom = -27.56
 
 [node name="PauseMenuController" type="Node" parent="."]
 script = ExtResource("2_n13co")

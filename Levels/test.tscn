@@ -7581,3 +7581,23 @@ nextId = 1
 [node name="Area2D" parent="." instance=ExtResource("14_x28e7")]
 position = Vector2(-70, 56)
 Prototype_Id = "item_2x2"
+
+[connection signal="body_shape_entered" from="TileMap/Object" to="TileMap/Object" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320049" to="TileMap/@Area2D@320049" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320050" to="TileMap/@Area2D@320050" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320051" to="TileMap/@Area2D@320051" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320052" to="TileMap/@Area2D@320052" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320053" to="TileMap/@Area2D@320053" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320054" to="TileMap/@Area2D@320054" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320055" to="TileMap/@Area2D@320055" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320056" to="TileMap/@Area2D@320056" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320057" to="TileMap/@Area2D@320057" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320058" to="TileMap/@Area2D@320058" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320059" to="TileMap/@Area2D@320059" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320060" to="TileMap/@Area2D@320060" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320061" to="TileMap/@Area2D@320061" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320062" to="TileMap/@Area2D@320062" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320063" to="TileMap/@Area2D@320063" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320064" to="TileMap/@Area2D@320064" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/@Area2D@320065" to="TileMap/@Area2D@320065" method="_on_body_shape_entered"]
+[connection signal="body_shape_entered" from="TileMap/PlayerArea" to="TileMap/PlayerArea" method="_on_body_shape_entered"]
