@@ -5,6 +5,8 @@ extends Area2D
 
 @export var id = 0
 
+@export var required_type = 0
+
 @export var tile_size = 16
 
 
@@ -42,10 +44,14 @@ func press_button(In_Out: bool):
 
 
 func _on_area_entered(area):
-	press_button(true)
-	signal_bus.button_pressed.emit(true,id)
+	print(area.type)
+	if area.type.has(required_type): 
+		
+		press_button(true)
+		signal_bus.button_pressed.emit(true,id)
 
 
 func _on_area_exited(area):
-	press_button(false)
-	signal_bus.button_pressed.emit(false,id)
+	if area.type.has(required_type): 
+		press_button(false)
+		signal_bus.button_pressed.emit(false,id)

@@ -24,7 +24,7 @@ json_data = "[
         \"height\": 2,
         \"id\": \"item_2x2\",
         \"image\": \"res://images/item_armour_silver.png\",
-        \"spawn\": \"[[0.0, 1.0], 0.0, 1.0]\",
+        \"spawn\": \"[[0, 4], 0, 1]\",
         \"width\": 2
     }
 ]"

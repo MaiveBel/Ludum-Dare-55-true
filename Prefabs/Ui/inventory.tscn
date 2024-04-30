@@ -34,12 +34,15 @@ expand_margin_top = 2.0
 expand_margin_bottom = 4.0
 
 [node name="InventoryGrid" type="Control" node_paths=PackedStringArray("ctrl_inventory_left", "inventory_grid") groups=["InventoryGrid"]]
+z_index = 1
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 0.354
+anchor_bottom = 0.671
+offset_right = -64.56
+offset_bottom = -35.56
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_xkekt")
 ctrl_inventory_left = NodePath("VBoxContainer/HBoxContainer/VBoxContainer/PanelContainer/CtrlInventoryGridLeft")
 inventory_grid = NodePath("CtrlInventoryGrid")
@@ -47,7 +50,7 @@ inventory_grid = NodePath("CtrlInventoryGrid")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_right = 160.0
-offset_bottom = 234.0
+offset_bottom = 206.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -68,6 +71,7 @@ layout_mode = 2
 script = ExtResource("2_qgvkf")
 inventory_path = NodePath("../../../../../CtrlInventoryGrid")
 default_item_texture = ExtResource("3_ueeaf")
+select_mode = 1
 field_style = SubResource("StyleBoxTexture_kcmb0")
 field_highlighted_style = SubResource("2")
 selection_style = SubResource("5")
@@ -92,20 +96,33 @@ script = ExtResource("8_x67tx")
 size = Vector2i(5, 5)
 item_protoset = ExtResource("9_36mwn")
 
-[node name="_Node_42357" type="Node" parent="CtrlInventoryGrid"]
+[node name="_Node_101065" type="Node" parent="CtrlInventoryGrid"]
 script = ExtResource("10_fe351")
 protoset = ExtResource("9_36mwn")
 prototype_id = "smoler"
 properties = {
-"grid_position": Vector2i(0, 2)
+"grid_position": Vector2i(0, 1)
 }
 
-[node name="_Node_42625" type="Node" parent="CtrlInventoryGrid"]
+[node name="_Node_101107" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("10_fe351")
+protoset = ExtResource("9_36mwn")
+prototype_id = "smol"
+
+[node name="_Node_111615" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("10_fe351")
+protoset = ExtResource("9_36mwn")
+prototype_id = "smoler"
+properties = {
+"grid_position": Vector2i(3, 3)
+}
+
+[node name="_Node_111787" type="Node" parent="CtrlInventoryGrid"]
 script = ExtResource("10_fe351")
 protoset = ExtResource("9_36mwn")
 prototype_id = "smol"
 properties = {
-"grid_position": Vector2i(1, 2)
+"grid_position": Vector2i(0, 3)
 }
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_combine_button_pressed"]

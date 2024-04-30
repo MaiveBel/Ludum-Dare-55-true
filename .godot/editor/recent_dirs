@@ -1,9 +1,10 @@
-res://Prefabs/world/scenes
+res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu
 res://Prefabs/SlimeAbilities
+res://Prefabs/world/scripts
+res://Prefabs/world/scenes
 res://misc
 res://Prefabs/Ui
 res://Prefabs/world
-res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu
 res://Levels
 res://
 res://addons/maaacks_game_template/base/scenes/Menus/MainMenu
@@ -11,5 +12,4 @@ res://addons/maaacks_game_template/base/scenes/InitApp
 res://addons/maaacks_game_template/extras/scenes/Autoloads
 res://addons/maaacks_game_template/base/scripts
 res://Resources
-res://Prefabs/world/scripts
 res://Prefabs

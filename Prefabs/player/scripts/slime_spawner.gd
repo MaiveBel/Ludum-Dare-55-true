@@ -5,7 +5,10 @@ extends Node2D
 
 const slimePrefabs = [
 	preload("res://Prefabs/player/scenes/PlayableCharacterMinion.tscn"),
-	preload("res://Prefabs/SlimeAbilities/sticky_module.tscn")
+	preload("res://Prefabs/SlimeAbilities/fire_module.tscn"),
+	0,
+	0,
+	preload("res://Prefabs/SlimeAbilities/sticky_module.tscn"),
 	
 	
 	

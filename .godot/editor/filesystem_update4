@@ -28,3 +28,15 @@ res://addons/gloot/core/constraints/grid_constraint.gd
 res://addons/gloot/core/constraints/inventory_constraint.gd
 res://Prefabs/Ui/inventory_grid_stacked_transfer.gd
 res://addons/gloot/core/inventory_grid.gd
+res://Prefabs/world/scripts/item_on_floor.gd
+res://addons/gloot/ui/ctrl_dragable.gd
+res://addons/gloot/ui/ctrl_inventory_grid_basic.gd
+res://addons/gloot/editor/gloot_undo_redo.gd
+res://addons/gloot/ui/ctrl_drop_zone.gd
+res://addons/gloot/core/constraints/item_map.gd
+res://Prefabs/world/scripts/game_button.gd
+res://Prefabs/player/scripts/PlayableCharacterMove.gd
+res://Prefabs/Ui/invProtoset.tres
+res://Prefabs/player/scripts/slime_spawner.gd
+res://Prefabs/SlimeAbilities/fire_module.tscn
+res://Prefabs/SlimeAbilities/fire_module.gd

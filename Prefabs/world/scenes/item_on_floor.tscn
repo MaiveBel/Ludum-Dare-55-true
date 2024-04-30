@@ -1,3 +1,24 @@
-[gd_scene format=3 uid="uid://cbobkuuklg6a1"]
+[gd_scene load_steps=5 format=3 uid="uid://cbobkuuklg6a1"]
 
-[node name="ItemOnFloor" type="Node2D"]
+[ext_resource type="Script" path="res://Prefabs/world/scripts/item_on_floor.gd" id="1_yp60m"]
+[ext_resource type="Texture2D" uid="uid://qlt0i7muj2tj" path="res://addons/gloot/images/icon_item.svg" id="2_d1i4o"]
+[ext_resource type="Resource" uid="uid://b7ph8mtfopx0n" path="res://Prefabs/Ui/invProtoset.tres" id="2_kuleo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hjxhb"]
+radius = 55.0
+
+[node name="Item" type="Area2D"]
+scale = Vector2(0.25, 0.25)
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_yp60m")
+protoset = ExtResource("2_kuleo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hjxhb")
+
+[node name="ItemTexture" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_d1i4o")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

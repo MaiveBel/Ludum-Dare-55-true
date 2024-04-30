@@ -263,6 +263,7 @@ func _on_item_context_activated(ctrl_inventory_item: CtrlInventoryItemRect) -> v
 
 
 func _on_item_mouse_entered(ctrl_inventory_item) -> void:
+	#print(ctrl_inventory_item)
 	item_mouse_entered.emit(ctrl_inventory_item.item)
 
 

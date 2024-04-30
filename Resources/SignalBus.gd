@@ -1,5 +1,7 @@
 extends Node2D
 
+var tile_size = 16
+
 #door
 signal door_opened(bool,int)
 signal button_pressed(bool,int)

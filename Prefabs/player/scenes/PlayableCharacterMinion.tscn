@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://q6jjt2ick1i4"]
+[gd_scene load_steps=10 format=3 uid="uid://q6jjt2ick1i4"]
 
 [ext_resource type="Script" path="res://Prefabs/player/scripts/PlayableCharacterMove.gd" id="1_18j20"]
 [ext_resource type="Texture2D" uid="uid://coqk337g2ho1d" path="res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png" id="2_hd4jk"]
 [ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/player/scenes/moveModule.tscn" id="3_s3amr"]
 [ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player/scenes/player_cam.tscn" id="4_ga5l6"]
 [ext_resource type="PackedScene" uid="uid://b3tcs1802gkem" path="res://Prefabs/player/scenes/walk_particles.tscn" id="5_5pujg"]
+[ext_resource type="PackedScene" uid="uid://bsyu4faa8kvyo" path="res://Prefabs/SlimeAbilities/fire_module.tscn" id="6_e66vo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
 
@@ -56,6 +57,10 @@ scale = Vector2(4, 4)
 [node name="DeathAudio" type="AudioStreamPlayer2D" parent="."]
 
 [node name="WalkParticles" parent="." instance=ExtResource("5_5pujg")]
+
+[node name="fire_module" parent="." instance=ExtResource("6_e66vo")]
+position = Vector2(0, 10)
+scale = Vector2(5, 5)
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 

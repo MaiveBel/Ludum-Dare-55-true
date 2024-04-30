@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://c5gua5snsvt1t"]
+[gd_scene load_steps=27 format=3 uid="uid://c5gua5snsvt1t"]
 
 [ext_resource type="Texture2D" uid="uid://0uvy3mownaa0" path="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png" id="1_awfhw"]
 [ext_resource type="PackedScene" uid="uid://di20p4si6o1p8" path="res://Prefabs/player/scenes/PlayableCharacter.tscn" id="1_njeo6"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://blq86fw4nf0ch" path="res://Prefabs/world/scenes/game_openable_by_button.tscn" id="11_g1lqm"]
 [ext_resource type="Script" path="res://addons/maaacks_game_template/base/scripts/UISoundController.gd" id="12_odild"]
 [ext_resource type="PackedScene" uid="uid://bs81wqai4al4f" path="res://Prefabs/world/scenes/portal_to_next.tscn" id="13_isqcl"]
+[ext_resource type="PackedScene" uid="uid://cbobkuuklg6a1" path="res://Prefabs/world/scenes/item_on_floor.tscn" id="14_x28e7"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bqsyf"]
 
@@ -7443,6 +7444,7 @@ texture = ExtResource("7_1y3mv")
 2:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_2/angular_velocity = 0.0
 2:1/0/custom_data_1 = "Light"
+3:1/animation_columns = 8
 3:1/animation_separation = Vector2i(7, 0)
 3:1/animation_speed = 4.0
 3:1/animation_frame_0/duration = 1.0
@@ -7511,6 +7513,17 @@ texture = ExtResource("7_1y3mv")
 5:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
 5:1/0/physics_layer_2/angular_velocity = 0.0
+7:1/animation_columns = 7
+7:1/animation_separation = Vector2i(7, 0)
+7:1/animation_speed = 4.0
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0/physics_layer_1/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_1/angular_velocity = 0.0
+7:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0/physics_layer_2/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_2/angular_velocity = 0.0
 
 [sub_resource type="TileSet" id="TileSet_o1ius"]
 physics_layer_0/collision_layer = 1
@@ -7552,13 +7565,11 @@ layer_2/tile_data = PackedInt32Array(-65533, 0, 15, 3, 0, 16, 65539, 0, 17, -262
 
 [node name="Button" parent="." instance=ExtResource("8_sdgaq")]
 position = Vector2(64, 159)
+required_type = 4
 
 [node name="Door" parent="." instance=ExtResource("11_g1lqm")]
 position = Vector2(64, 191)
 mode = 1
-
-[node name="Button2" parent="." instance=ExtResource("8_sdgaq")]
-position = Vector2(127, 191)
 
 [node name="UISoundController" type="Node" parent="."]
 script = ExtResource("12_odild")
@@ -7566,3 +7577,7 @@ script = ExtResource("12_odild")
 [node name="Portal" parent="." instance=ExtResource("13_isqcl")]
 position = Vector2(-38, 56)
 nextId = 1
+
+[node name="Area2D" parent="." instance=ExtResource("14_x28e7")]
+position = Vector2(-70, 56)
+Prototype_Id = "item_2x2"
