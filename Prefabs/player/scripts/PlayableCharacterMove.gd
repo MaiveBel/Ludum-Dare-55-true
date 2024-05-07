@@ -7,6 +7,7 @@ extends Area2D
 # todo - make lightable torches
 
 # next - add audio
+# next - add earth module
 # todo - make visuals
 
 

@@ -18,5 +18,6 @@ signal id_change(new_id: int,old_id: int)
 signal nextLevel(level_id)
 
 #item
-signal pickUpItem(item_id)
+signal pickUpItem(item_id,floor_item)
+signal pickedUpItem(item_id,floor_item)
 #todo make lich crossable blocks

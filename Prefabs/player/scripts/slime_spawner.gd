@@ -74,7 +74,7 @@ func spawn_slime(type : Array,modifiers : int,selection_id : int):
 func dead_character(id,entity):
 	signal_bus.characterSelected.emit(1)
 	for slime in slimes:
-		if slime.selectionId < id:
+		if slime.selectionId > id:
 			signal_bus.id_change.emit(slime.selectionId - 1,slime.selectionId)
 			slime.selectionId = slime.selectionId - 1
 	slimes.erase(entity)

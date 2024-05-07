@@ -1,5 +1,5 @@
 6dcd580d9bf2a9dbe66cc9f994d3620b
-::res://::1714809654
+::res://::1715090637
 icon.png::CompressedTexture2D::4296582037975965739::1713031237::1713032305::1::::<><>::
 icon.svg::CompressedTexture2D::9096153217048267743::1713022876::1713032305::1::::<><>::
 README.md::TextFile::-1::1713032353::0::1::::<><>::
@@ -113,9 +113,9 @@ item_ref_slot.gd::GDScript::-1::1713027011::0::1::::ItemRefSlot<>Node<>res://add
 item_slot.gd::GDScript::-1::1713027011::0::1::::ItemSlot<>Node<>res://addons/gloot/images/icon_item_slot.svg::
 item_slot_base.gd::GDScript::-1::1713027011::0::1::::ItemSlotBase<>Node<>res://addons/gloot/images/icon_item_slot.svg::
 verify.gd::GDScript::-1::1713027011::0::1::::<>RefCounted<>::
-::res://addons/gloot/core/constraints/::1714479005
+::res://addons/gloot/core/constraints/::1715085764
 constraint_manager.gd::GDScript::-1::1714463215::0::1::::<>RefCounted<>::
-grid_constraint.gd::GDScript::-1::1714463216::0::1::::<>Object<>::
+grid_constraint.gd::GDScript::-1::1715085764::0::1::::<>Object<>::
 inventory_constraint.gd::GDScript::-1::1714463216::0::1::::<>Object<>::
 item_map.gd::GDScript::-1::1714479005::0::1::::<>RefCounted<>::
 stacks_constraint.gd::GDScript::-1::1713256225::0::1::::<>Object<>::
@@ -381,8 +381,8 @@ OpeningWithLogo.tscn::PackedScene::4745801091962842301::1713174307::0::1::::<><>
 SuccessScreenWithScenes.tscn::PackedScene::1335268516983197726::1713174307::0::1::::<><>::uid://dt5ses55itjy4::::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/SuccessScreen.tscn
 ::res://addons/maaacks_game_template/extras/::1713174307
 ::res://addons/maaacks_game_template/extras/scenes/::1713174307
-::res://addons/maaacks_game_template/extras/scenes/Autoloads/::1714558267
-ProjectLevelLoader.tscn::PackedScene::9104059586660367435::1714558266::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd
+::res://addons/maaacks_game_template/extras/scenes/Autoloads/::1715090951
+ProjectLevelLoader.tscn::PackedScene::9104059586660367435::1715090951::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd
 ProjectMusicController.tscn::PackedScene::1256348865492462175::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/MusicController.gd
 ProjectUISoundController.tscn::PackedScene::4973014309445390759::1714558267::0::1::::<><>::res://addons/maaacks_game_template/base/scripts/UISoundController.gd
 ::res://addons/maaacks_game_template/extras/scenes/FailureScreen/::1713174307
@@ -391,23 +391,23 @@ FailureScreen.tscn::PackedScene::5884437906244770056::1713174307::0::1::::<><>::
 ::res://addons/maaacks_game_template/extras/scenes/Opening/::1713174307
 Opening.gd::GDScript::-1::1713174307::0::1::::<>Control<>::
 Opening.tscn::PackedScene::1280526303966499055::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/Opening/Opening.gd
-::res://addons/maaacks_game_template/extras/scenes/PauseMenu/::1714668664
+::res://addons/maaacks_game_template/extras/scenes/PauseMenu/::1715090950
 PauseMenu.gd::GDScript::-1::1713174307::0::1::::<>CanvasLayer<>::
-PauseMenu.tscn::PackedScene::5030133278712839223::1714668664::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/PauseMenu/PauseMenu.gd<>uid://vh1ucj2rfbby::::res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/OptionsMenu.tscn<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
+PauseMenu.tscn::PackedScene::5030133278712839223::1715090950::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/PauseMenu/PauseMenu.gd<>uid://vh1ucj2rfbby::::res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/OptionsMenu.tscn<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
 ::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/::1713174307
 SuccessScreen.gd::GDScript::-1::1713174307::0::1::::<>CanvasLayer<>::
 SuccessScreen.tscn::PackedScene::8555882455008074185::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/SuccessScreen.gd<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
-::res://addons/maaacks_game_template/extras/scripts/::1713613136
+::res://addons/maaacks_game_template/extras/scripts/::1715081929
 CaptureMouse.gd::GDScript::-1::1713174307::0::1::::CaptureMouse<>Control<>::
 GameLevelLog.gd::GDScript::-1::1713174307::0::1::::GameLevelLog<>GameLog<>::
 GameLog.gd::GDScript::-1::1713174307::0::1::::GameLog<>Node<>::
 InGameMenuController.gd::GDScript::-1::1713174307::0::1::::InGameMenuController<>Node<>::
-LevelLoader.gd::GDScript::-1::1713613136::0::1::::LevelLoader<>SceneLister<>::
+LevelLoader.gd::GDScript::-1::1715081928::0::1::::LevelLoader<>SceneLister<>::
 MusicController.gd::GDScript::-1::1713174307::0::1::::MusicController<>Node<>::
 PauseMenuController.gd::GDScript::-1::1713174307::0::1::::PauseMenuController<>Node<>::
 RuntimeLogger.gd::GDScript::-1::1713174307::0::1::::<>Node<>::
 SceneLister.gd::GDScript::-1::1713174307::0::1::::SceneLister<>Node<>::
-::res://addons/Todo_Manager/::1714809653
+::res://addons/Todo_Manager/::1715091244
 ColourPicker.gd::GDScript::-1::1713051449::0::1::::<>HBoxContainer<>::
 Current.gd::GDScript::-1::1713051449::0::1::::<>Panel<>::
 Dock.gd::GDScript::-1::1713051449::0::1::::<>Control<>::
@@ -415,7 +415,7 @@ Pattern.gd::GDScript::-1::1713051449::0::1::::<>HBoxContainer<>::
 plugin.cfg::TextFile::-1::1713051449::0::1::::<><>::
 plugin.gd::GDScript::-1::1713051449::0::1::::<>EditorPlugin<>::
 Project.gd::GDScript::-1::1713051449::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1714809653::0::1::::<><>::
+todo.cfg::TextFile::-1::1715090622::0::1::::<><>::
 todoItem_class.gd::GDScript::-1::1713051449::0::1::::<>RefCounted<>::
 todo_class.gd::GDScript::-1::1713051449::0::1::::<>RefCounted<>::
 ::res://addons/Todo_Manager/doc/::1713051449
@@ -820,6 +820,13 @@ torch4.png::CompressedTexture2D::5872498035596217695::1713040937::1713040974::1:
 torch5.png::CompressedTexture2D::3367549552949381772::1713040937::1713040974::1::::<><>::
 torch6.png::CompressedTexture2D::5519027328356285637::1713040937::1713040974::1::::<><>::
 torch7.png::CompressedTexture2D::3675573016603840920::1713040937::1713040974::1::::<><>::
+::res://Audio/::1715082304
+::res://Audio/Music/::1715082294
+::res://Audio/Sfx/::1715091752
+combine.wav::AudioStreamWAV::6939236699206896061::1715086556::1715086580::1::::<><>::
+error.wav::AudioStreamWAV::6543654325859926793::1715091752::1715091753::1::::<><>::
+idk.wav::AudioStreamWAV::8889747917322314636::1715086508::1715086572::1::::<><>::
+Pickup.wav::AudioStreamWAV::3629818320832582415::1715090621::1715090638::1::::<><>::
 ::res://examples/::1713032354
 inventory_grid_ex_transfer.tscn::PackedScene::7872321490746640795::1713032354::0::1::::<><>::uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_grid.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>res://examples/inventory_grid_transfer.gd<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/ui/ctrl_item_slot_ex.gd<>res://addons/gloot/core/inventory_item.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/item_slot.gd
 inventory_grid_stacked_ex_transfer.tscn::PackedScene::1047060584163595217::1713032354::0::1::::<><>::res://examples/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://b2hkcwwq10cut::::res://icon.png<>res://addons/gloot/ui/ctrl_item_slot_ex.gd<>res://addons/gloot/core/inventory_grid_stacked.gd<>uid://ddrmqwl3guset::::res://tests/data/item_definitions_grid.tres<>res://addons/gloot/core/inventory_item.gd<>res://addons/gloot/core/item_slot.gd
@@ -841,21 +848,21 @@ item_armour_silver.png::CompressedTexture2D::1560561598343858558::1713027990::17
 item_book_blue.png::CompressedTexture2D::843337291627351538::1713027990::1713032305::1::::<><>::
 item_key.png::CompressedTexture2D::3061303305556543008::1713027990::1713032305::1::::<><>::
 item_scroll_blue.png::CompressedTexture2D::4770035527959100396::1713027990::1713032305::1::::<><>::
-::res://Levels/::1714668966
-test2.tscn::PackedScene::3657146341057451376::1714668966::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
-test.tscn::PackedScene::6892108887029408187::1714668663::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd<>uid://bs81wqai4al4f::::res://Prefabs/world/scenes/portal_to_next.tscn<>uid://cbobkuuklg6a1::::res://Prefabs/world/scenes/item_on_floor.tscn
+::res://Levels/::1715090951
+test2.tscn::PackedScene::3657146341057451376::1715090951::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
+test.tscn::PackedScene::6892108887029408187::1715090949::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd<>uid://bs81wqai4al4f::::res://Prefabs/world/scenes/portal_to_next.tscn<>uid://cbobkuuklg6a1::::res://Prefabs/world/scenes/item_on_floor.tscn
 ::res://misc/::1713349144
 m6x11.ttf::FontFile::7665568899331821131::1713349143::1713349144::1::::<><>::
 m6x11plus.ttf::FontFile::8260783108339331848::1713346414::1713346414::1::::<><>::
 ::res://Prefabs/::1713438391
-::res://Prefabs/player/::1714663138
+::res://Prefabs/player/::1715090637
 shade.tscn::PackedScene::1974242550219615176::1714663138::0::1::::<><>::uid://jtyelcdutobg::::res://Assets/PocketWitch-Slimes/shadow.png
-::res://Prefabs/player/scenes/::1714668664
+::res://Prefabs/player/scenes/::1715090950
 moveModule.tscn::PackedScene::2240820904471505383::1713450754::0::1::::<><>::res://Prefabs/player/scripts/moveModule.gd
-PlayableCharacter.tscn::PackedScene::7778057262660035559::1714668663::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://cxwuxkrmc2gyv::::res://Prefabs/SlimeAbilities/swap_module.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://c6u3ue4d1ycin::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png<>uid://etc0s1mw212y::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://c32x3tyv5phtw::::res://Prefabs/player/scenes/slime_spawner.tscn<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn
-PlayableCharacterMinion.tscn::PackedScene::1187580773684364869::1714668663::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://duji0lax32cdf::::res://Prefabs/SlimeAbilities/earth_module.tscn<>uid://txbwwytl82qm::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_front.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://s6b1bb64s625::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_side.png<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn<>uid://bsyu4faa8kvyo::::res://Prefabs/SlimeAbilities/fire_module.tscn
-player_cam.tscn::PackedScene::2156300237599004541::1714668664::0::1::::<><>::
-slime_spawner.tscn::PackedScene::6795314717687479600::1714668664::0::1::::<><>::res://Prefabs/player/scripts/slime_spawner.gd
+PlayableCharacter.tscn::PackedScene::7778057262660035559::1715090950::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://cxwuxkrmc2gyv::::res://Prefabs/SlimeAbilities/swap_module.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://c6u3ue4d1ycin::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png<>uid://etc0s1mw212y::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://c32x3tyv5phtw::::res://Prefabs/player/scenes/slime_spawner.tscn<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn
+PlayableCharacterMinion.tscn::PackedScene::1187580773684364869::1715090950::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://duji0lax32cdf::::res://Prefabs/SlimeAbilities/earth_module.tscn<>uid://txbwwytl82qm::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_front.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://s6b1bb64s625::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_side.png<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn<>uid://bsyu4faa8kvyo::::res://Prefabs/SlimeAbilities/fire_module.tscn
+player_cam.tscn::PackedScene::2156300237599004541::1715090950::0::1::::<><>::
+slime_spawner.tscn::PackedScene::6795314717687479600::1715090950::0::1::::<><>::res://Prefabs/player/scripts/slime_spawner.gd
 walk_particles.tscn::PackedScene::4391086478918828284::1713450754::0::1::::<><>::
 ::res://Prefabs/player/scenes/PocketWitch-Slimes/::1714554518
 READ ME.txt::TextFile::-1::1714554518::0::1::::<><>::
@@ -988,48 +995,48 @@ slime_purple_side.png::CompressedTexture2D::1473514110261691425::1714554518::171
 slime_hurt.png::CompressedTexture2D::8224751305882781453::1714554518::1714554519::1::::<><>::
 slime_red_front.png::CompressedTexture2D::5805475295551350143::1714554518::1714554519::1::::<><>::
 slime_red_side.png::CompressedTexture2D::5607873331652396977::1714554518::1714554519::1::::<><>::
-::res://Prefabs/player/scripts/::1714664487
-moveModule.gd::GDScript::-1::1714664487::0::1::::<>Node2D<>::
-PlayableCharacterMove.gd::GDScript::-1::1714664134::0::1::::<>Area2D<>::
-slime_spawner.gd::GDScript::-1::1714660706::0::1::::<>Node2D<>::
-::res://Prefabs/SlimeAbilities/::1714668663
+::res://Prefabs/player/scripts/::1715089388
+moveModule.gd::GDScript::-1::1715089259::0::1::::<>Node2D<>::
+PlayableCharacterMove.gd::GDScript::-1::1715089388::0::1::::<>Area2D<>::
+slime_spawner.gd::GDScript::-1::1715085858::0::1::::<>Node2D<>::
+::res://Prefabs/SlimeAbilities/::1715091244
 abilityModule.gd::GDScript::-1::1713256726::0::1::::<>Node2D<>::
 ability_module.tscn::PackedScene::614975834498962990::1713450754::0::1::::<><>::res://Prefabs/SlimeAbilities/abilityModule.gd
 earth_module.gd::GDScript::-1::1714660888::0::1::::<>Node2D<>::
-earth_module.tscn::PackedScene::8582149283256590315::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/earth_module.gd
+earth_module.tscn::PackedScene::8582149283256590315::1715090950::0::1::::<><>::res://Prefabs/SlimeAbilities/earth_module.gd
 fire_module.gd::GDScript::-1::1714660881::0::1::::<>Node2D<>::
-fire_module.tscn::PackedScene::3700631325814957810::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/fire_module.gd
+fire_module.tscn::PackedScene::3700631325814957810::1715090950::0::1::::<><>::res://Prefabs/SlimeAbilities/fire_module.gd
 moveBoxModule.gd::GDScript::-1::1713780036::0::1::::<>Node2D<>::
 moveBoxModule.tscn::PackedScene::6620075011334015169::1714558266::0::1::::<><>::res://Prefabs/SlimeAbilities/moveBoxModule.gd
 pushModule.gd::GDScript::-1::1713178193::0::1::::<>Node2D<>::
 push_module.tscn::PackedScene::6791102129625916786::1713438406::0::1::::<><>::res://Prefabs/SlimeAbilities/pushModule.gd
-sticky_module.gd::GDScript::-1::1713620841::0::1::::<>Node2D<>::
-sticky_module.tscn::PackedScene::4037442200805190239::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/sticky_module.gd
+sticky_module.gd::GDScript::-1::1715091244::0::1::::<>Node2D<>::
+sticky_module.tscn::PackedScene::4037442200805190239::1715091244::0::1::::<><>::res://Prefabs/SlimeAbilities/sticky_module.gd
 swap_module.gd::GDScript::-1::1713954267::0::1::::<>Node2D<>::
 swap_module.tscn::PackedScene::6433857046809547157::1714558266::0::1::::<><>::res://Prefabs/SlimeAbilities/swap_module.gd
-::res://Prefabs/Ui/::1714663067
+::res://Prefabs/Ui/::1715090951
 Game_UI.tscn::PackedScene::7345256062465736044::1714558266::0::1::::<><>::uid://mlxr8vbq6j7h::::res://Prefabs/Ui/inventory.tscn<>res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd<>uid://qeqh1euot2d0::::res://addons/maaacks_game_template/examples/scenes/Menus/PauseMenu/PauseMenuWithScenes.tscn
-inventory.tscn::PackedScene::866402894060552259::1714558266::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://d2uikxt5vgnfb::::res://icon.svg<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>uid://d3qajhvbxfn0u::::res://addons/gloot/images/icon_ctrl_inventory.svg<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd
+inventory.tscn::PackedScene::866402894060552259::1715090951::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://d2uikxt5vgnfb::::res://icon.svg<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>uid://d3qajhvbxfn0u::::res://addons/gloot/images/icon_ctrl_inventory.svg<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd<>uid://c54ohkcwy4tu8::::res://Audio/Sfx/combine.wav<>uid://bryktvq7q28qt::::res://Audio/Sfx/Pickup.wav
 inventoryReference.tscn::PackedScene::9083939541269386277::1713438399::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>res://addons/gloot/core/item_protoset.gd
-inventory_grid_stacked_transfer.gd::GDScript::-1::1714483716::0::1::::<>Control<>::
+inventory_grid_stacked_transfer.gd::GDScript::-1::1715090943::0::1::::<>Control<>::
 invProtoset.tres::Resource/Resource::4663913956447249267::1714490111::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
 MainCamera.gd::GDScript::-1::1713256225::0::1::::<>Camera2D<>::
-TextTheme.tres::Theme::5960532313037758064::1714663067::0::1::::<><>::uid://dhhi2guccowqd::::res://misc/m6x11.ttf
-::res://Prefabs/world/::1714558266
-level_container.gd::GDScript::-1::1713611499::0::1::::<>Node2D<>::
-level_container.tscn::PackedScene::5091565869295272084::1714558266::0::1::::<><>::res://Prefabs/world/level_container.gd<>uid://d2ycscfevkmfr::::res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn
-::res://Prefabs/world/scenes/::1714668664
+TextTheme.tres::Theme::5960532313037758064::1714809774::0::1::::<><>::uid://dhhi2guccowqd::::res://misc/m6x11.ttf
+::res://Prefabs/world/::1715090951
+level_container.gd::GDScript::-1::1715082144::0::1::::<>Node2D<>::
+level_container.tscn::PackedScene::5091565869295272084::1715090951::0::1::::<><>::res://Prefabs/world/level_container.gd<>uid://d2ycscfevkmfr::::res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn
+::res://Prefabs/world/scenes/::1715090951
 game_button.tscn::PackedScene::5062601764079033630::1714558267::0::1::::<><>::res://Prefabs/world/scripts/game_button.gd<>uid://b87v12g1icu3u::::res://images/item_scroll_blue.png
-game_openable_by_button.tscn::PackedScene::3193587326086431815::1714668664::0::1::::<><>::res://Prefabs/world/scripts/game_openable_by_button.gd<>uid://marv3em7xope::::res://images/item_book_blue.png
-item_on_floor.tscn::PackedScene::4872011156345303606::1714558266::0::1::::<><>::res://Prefabs/world/scripts/item_on_floor.gd<>uid://qlt0i7muj2tj::::res://addons/gloot/images/icon_item.svg<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres
-MovableObject.tscn::PackedScene::7383243970252382916::1714558266::0::1::::<><>::res://Prefabs/world/scripts/MovableObject.gd<>uid://c1k2wyqf7of58::::res://Prefabs/SlimeAbilities/moveBoxModule.tscn<>uid://d2uikxt5vgnfb::::res://icon.svg
+game_openable_by_button.tscn::PackedScene::3193587326086431815::1715090950::0::1::::<><>::res://Prefabs/world/scripts/game_openable_by_button.gd<>uid://marv3em7xope::::res://images/item_book_blue.png
+item_on_floor.tscn::PackedScene::4872011156345303606::1715090951::0::1::::<><>::res://Prefabs/world/scripts/item_on_floor.gd<>uid://qlt0i7muj2tj::::res://addons/gloot/images/icon_item.svg<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres
+MovableObject.tscn::PackedScene::7383243970252382916::1715090951::0::1::::<><>::res://Prefabs/world/scripts/MovableObject.gd<>uid://c1k2wyqf7of58::::res://Prefabs/SlimeAbilities/moveBoxModule.tscn<>uid://binxgaqjs71bn::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/PROPS ( No Animations )/Rock2/Rock2.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn
 portal_to_next.tscn::PackedScene::3719563105115345499::1714558266::0::1::::<><>::res://Prefabs/world/scripts/portal.gd<>uid://bju6hohmp15ua::::res://images/item_key.png
-::res://Prefabs/world/scripts/::1714488837
+::res://Prefabs/world/scripts/::1715089273
 game_button.gd::GDScript::-1::1714488837::0::1::::<>Area2D<>::
 game_openable_by_button.gd::GDScript::-1::1713447102::0::1::::<>Area2D<>::
-item_on_floor.gd::GDScript::-1::1714468849::0::1::::<>Node2D<>::
-MovableObject.gd::GDScript::-1::1713620940::0::1::::<>Area2D<>::
+item_on_floor.gd::GDScript::-1::1715086242::0::1::::<>Node2D<>::
+MovableObject.gd::GDScript::-1::1715089273::0::1::::<>Area2D<>::
 portal.gd::GDScript::-1::1713615640::0::1::::<>Area2D<>::
-::res://Resources/::1714668664
-SignalBus.gd::GDScript::-1::1714468265::0::1::::<>Node2D<>::
-SignalBus.tscn::PackedScene::381170119793915404::1714668664::0::1::::<><>::res://Resources/SignalBus.gd
+::res://Resources/::1715090950
+SignalBus.gd::GDScript::-1::1715083188::0::1::::<>Node2D<>::
+SignalBus.tscn::PackedScene::381170119793915404::1715090950::0::1::::<><>::res://Resources/SignalBus.gd

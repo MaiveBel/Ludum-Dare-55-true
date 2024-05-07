@@ -9,7 +9,7 @@ signal level_loaded
 signal levels_finished
 
 ## Container where the level instance will be added.
-@export var level_container : Node
+@export var level_container = get_node("/root/LevelContainer")
 ## Loads a level on start.
 @export var auto_load : bool = true
 @export var reset_game : bool = false

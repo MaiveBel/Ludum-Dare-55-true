@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://mlxr8vbq6j7h"]
+[gd_scene load_steps=18 format=3 uid="uid://mlxr8vbq6j7h"]
 
 [ext_resource type="Script" path="res://Prefabs/Ui/inventory_grid_stacked_transfer.gd" id="1_xkekt"]
 [ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_grid_ex.gd" id="2_qgvkf"]
@@ -10,6 +10,9 @@
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_grid.gd" id="8_x67tx"]
 [ext_resource type="Resource" uid="uid://b7ph8mtfopx0n" path="res://Prefabs/Ui/invProtoset.tres" id="9_36mwn"]
 [ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="10_fe351"]
+[ext_resource type="AudioStream" uid="uid://c54ohkcwy4tu8" path="res://Audio/Sfx/combine.wav" id="11_5vfqf"]
+[ext_resource type="AudioStream" uid="uid://bryktvq7q28qt" path="res://Audio/Sfx/Pickup.wav" id="12_27wwm"]
+[ext_resource type="AudioStream" uid="uid://c0h2bbq565hcj" path="res://Audio/Sfx/error.wav" id="13_sgu0i"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kcmb0"]
 texture = ExtResource("4_r3ean")
@@ -109,6 +112,9 @@ properties = {
 script = ExtResource("10_fe351")
 protoset = ExtResource("9_36mwn")
 prototype_id = "smol"
+properties = {
+"grid_position": Vector2i(1, 1)
+}
 
 [node name="_Node_111615" type="Node" parent="CtrlInventoryGrid"]
 script = ExtResource("10_fe351")
@@ -125,5 +131,29 @@ prototype_id = "smol"
 properties = {
 "grid_position": Vector2i(0, 3)
 }
+
+[node name="_Node_63404" type="Node" parent="CtrlInventoryGrid"]
+script = ExtResource("10_fe351")
+protoset = ExtResource("9_36mwn")
+prototype_id = "item_2x2"
+properties = {
+"grid_position": Vector2i(3, 0)
+}
+
+[node name="AudioStreamCombinePlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_5vfqf")
+volume_db = -7.841
+pitch_scale = 2.54
+bus = &"SFX"
+
+[node name="AudioStreamPickUpPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_27wwm")
+pitch_scale = 0.98
+bus = &"SFX"
+
+[node name="AudioStreamFailPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_sgu0i")
+volume_db = -2.0
+bus = &"SFX"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_combine_button_pressed"]

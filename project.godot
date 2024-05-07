@@ -21,9 +21,7 @@ SignalBus="*res://Resources/SignalBus.tscn"
 ProjectUiSoundController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectUISoundController.tscn"
 SceneLoader="*res://addons/maaacks_game_template/base/scripts/SceneLoader.gd"
 RuntimeLogger="*res://addons/maaacks_game_template/extras/scripts/RuntimeLogger.gd"
-ProjectLevelLoader="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn"
 ProjectMusicController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectMusicController.tscn"
-ProjectUISoundController="*res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectUISoundController.tscn"
 
 [debug]
 

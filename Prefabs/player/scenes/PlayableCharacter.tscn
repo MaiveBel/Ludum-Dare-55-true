@@ -308,7 +308,6 @@ texture_filter = 1
 scale = Vector2(4, 4)
 texture = ExtResource("3_cnbph")
 hframes = 4
-frame = 3
 
 [node name="Shade" parent="PlayerSprite" instance=ExtResource("5_dkr03")]
 position = Vector2(-2.98023e-08, 13)

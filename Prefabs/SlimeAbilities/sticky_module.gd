@@ -5,7 +5,7 @@ extends Node2D
 @onready var moveModule = get_node(str(parent.get_path())+ "/MoveModule")
 @onready var shape_cast_array = [$ShapeCastUp,$ShapeCastDown,$ShapeCastLeft,$ShapeCastRight]
 
-
+#todo add area showing
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

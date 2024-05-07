@@ -6,12 +6,17 @@ const info_offset: Vector2 = Vector2(20, 0)
 @export var ctrl_inventory_left  = Node2D
 @export var inventory_grid = Node2D
 @export var combine_button = Button
+@onready var audio_stream_combine_player = $AudioStreamCombinePlayer
+@onready var audio_stream_fail_player = $AudioStreamFailPlayer
+@onready var audio_stream_pick_up_player = $AudioStreamPickUpPlayer
 
 #@onready var ctrl_slot: CtrlItemSlot = $"%CtrlItemSlot"
 @onready var lbl_info: Label = %LblInfo
 #@onready var slimeSpawner = $/root/test/TileMap/PlayerArea/SlimeSpawner
 # Hack this will mess up on scene switch
 
+#todo hide inventory on pause
+var audioPlaying = false
 
 func _ready() -> void:
 	lbl_info.hide()
@@ -56,7 +61,7 @@ func combine_all_items():
 						if item.get_property("makes") != null && selected_items.has(item_combines_with) or item.get_property("makes") != null && selected_items.is_empty():
 							var new_item = inventory_grid.create_and_add_item(item.get_property("makes"))
 							inventory_grid.remove_item(new_item)
-							if inventory_grid.find_free_place(new_item).success:
+							if new_item != null && inventory_grid.find_free_place(new_item).success:
 								item.set_property("makes",null)
 								print(item.get_property("makes"))
 								inventory_grid.add_item_at(new_item,inventory_grid.find_free_place(new_item).position)
@@ -65,9 +70,11 @@ func combine_all_items():
 								print(item_combines_with.get_property("id"))
 								inventory_grid.remove_item(item_combines_with)
 								print(item_distance_final)
+								playInvSound(audio_stream_combine_player)
 							else:
-								new_item.queue_free
-								
+								if new_item != null:
+									new_item.queue_free()
+								playInvSound(audio_stream_fail_player)
 					
 					else:
 						continue
@@ -108,9 +115,23 @@ func swap_slime_from_item(item: InventoryItem):
 	print(item.get_property("swap"))
 	signal_bus.characterSwap.emit()
 
-func pick_up_item(Id: String):
+func pick_up_item(Id: String,floor_item):
 	var new_item = inventory_grid.create_and_add_item(Id)
-	if inventory_grid.find_free_place(new_item).success:
+	inventory_grid.remove_item(new_item)
+	if new_item != null && inventory_grid.find_free_place(new_item).success:
 		inventory_grid.add_item_at(new_item,inventory_grid.find_free_place(new_item).position)
+		signal_bus.pickedUpItem.emit(Id,floor_item)
+		playInvSound(audio_stream_pick_up_player)
 	else:
-		new_item.queue_free
+		if new_item != null:
+			new_item.queue_free()
+		playInvSound(audio_stream_fail_player)
+
+func playInvSound(streamPlayer):
+	streamPlayer.finished.connect(_on_audio_stream_finished,CONNECT_ONE_SHOT )
+	if !audioPlaying:
+		streamPlayer.play()
+		audioPlaying = true
+
+func _on_audio_stream_finished():
+	audioPlaying = false
