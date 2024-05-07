@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://di20p4si6o1p8"]
+[gd_scene load_steps=16 format=3 uid="uid://di20p4si6o1p8"]
 
 [ext_resource type="Script" path="res://Prefabs/player/scripts/PlayableCharacterMove.gd" id="1_jwno4"]
 [ext_resource type="PackedScene" uid="uid://cxwuxkrmc2gyv" path="res://Prefabs/SlimeAbilities/swap_module.tscn" id="2_q6toj"]
 [ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player/scenes/player_cam.tscn" id="2_qknun"]
 [ext_resource type="Texture2D" uid="uid://c6u3ue4d1ycin" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png" id="3_cnbph"]
 [ext_resource type="Texture2D" uid="uid://etc0s1mw212y" path="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png" id="4_o0db6"]
+[ext_resource type="PackedScene" uid="uid://3elqsh7uytym" path="res://Prefabs/player/shade.tscn" id="5_dkr03"]
 [ext_resource type="PackedScene" uid="uid://c32x3tyv5phtw" path="res://Prefabs/player/scenes/slime_spawner.tscn" id="5_p2ql5"]
 [ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/player/scenes/moveModule.tscn" id="6_vdlvm"]
 [ext_resource type="PackedScene" uid="uid://b3tcs1802gkem" path="res://Prefabs/player/scenes/walk_particles.tscn" id="7_ybq8f"]
@@ -307,6 +308,10 @@ texture_filter = 1
 scale = Vector2(4, 4)
 texture = ExtResource("3_cnbph")
 hframes = 4
+frame = 3
+
+[node name="Shade" parent="PlayerSprite" instance=ExtResource("5_dkr03")]
+position = Vector2(-2.98023e-08, 13)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -0.5)

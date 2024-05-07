@@ -6,6 +6,7 @@ extends Node2D
 @export var walkParticles:Node2D
 @onready var parent = self.get_parent()
 @onready var stickyModule = get_node(str(parent.get_path())+ "/StickyModule")
+@onready var animationPlayer = get_node(str(parent.get_path())+ "/AnimationPlayer")
 @export var pushableTarget = false
 @export var strength = 0
 
@@ -21,7 +22,12 @@ var moving = false
 
 func _ready():
 	parent.position = parent.position.snapped(Vector2.ONE * tile_size)
-	
+	if animationPlayer != null:
+		animationPlayer.play("move_left")
+		animationPlayer.play("move_right")
+		animationPlayer.play("move_front")
+		animationPlayer.play("Idle")
+		animationPlayer.animation_finished.connect(_on_animation_finished)
 
 
 func move(dir):
@@ -49,6 +55,17 @@ func move(dir):
 func actuallyMove(dir):
 	if stickyModule != null:
 		stickyModule.move_box(dir,inputs[dir])
+	if animationPlayer != null:
+		match inputs[dir]:
+			Vector2.DOWN:
+				animationPlayer.play("move_front")
+			Vector2.LEFT:
+				animationPlayer.play("move_left")
+			Vector2.RIGHT:
+				animationPlayer.play("move_right")
+			Vector2.UP:
+				animationPlayer.play("move_front")
+		print(animationPlayer.current_animation)
 	walkParticles.emitting = true
 	parent.position += inputs[dir] * tile_size
 	var tween = create_tween()
@@ -61,5 +78,6 @@ func actuallyMove(dir):
 	moving = false
 	parent.moving = false
 
-
-#bug moving inside boxes
+func _on_animation_finished(animation):
+	if animation != "Idle":
+		animationPlayer.play("Idle")

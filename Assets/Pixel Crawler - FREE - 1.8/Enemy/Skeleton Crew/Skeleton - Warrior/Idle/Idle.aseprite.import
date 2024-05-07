@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://115ag8p0msr4"
+path="res://.godot/imported/Idle.aseprite-fede1db1b5861e8c8c016a3cc41afb1a.res"
+
+[deps]
+
+source_file="res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Idle/Idle.aseprite"
+dest_files=["res://.godot/imported/Idle.aseprite-fede1db1b5861e8c8c016a3cc41afb1a.res"]
+
+[params]
+

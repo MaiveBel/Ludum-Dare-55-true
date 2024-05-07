@@ -2,4 +2,4 @@
 
 [node name="PlayerCam" type="Camera2D"]
 position_smoothing_enabled = true
-position_smoothing_speed = 3.0
+position_smoothing_speed = 16.0

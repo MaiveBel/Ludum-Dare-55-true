@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://3elqsh7uytym"]
+
+[ext_resource type="Texture2D" uid="uid://jtyelcdutobg" path="res://Assets/PocketWitch-Slimes/shadow.png" id="1_nn5op"]
+
+[node name="Shade" type="Sprite2D"]
+self_modulate = Color(0, 0, 0, 0.188235)
+show_behind_parent = true
+position = Vector2(-2.98023e-08, 4)
+texture = ExtResource("1_nn5op")

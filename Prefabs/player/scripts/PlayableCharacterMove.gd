@@ -1,14 +1,14 @@
 extends Area2D
 
-# todo - make positional save system
+
 # todo - animation player for entities
-# todo - make slime abilities module
+
 # todo - make levels
 # todo - make lightable torches
-# todo - make pick up system
+
 # next - add audio
 # todo - make visuals
-# next - Teleport swap with slime
+
 
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var player_cam = $PlayerCam
@@ -35,7 +35,7 @@ var moving = false
 func _ready():
 	signal_bus.characterSelected.connect(selectionCheck)
 	signal_bus.id_change.connect(on_id_change)
-	
+	Engine.time_scale = 1.0
 
 func _unhandled_input(event):
 	if isSelected:
@@ -43,6 +43,8 @@ func _unhandled_input(event):
 			if event.is_action_pressed(dir):
 				if !moving:
 					moveModule.move(dir)
+	
+	
 
 
 

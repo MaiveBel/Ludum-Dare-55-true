@@ -1,18 +1,247 @@
-[gd_scene load_steps=10 format=3 uid="uid://q6jjt2ick1i4"]
+[gd_scene load_steps=18 format=3 uid="uid://q6jjt2ick1i4"]
 
 [ext_resource type="Script" path="res://Prefabs/player/scripts/PlayableCharacterMove.gd" id="1_18j20"]
-[ext_resource type="Texture2D" uid="uid://coqk337g2ho1d" path="res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png" id="2_hd4jk"]
+[ext_resource type="PackedScene" uid="uid://duji0lax32cdf" path="res://Prefabs/SlimeAbilities/earth_module.tscn" id="2_ab30t"]
+[ext_resource type="Texture2D" uid="uid://txbwwytl82qm" path="res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_front.png" id="2_jqn00"]
+[ext_resource type="PackedScene" uid="uid://3elqsh7uytym" path="res://Prefabs/player/shade.tscn" id="3_8x6pw"]
+[ext_resource type="Texture2D" uid="uid://s6b1bb64s625" path="res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_side.png" id="3_atrlv"]
 [ext_resource type="PackedScene" uid="uid://66p802jr5bhv" path="res://Prefabs/player/scenes/moveModule.tscn" id="3_s3amr"]
 [ext_resource type="PackedScene" uid="uid://5yr7kb3vbkft" path="res://Prefabs/player/scenes/player_cam.tscn" id="4_ga5l6"]
 [ext_resource type="PackedScene" uid="uid://b3tcs1802gkem" path="res://Prefabs/player/scenes/walk_particles.tscn" id="5_5pujg"]
-[ext_resource type="PackedScene" uid="uid://bsyu4faa8kvyo" path="res://Prefabs/SlimeAbilities/fire_module.tscn" id="6_e66vo"]
+[ext_resource type="PackedScene" uid="uid://bsyu4faa8kvyo" path="res://Prefabs/SlimeAbilities/fire_module.tscn" id="9_3q25n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg27"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fkh68"]
 radius = 55.0
 
+[sub_resource type="Animation" id="Animation_sbjek"]
+resource_name = "Idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 4, -0.25, 0, 0.25, 0, 5, -0.25, 0, 0.25, 0, 6, -0.25, 0, 0.25, 0, 7, -0.25, 0, 0.25, 0, 8, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 10, -0.25, 0, 0.25, 0, 11, -0.25, 0, 0.25, 0, 12, -0.25, 0, 0.25, 0, 13, -0.25, 0, 0.25, 0, 14, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer:speed_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2.0]
+}
+
+[sub_resource type="Animation" id="Animation_6yy51"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_atrlv")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer:speed_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerSprite:flip_h")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_dms2v"]
+resource_name = "move_front"
+length = 1.6
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 4, -0.25, 0, 0.25, 0, 5, -0.25, 0, 0.25, 0, 6, -0.25, 0, 0.25, 0, 7, -0.25, 0, 0.25, 0, 8, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 10, -0.25, 0, 0.25, 0, 11, -0.25, 0, 0.25, 0, 12, -0.25, 0, 0.25, 0, 13, -0.25, 0, 0.25, 0, 14, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_jqn00")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer:speed_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1e+06, 100000),
+"update": 1,
+"values": [4.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_e0qt4"]
+resource_name = "move_left"
+length = 1.6
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 4, -0.25, 0, 0.25, 0, 5, -0.25, 0, 0.25, 0, 6, -0.25, 0, 0.25, 0, 7, -0.25, 0, 0.25, 0, 8, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 10, -0.25, 0, 0.25, 0, 11, -0.25, 0, 0.25, 0, 12, -0.25, 0, 0.25, 0, 13, -0.25, 0, 0.25, 0, 14, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_atrlv")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer:speed_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1e+06, 100000),
+"update": 1,
+"values": [4.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerSprite:flip_h")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_kdqmp"]
+resource_name = "move_right"
+length = 1.6
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 2, -0.25, 0, 0.25, 0, 3, -0.25, 0, 0.25, 0, 4, -0.25, 0, 0.25, 0, 5, -0.25, 0, 0.25, 0, 6, -0.25, 0, 0.25, 0, 7, -0.25, 0, 0.25, 0, 8, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 9, -0.25, 0, 0.25, 0, 10, -0.25, 0, 0.25, 0, 11, -0.25, 0, 0.25, 0, 12, -0.25, 0, 0.25, 0, 13, -0.25, 0, 0.25, 0, 14, -0.25, 0, 0.25, 0, 15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerSprite:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_atrlv")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer:speed_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1e+06, 100000),
+"update": 1,
+"values": [4.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerSprite:flip_h")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ujlvi"]
+_data = {
+"Idle": SubResource("Animation_sbjek"),
+"RESET": SubResource("Animation_6yy51"),
+"move_front": SubResource("Animation_dms2v"),
+"move_left": SubResource("Animation_e0qt4"),
+"move_right": SubResource("Animation_kdqmp")
+}
 
 [node name="PlayerArea" type="Area2D" node_paths=PackedStringArray("moveModule")]
 scale = Vector2(0.25, 0.25)
@@ -33,9 +262,12 @@ collide_with_areas = true
 
 [node name="PlayerSprite" type="Sprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(4, 4)
-texture = ExtResource("2_hd4jk")
-hframes = 4
+scale = Vector2(7, 7)
+texture = ExtResource("3_atrlv")
+flip_h = true
+hframes = 16
+
+[node name="Shade" parent="PlayerSprite" instance=ExtResource("3_8x6pw")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -0.5)
@@ -45,6 +277,7 @@ shape = SubResource("CircleShape2D_fkh68")
 libraries = {
 "": SubResource("AnimationLibrary_ujlvi")
 }
+speed_scale = 2.0
 
 [node name="MoveModule" parent="." node_paths=PackedStringArray("ray", "walkParticles") instance=ExtResource("3_s3amr")]
 ray = NodePath("../ShapeCast2D")
@@ -58,10 +291,12 @@ scale = Vector2(4, 4)
 
 [node name="WalkParticles" parent="." instance=ExtResource("5_5pujg")]
 
-[node name="fire_module" parent="." instance=ExtResource("6_e66vo")]
-position = Vector2(0, 10)
+[node name="earth_module" parent="." instance=ExtResource("2_ab30t")]
 scale = Vector2(5, 5)
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="fire_module" parent="." instance=ExtResource("9_3q25n")]
+visible = false
 
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

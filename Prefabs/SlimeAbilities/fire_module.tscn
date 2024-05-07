@@ -18,6 +18,7 @@ curve = SubResource("Curve_xua3q")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yfdk1"]
 particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, 0, -3)
 emission_shape = 1
 emission_sphere_radius = 3.23
 angle_max = 117.2
@@ -33,6 +34,8 @@ turbulence_noise_strength = 0.44
 turbulence_noise_scale = 0.33
 
 [node name="fire_module" type="Node2D"]
+show_behind_parent = true
+scale = Vector2(5, 5)
 script = ExtResource("1_hys6p")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]

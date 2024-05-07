@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c61k24w7xteql"
+path="res://.godot/imported/Tiles.aseprite-4d25ec25922382200816abcaad27c071.res"
+
+[deps]
+
+source_file="res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.aseprite"
+dest_files=["res://.godot/imported/Tiles.aseprite-4d25ec25922382200816abcaad27c071.res"]
+
+[params]
+

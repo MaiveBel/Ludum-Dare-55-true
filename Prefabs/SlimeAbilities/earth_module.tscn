@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://duji0lax32cdf"]
+
+[ext_resource type="Script" path="res://Prefabs/SlimeAbilities/earth_module.gd" id="1_6l7xw"]
+
+[sub_resource type="Gradient" id="Gradient_duvg5"]
+offsets = PackedFloat32Array(0, 0.243056, 0.517361, 0.743056, 1)
+colors = PackedColorArray(0.396078, 0.270588, 0.121569, 1, 0.462745, 0.345098, 0.152941, 1, 0.784314, 0.682353, 0.490196, 1, 0.917647, 0.776471, 0.588235, 1, 0.164706, 0.164706, 0.164706, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bu8hj"]
+gradient = SubResource("Gradient_duvg5")
+
+[sub_resource type="Curve" id="Curve_xua3q"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.5, 0.582494), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_s4tid"]
+curve = SubResource("Curve_xua3q")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_yfdk1"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, 0, -3)
+emission_shape = 1
+emission_sphere_radius = 3.23
+angle_max = 117.2
+spread = 180.0
+initial_velocity_min = 29.07
+initial_velocity_max = 40.7
+gravity = Vector3(0, 50, 0)
+damping_max = 100.0
+scale_curve = SubResource("CurveTexture_s4tid")
+color_ramp = SubResource("GradientTexture1D_bu8hj")
+turbulence_enabled = true
+turbulence_noise_strength = 0.44
+turbulence_noise_scale = 0.33
+
+[node name="earth_module" type="Node2D"]
+show_behind_parent = true
+script = ExtResource("1_6l7xw")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+texture_filter = 2
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_yfdk1")

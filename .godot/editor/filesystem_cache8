@@ -1,9 +1,103 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714461303
+6dcd580d9bf2a9dbe66cc9f994d3620b
+::res://::1714809654
 icon.png::CompressedTexture2D::4296582037975965739::1713031237::1713032305::1::::<><>::
 icon.svg::CompressedTexture2D::9096153217048267743::1713022876::1713032305::1::::<><>::
 README.md::TextFile::-1::1713032353::0::1::::<><>::
-::res://addons/::1714497953
+::res://addons/::1714662569
+::res://addons/AsepriteWizard/::1714662570
+plugin.cfg::TextFile::-1::1714662570::0::1::::<><>::
+plugin.gd::GDScript::-1::1714662570::0::1::::<>EditorPlugin<>::
+::res://addons/AsepriteWizard/aseprite/::1714662569
+aseprite.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+file_exporter.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/config/::1714662569
+config.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+config_dialog.gd::GDScript::-1::1714662569::0::1::::<>PopupPanel<>::
+config_dialog.tscn::PackedScene::8959845410224223728::1714662569::0::1::::<><>::res://addons/AsepriteWizard/config/config_dialog.gd
+result_codes.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+wizard_config.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/creators/::1714662569
+base_sprite_resource_creator.gd::GDScript::-1::1714662569::0::1::::<>RefCounted<>::
+::res://addons/AsepriteWizard/creators/animation_player/::1714662569
+animation_creator.gd::GDScript::-1::1714662569::0::1::::<><>::
+sprite_animation_creator.gd::GDScript::-1::1714662569::0::1::::<><>::
+texture_rect_animation_creator.gd::GDScript::-1::1714662569::0::1::::<><>::
+::res://addons/AsepriteWizard/creators/sprite_frames/::1714662569
+sprite_frames_creator.gd::GDScript::-1::1714662569::0::1::::<><>::
+::res://addons/AsepriteWizard/creators/static_texture/::1714662569
+texture_creator.gd::GDScript::-1::1714662569::0::1::::<><>::
+::res://addons/AsepriteWizard/export/::1714662569
+metadata_export_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorExportPlugin<>::
+::res://addons/AsepriteWizard/importers/::1714662569
+noop_import_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorImportPlugin<>::
+sprite_frames_import_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorImportPlugin<>::
+static_texture_import_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorImportPlugin<>::
+tileset_texture_import_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorImportPlugin<>::
+::res://addons/AsepriteWizard/interface/::1714662570
+::res://addons/AsepriteWizard/interface/docks/::1714662570
+base_inspector_dock.gd::GDScript::-1::1714662569::0::1::::<>PanelContainer<>::
+base_inspector_dock.tscn::PackedScene::790936594926835372::1714662569::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/base_inspector_dock.gd<>uid://x1f1t87m582u::::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.tscn<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
+dock_fields.gd::GDScript::-1::1714662569::0::1::::<>MarginContainer<>::
+dock_fields.tscn::PackedScene::1452043402822489973::1714662569::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/dock_fields.gd<>uid://x1f1t87m582u::::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.tscn<>uid://dj1uo3blocr8e::::res://addons/AsepriteWizard/interface/shared/source_drop_button.tscn<>uid://cwvgnm3o7eed2::::res://addons/AsepriteWizard/interface/shared/dir_drop_button.tscn
+::res://addons/AsepriteWizard/interface/docks/animated_sprite/::1714662569
+animated_sprite_inspector_dock.gd::GDScript::-1::1714662569::0::1::::<><>::
+animated_sprite_inspector_dock.tscn::PackedScene::1482828111488489973::1714662569::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/animated_sprite/animated_sprite_inspector_dock.gd<>uid://uxm7b02wry10::::res://addons/AsepriteWizard/interface/docks/dock_fields.tscn
+inspector_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorInspectorPlugin<>::
+::res://addons/AsepriteWizard/interface/docks/sprite/::1714662570
+inspector_plugin.gd::GDScript::-1::1714662569::0::1::::<>EditorInspectorPlugin<>::
+sprite_inspector_dock.gd::GDScript::-1::1714662569::0::1::::<><>::
+sprite_inspector_dock.tscn::PackedScene::2998581922542402478::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/sprite/sprite_inspector_dock.gd<>uid://uxm7b02wry10::::res://addons/AsepriteWizard/interface/docks/dock_fields.tscn
+::res://addons/AsepriteWizard/interface/docks/wizard/::1714662570
+as_wizard_dock_container.gd::GDScript::-1::1714662570::0::1::::<>TabContainer<>::
+as_wizard_dock_container.tscn::PackedScene::4764297739002286173::1714662570::0::1::::<><>::uid://c5dwobjd34w3p::::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.tscn<>res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_dock_container.gd<>uid://cyoin5ncul0fm::::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.tscn<>uid://bfhsdslj8kt7b::::res://addons/AsepriteWizard/interface/docks/wizard/imported_sprite_frames.tscn
+as_wizard_window.gd::GDScript::-1::1714662570::0::1::::<>PanelContainer<>::
+as_wizard_window.tscn::PackedScene::6886060651346363495::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/as_wizard_window.gd
+imported_sprite_frames.gd::GDScript::-1::1714662570::0::1::::<>PanelContainer<>::
+imported_sprite_frames.tscn::PackedScene::2752914772279777613::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/imported_sprite_frames.gd<>uid://cisgsfvp4nf1g::::res://addons/AsepriteWizard/interface/shared/tree/resource_tree.tscn<>uid://q7eyyg2kvvv2::::res://addons/AsepriteWizard/interface/docks/wizard/resource_tree_single_item.tscn<>uid://fscemkx5w1dw::::res://addons/AsepriteWizard/interface/docks/wizard/resource_tree_multiple_items.tscn<>uid://qgmln507kjnm::::res://addons/AsepriteWizard/interface/shared/tree/tree_selection_confirmation_warning.tscn
+resource_tree_multiple_items.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+resource_tree_multiple_items.tscn::PackedScene::388232241738635988::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/resource_tree_multiple_items.gd
+resource_tree_single_item.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+resource_tree_single_item.tscn::PackedScene::1189368584433414497::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/resource_tree_single_item.gd<>uid://c1l0bk12iwln3::::res://addons/AsepriteWizard/interface/shared/tree/inline_warning_panel.tscn
+sprite_frames_import_history.gd::GDScript::-1::1714662570::0::1::::<>PanelContainer<>::
+sprite_frames_import_history.tscn::PackedScene::6486785450419732274::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/sprite_frames_import_history.gd
+wizard_import_helper.gd::GDScript::-1::1714662570::0::1::::<>Node<>::
+::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/::1714662570
+details.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+details.tscn::PackedScene::4230025582002195470::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/details.gd
+import_date.gd::GDScript::-1::1714662570::0::1::::<>Label<>::
+import_date.tscn::PackedScene::3701966676920363124::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/import_date.gd
+list_actions.gd::GDScript::-1::1714662570::0::1::::<>HBoxContainer<>::
+list_actions.tscn::PackedScene::-1::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/list_actions.gd
+output_path.tscn::PackedScene::-1::1714662570::0::1::::<><>::
+source_path.gd::GDScript::-1::1714662570::0::1::::<>LineEdit<>::
+source_path.tscn::PackedScene::-1::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/docks/wizard/wizard_nodes/source_path.gd
+::res://addons/AsepriteWizard/interface/imports_manager/::1714662570
+aseprite_imports_manager.gd::GDScript::-1::1714662570::0::1::::<>Window<>::
+aseprite_imports_manager.tscn::PackedScene::1803923898729981441::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/imports_manager/aseprite_imports_manager.gd
+dock_imports_panel.gd::GDScript::-1::1714662570::0::1::::<>Panel<>::
+dock_imports_panel.tscn::PackedScene::158833016359251406::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/imports_manager/dock_imports_panel.gd<>uid://cisgsfvp4nf1g::::res://addons/AsepriteWizard/interface/shared/tree/resource_tree.tscn<>uid://qgmln507kjnm::::res://addons/AsepriteWizard/interface/shared/tree/tree_selection_confirmation_warning.tscn<>uid://dnlk2yep7teea::::res://addons/AsepriteWizard/interface/imports_manager/tree_selection_single_item.tscn<>uid://bhtu6mlwmthqo::::res://addons/AsepriteWizard/interface/imports_manager/tree_selection_multiple_items.tscn
+import_helper.gd::GDScript::-1::1714662570::0::1::::<>RefCounted<>::
+import_panels.gd::GDScript::-1::1714662570::0::1::::<>MarginContainer<>::
+import_panels.tscn::PackedScene::2396348643686595639::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/imports_manager/import_panels.gd<>uid://ci67r2f2btg5::::res://addons/AsepriteWizard/interface/imports_manager/dock_imports_panel.tscn
+tree_filter_field.gd::GDScript::-1::1714662570::0::1::::<>LineEdit<>::
+tree_selection_multiple_items.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+tree_selection_multiple_items.tscn::PackedScene::2918236114242265634::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/imports_manager/tree_selection_multiple_items.gd
+tree_selection_single_item.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+tree_selection_single_item.tscn::PackedScene::8095081827496145296::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/imports_manager/tree_selection_single_item.gd<>uid://c1l0bk12iwln3::::res://addons/AsepriteWizard/interface/shared/tree/inline_warning_panel.tscn
+::res://addons/AsepriteWizard/interface/shared/::1714662570
+animation_player_drop_button.gd::GDScript::-1::1714662570::0::1::::<>Button<>::
+animation_player_drop_button.tscn::PackedScene::1668368291279044894::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/animation_player_drop_button.gd
+dir_drop_button.gd::GDScript::-1::1714662570::0::1::::<>Button<>::
+dir_drop_button.tscn::PackedScene::6360736051749278321::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/dir_drop_button.gd
+source_drop_button.gd::GDScript::-1::1714662570::0::1::::<>Button<>::
+source_drop_button.tscn::PackedScene::7845876279114352826::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/source_drop_button.gd
+::res://addons/AsepriteWizard/interface/shared/tree/::1714662570
+inline_warning_panel.gd::GDScript::-1::1714662570::0::1::::<>PanelContainer<>::
+inline_warning_panel.tscn::PackedScene::6621979734519509394::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/tree/inline_warning_panel.gd
+resource_tree.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+resource_tree.tscn::PackedScene::5371907658088870246::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/tree/resource_tree.gd<>res://addons/AsepriteWizard/interface/imports_manager/tree_filter_field.gd
+tree_selection_confirmation_warning.gd::GDScript::-1::1714662570::0::1::::<>VBoxContainer<>::
+tree_selection_confirmation_warning.tscn::PackedScene::1136156742705764826::1714662570::0::1::::<><>::res://addons/AsepriteWizard/interface/shared/tree/tree_selection_confirmation_warning.gd
 ::res://addons/gloot/::1713032353
 gloot.gd::GDScript::-1::1713027011::0::1::::<>EditorPlugin<>::
 plugin.cfg::TextFile::-1::1713027012::0::1::::<><>::
@@ -86,7 +180,7 @@ ctrl_inventory_item_rect.gd::GDScript::-1::1713427511::0::1::::CtrlInventoryItem
 ctrl_inventory_stacked.gd::GDScript::-1::1713347260::0::1::::CtrlInventoryStacked<>CtrlInventory<>res://addons/gloot/images/icon_ctrl_inventory_stacked.svg::
 ctrl_item_slot.gd::GDScript::-1::1713347260::0::1::::CtrlItemSlot<>Control<>res://addons/gloot/images/icon_ctrl_item_slot.svg::
 ctrl_item_slot_ex.gd::GDScript::-1::1713027012::0::1::::CtrlItemSlotEx<>CtrlItemSlot<>res://addons/gloot/images/icon_ctrl_item_slot.svg::
-::res://addons/kenney_particle_pack/::1714497955
+::res://addons/kenney_particle_pack/::1714497957
 circle_01.png::CompressedTexture2D::5205678863023217783::1714497953::1714497956::1::::<><>::
 circle_02.png::CompressedTexture2D::2472803630584100475::1714497953::1714497956::1::::<><>::
 circle_03.png::CompressedTexture2D::6344198965757804863::1714497953::1714497956::1::::<><>::
@@ -168,7 +262,7 @@ window_01.png::CompressedTexture2D::8555872762249917200::1714497955::1714497956:
 window_02.png::CompressedTexture2D::9167707914417131822::1714497955::1714497956::1::::<><>::
 window_03.png::CompressedTexture2D::6453680390877304780::1714497955::1714497956::1::::<><>::
 window_04.png::CompressedTexture2D::1796567189227358871::1714497955::1714497956::1::::<><>::
-::res://addons/kenney_particle_pack/rotated/::1714497954
+::res://addons/kenney_particle_pack/rotated/::1714497956
 flame_05_rotated.png::CompressedTexture2D::9057431141558334984::1714497953::1714497956::1::::<><>::
 flame_06_rotated.png::CompressedTexture2D::7998764127627885915::1714497953::1714497956::1::::<><>::
 muzzle_01_rotated.png::CompressedTexture2D::300005687808258359::1714497953::1714497956::1::::<><>::
@@ -197,9 +291,9 @@ README.md::TextFile::-1::1713174487::0::1::::<><>::
 ::res://addons/maaacks_game_template/base/scenes/Credits/::1713174306
 Credits.gd::GDScript::-1::1713174306::0::1::::<>Control<>::
 Credits.tscn::PackedScene::1389544567206053885::1713174306::0::1::::<><>::res://addons/maaacks_game_template/base/scenes/Credits/Credits.gd
-::res://addons/maaacks_game_template/base/scenes/InitApp/::1714490224
+::res://addons/maaacks_game_template/base/scenes/InitApp/::1714558267
 InitApp.gd::GDScript::-1::1713174306::0::1::::<>Node<>::
-InitApp.tscn::PackedScene::3612125141053073924::1714490224::0::1::::<><>::res://addons/maaacks_game_template/base/scenes/InitApp/InitApp.gd
+InitApp.tscn::PackedScene::3612125141053073924::1714558267::0::1::::<><>::res://addons/maaacks_game_template/base/scenes/InitApp/InitApp.gd
 ::res://addons/maaacks_game_template/base/scenes/LoadingScreen/::1713174306
 LoadingScreen.gd::GDScript::-1::1713174306::0::1::::LoadingScreen<>CanvasLayer<>::
 LoadingScreen.tscn::PackedScene::5035565993894699171::1713174306::0::1::::<><>::res://addons/maaacks_game_template/base/scenes/LoadingScreen/LoadingScreen.gd
@@ -265,9 +359,9 @@ LoadingScreenWithShaderCaching.gd::GDScript::-1::1713174306::0::1::::<>LoadingSc
 LoadingScreenWithShaderCaching.tscn::PackedScene::8665896743022405562::1713174306::0::1::::<><>::uid://cd0jbh4metflb::::res://addons/maaacks_game_template/base/scenes/LoadingScreen/LoadingScreen.tscn<>res://addons/maaacks_game_template/examples/scenes/LoadingScreen/LoadingScreenWithShaderCaching.gd
 QuadMeshPlaceholder.tscn::PackedScene::4239459441143411142::1713174306::0::1::::<><>::
 ::res://addons/maaacks_game_template/examples/scenes/Menus/::1713174307
-::res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/::1714490224
+::res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/::1714558267
 MainMenuWithAnimations.gd::GDScript::-1::1713174306::0::1::::<>MainMenu<>::
-MainMenuWithAnimations.tscn::PackedScene::7506849282146818002::1714490224::0::1::::<><>::uid://byvydukidk6i2::::res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithScenes.tscn<>res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithAnimations.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres
+MainMenuWithAnimations.tscn::PackedScene::7506849282146818002::1714558267::0::1::::<><>::uid://byvydukidk6i2::::res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithScenes.tscn<>res://addons/maaacks_game_template/examples/scenes/Menus/MainMenu/MainMenuWithAnimations.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres
 MainMenuWithScenes.tscn::PackedScene::4115768495332212007::1713615644::0::1::::<><>::uid://c6k5nnpbypshi::::res://addons/maaacks_game_template/base/scenes/Menus/MainMenu/MainMenu.tscn<>uid://bdvdf5v87mmrr::::res://addons/maaacks_game_template/examples/scenes/Menus/OptionsMenu/MasterOptionsMenuWithGameTab.tscn
 ::res://addons/maaacks_game_template/examples/scenes/Menus/OptionsMenu/::1713174307
 MasterOptionsMenuWithGameTab.tscn::PackedScene::2640531837074292291::1713174307::0::1::::<><>::uid://bvwl11s2p0hd::::res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/MasterOptionsMenu.tscn<>uid://c1eqf1cse1hch::::res://addons/maaacks_game_template/examples/assets/images/addition_symbol.png<>uid://bteq3ica74h30::::res://addons/maaacks_game_template/examples/assets/images/subtraction_symbol.png<>uid://bsbo8ot2p46dv::::res://addons/maaacks_game_template/examples/scenes/Menus/OptionsMenu/Game/GameOptionsMenu.tscn
@@ -287,19 +381,19 @@ OpeningWithLogo.tscn::PackedScene::4745801091962842301::1713174307::0::1::::<><>
 SuccessScreenWithScenes.tscn::PackedScene::1335268516983197726::1713174307::0::1::::<><>::uid://dt5ses55itjy4::::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/SuccessScreen.tscn
 ::res://addons/maaacks_game_template/extras/::1713174307
 ::res://addons/maaacks_game_template/extras/scenes/::1713174307
-::res://addons/maaacks_game_template/extras/scenes/Autoloads/::1714490224
-ProjectLevelLoader.tscn::PackedScene::9104059586660367435::1714490224::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd
+::res://addons/maaacks_game_template/extras/scenes/Autoloads/::1714558267
+ProjectLevelLoader.tscn::PackedScene::9104059586660367435::1714558266::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/LevelLoader.gd
 ProjectMusicController.tscn::PackedScene::1256348865492462175::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scripts/MusicController.gd
-ProjectUISoundController.tscn::PackedScene::4973014309445390759::1714490224::0::1::::<><>::res://addons/maaacks_game_template/base/scripts/UISoundController.gd
+ProjectUISoundController.tscn::PackedScene::4973014309445390759::1714558267::0::1::::<><>::res://addons/maaacks_game_template/base/scripts/UISoundController.gd
 ::res://addons/maaacks_game_template/extras/scenes/FailureScreen/::1713174307
 FailureScreen.gd::GDScript::-1::1713174307::0::1::::<>CanvasLayer<>::
 FailureScreen.tscn::PackedScene::5884437906244770056::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/FailureScreen/FailureScreen.gd<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
 ::res://addons/maaacks_game_template/extras/scenes/Opening/::1713174307
 Opening.gd::GDScript::-1::1713174307::0::1::::<>Control<>::
 Opening.tscn::PackedScene::1280526303966499055::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/Opening/Opening.gd
-::res://addons/maaacks_game_template/extras/scenes/PauseMenu/::1714490224
+::res://addons/maaacks_game_template/extras/scenes/PauseMenu/::1714668664
 PauseMenu.gd::GDScript::-1::1713174307::0::1::::<>CanvasLayer<>::
-PauseMenu.tscn::PackedScene::5030133278712839223::1714490224::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/PauseMenu/PauseMenu.gd<>uid://vh1ucj2rfbby::::res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/OptionsMenu.tscn<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
+PauseMenu.tscn::PackedScene::5030133278712839223::1714668664::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/PauseMenu/PauseMenu.gd<>uid://vh1ucj2rfbby::::res://addons/maaacks_game_template/base/scenes/Menus/OptionsMenu/OptionsMenu.tscn<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
 ::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/::1713174307
 SuccessScreen.gd::GDScript::-1::1713174307::0::1::::<>CanvasLayer<>::
 SuccessScreen.tscn::PackedScene::8555882455008074185::1713174307::0::1::::<><>::res://addons/maaacks_game_template/extras/scenes/SuccessScreen/SuccessScreen.gd<>res://addons/maaacks_game_template/base/scripts/CaptureFocus.gd<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
@@ -313,7 +407,7 @@ MusicController.gd::GDScript::-1::1713174307::0::1::::MusicController<>Node<>::
 PauseMenuController.gd::GDScript::-1::1713174307::0::1::::PauseMenuController<>Node<>::
 RuntimeLogger.gd::GDScript::-1::1713174307::0::1::::<>Node<>::
 SceneLister.gd::GDScript::-1::1713174307::0::1::::SceneLister<>Node<>::
-::res://addons/Todo_Manager/::1714497792
+::res://addons/Todo_Manager/::1714809653
 ColourPicker.gd::GDScript::-1::1713051449::0::1::::<>HBoxContainer<>::
 Current.gd::GDScript::-1::1713051449::0::1::::<>Panel<>::
 Dock.gd::GDScript::-1::1713051449::0::1::::<>Control<>::
@@ -321,7 +415,7 @@ Pattern.gd::GDScript::-1::1713051449::0::1::::<>HBoxContainer<>::
 plugin.cfg::TextFile::-1::1713051449::0::1::::<><>::
 plugin.gd::GDScript::-1::1713051449::0::1::::<>EditorPlugin<>::
 Project.gd::GDScript::-1::1713051449::0::1::::<>Panel<>::
-todo.cfg::TextFile::-1::1714461302::0::1::::<><>::
+todo.cfg::TextFile::-1::1714809653::0::1::::<><>::
 todoItem_class.gd::GDScript::-1::1713051449::0::1::::<>RefCounted<>::
 todo_class.gd::GDScript::-1::1713051449::0::1::::<>RefCounted<>::
 ::res://addons/Todo_Manager/doc/::1713051449
@@ -339,107 +433,281 @@ TODO_Manager_Logo.png::CompressedTexture2D::8304389802222778237::1713051449::171
 ColourPicker.tscn::PackedScene::2957809393656723737::1713051449::0::1::::<><>::res://addons/Todo_Manager/ColourPicker.gd
 Dock.tscn::PackedScene::4584442902745049483::1713051449::0::1::::<><>::res://addons/Todo_Manager/Dock.gd<>res://addons/Todo_Manager/Project.gd<>res://addons/Todo_Manager/Current.gd
 Pattern.tscn::PackedScene::4056048923411208166::1713051449::0::1::::<><>::res://addons/Todo_Manager/Pattern.gd
-::res://Assets/::1713254812
+::res://Assets/::1714554547
 ::res://Assets/Pixel Crawler - FREE - 1.8/::1713082192
 Terms.txt::TextFile::-1::1713082192::0::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/::1713037448
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/::1713037448
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/::1713037448
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::5979201067531417010::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/::1713040974
+Death.aseprite::PackedDataContainer::1467254223845651198::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::3792248168242076217::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/::1713040974
+Idle.aseprite::PackedDataContainer::7716200717862314674::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::3421146017411763382::1713037448::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::8046594300285004881::1713037448::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/::1713037448
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::9128160297842082182::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Idle/::1713040974
+Death.aseprite::PackedDataContainer::1463279647063688769::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::4935884014126618565::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Run/::1713040974
+Idle.aseprite::PackedDataContainer::8834449548496992734::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::3031455123212798640::1713037448::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::8604275134203062347::1713037448::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/::1713037448
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::3342822366977625985::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/::1713040974
+Death.aseprite::PackedDataContainer::6415788606941144748::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::237836818472995125::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/::1713040974
+Idle.aseprite::PackedDataContainer::2218226142550142957::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::106242050357780959::1713037448::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::1282786967808233178::1713037448::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/::1713037448
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::8851094327378638350::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Idle/::1713040974
+Death.aseprite::PackedDataContainer::4143692911161195560::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::3843491638770549562::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Run/::1713040974
+Idle.aseprite::PackedDataContainer::8266456525759045844::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::8952484057508416204::1713037448::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::4262991947868558074::1713037448::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/::1713037449
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::5783819607647835914::1713037448::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/::1713040974
+Death.aseprite::PackedDataContainer::2591272828601498851::1713037448::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::7183505674585621879::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/::1713040974
+Idle.aseprite::PackedDataContainer::1545630162199261729::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::4991608519061194721::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::7956333913187724786::1713037449::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::649845037783042407::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/::1713040974
+Death.aseprite::PackedDataContainer::2889415308331675875::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::6991719121986685989::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/::1713040974
+Idle.aseprite::PackedDataContainer::1848505539518117229::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::320145616873354702::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::8291116914113356924::1713037449::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::2298010403702886473::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Idle/::1713040974
+Death.aseprite::PackedDataContainer::8223348891918699662::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::449751100541307503::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Run/::1713040974
+Idle.aseprite::PackedDataContainer::4753879888095468628::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::1750986357903446235::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::7185018243436046682::1713037449::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Death/::1714662579
 Death-Sheet.png::CompressedTexture2D::6587154539998403315::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Idle/::1713040974
+Death.aseprite::PackedDataContainer::7651202368583949727::1713037449::1714662579::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Idle/::1714662579
 Idle-Sheet.png::CompressedTexture2D::2573613876106384741::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Run/::1713040974
+Idle.aseprite::PackedDataContainer::1880405632811469495::1713037449::1714662579::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Run/::1714662579
 Run-Sheet.png::CompressedTexture2D::3497118704787878134::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::4670751659100625775::1713037449::1714662579::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Environment/::1713037449
 ::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/::1714662579
+Props.aseprite::PackedDataContainer::6689528855364128715::1713037449::1714662579::1::::<><>::
 Props.png::CompressedTexture2D::5483968047601051307::1713037449::1713040974::1::::<><>::
+Tiles.aseprite::PackedDataContainer::6957353807767716629::1713037449::1714662579::1::::<><>::
 Tiles.png::CompressedTexture2D::1797328051791281697::1713037449::1713040974::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/::1714662579
+Props.aseprite::PackedDataContainer::4632499171297507062::1713037449::1714662579::1::::<><>::
 Props.png::CompressedTexture2D::3413936169494817246::1713037449::1713040974::1::::<><>::
+Tiles.aseprite::PackedDataContainer::7003026286782129603::1713037449::1714662579::1::::<><>::
 Tiles.png::CompressedTexture2D::6027389621953332728::1713037449::1713040974::1::::<><>::
+Trees.aseprite::PackedDataContainer::7879855203255686753::1713037449::1714662579::1::::<><>::
 Trees.png::CompressedTexture2D::5357066210383673331::1713037449::1713040974::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/::1713037449
 ::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/::1714662579
 Death-Sheet.png::CompressedTexture2D::2959071254894613320::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/::1713040974
+Death.aseprite::PackedDataContainer::6411213429717438750::1713037449::1714662579::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/::1714662579
 Idle-Sheet.png::CompressedTexture2D::9093098798547310736::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/::1713040974
+Idle.aseprite::PackedDataContainer::8151074655898057904::1713037449::1714662579::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/::1714662579
 Run-Sheet.png::CompressedTexture2D::7073631796481382065::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::7530394608096344409::1713037449::1714662579::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Death/::1714662579
 Death-Sheet.png::CompressedTexture2D::2703774268005002337::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Idle/::1713040974
+Death.aseprite::PackedDataContainer::2003949211042868392::1713037449::1714662579::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::2031303162866014802::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Run/::1713040974
+Idle.aseprite::PackedDataContainer::8242176298356404006::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::356913098908965475::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::3659577621611852131::1713037449::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Death/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Death/::1714662580
 Death-Sheet.png::CompressedTexture2D::1296140577920817455::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/::1713040974
+Death.aseprite::PackedDataContainer::7250806944363149072::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/::1714662580
 Idle-Sheet.png::CompressedTexture2D::5789173914937144791::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Run/::1713040974
+Idle.aseprite::PackedDataContainer::2288770526623299965::1713037449::1714662580::1::::<><>::
+::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Run/::1714662580
 Run-Sheet.png::CompressedTexture2D::4447310460099846377::1713037449::1713040974::1::::<><>::
+Run.aseprite::PackedDataContainer::2705706341041361706::1713037449::1714662580::1::::<><>::
 ::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/::1713037449
-::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Bone/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Bone/::1714662580
+Bone.aseprite::PackedDataContainer::176177705498959761::1713037449::1714662580::1::::<><>::
 Bone.png::CompressedTexture2D::7539410740740930567::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Hands/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Hands/::1714662580
+Hands.aseprite::PackedDataContainer::2934691309525247552::1713037449::1714662580::1::::<><>::
 Hands.png::CompressedTexture2D::511678584262561943::1713037449::1713040974::1::::<><>::
-::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Wood/::1713040974
+::res://Assets/Pixel Crawler - FREE - 1.8/Weapons/Wood/::1714662580
+Wood.aseprite::PackedDataContainer::4946905199035969528::1713037449::1714662580::1::::<><>::
 Wood.png::CompressedTexture2D::7413128850412678117::1713037449::1713040974::1::::<><>::
+::res://Assets/PocketWitch-Slimes/::1714662824
+READ ME.txt::TextFile::-1::1714554547::0::1::::<><>::
+shadow.png::CompressedTexture2D::672387702081698328::1714662653::1714662824::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/::1714554547
+::res://Assets/PocketWitch-Slimes/Mini Slimes/aquamarine minislime/::1714554549
+minislime_aquamarine_front.png::CompressedTexture2D::2183353913413935564::1714554547::1714554549::1::::<><>::
+minislime_aquamarine_side.png::CompressedTexture2D::6127364101318942502::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::6021170852488911675::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/blue minislime/::1714554549
+minislime_blue_front.png::CompressedTexture2D::32335212371429163::1714554547::1714554549::1::::<><>::
+minislime_blue_side.png::CompressedTexture2D::7224450971588363026::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::4796513800346881004::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/bluegreen minislime/::1714554549
+minislime_bluegreen_front.png::CompressedTexture2D::6407299279088103143::1714554547::1714554549::1::::<><>::
+minislime_bluegreen_side.png::CompressedTexture2D::1225450882197779542::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::94481749362971343::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/dark blue minislime/::1714554549
+minislime_darkblue_front.png::CompressedTexture2D::8722801114660364718::1714554547::1714554549::1::::<><>::
+minislime_darkblue_side.png::CompressedTexture2D::8329930779466125931::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::5996327983962949249::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/gold minislime/::1714554549
+gold_slime_shinyeffect.png::CompressedTexture2D::611132544581899170::1714554547::1714554549::1::::<><>::
+minislime_gold_front.png::CompressedTexture2D::2538006440468445449::1714554547::1714554549::1::::<><>::
+minislime_gold_side.png::CompressedTexture2D::4461715785702735254::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::608671507822804556::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/green minislime/::1714554549
+minislime_green_front.png::CompressedTexture2D::65178822284752090::1714554547::1714554549::1::::<><>::
+minislime_green_side.png::CompressedTexture2D::6983274447800571893::1714554547::1714554549::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::4073432314466493886::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/lightblue minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::6588145129229733986::1714554547::1714554549::1::::<><>::
+minislime_lightblue_front.png::CompressedTexture2D::5635454304250331408::1714554547::1714554549::1::::<><>::
+minislime_lightblue_side.png::CompressedTexture2D::29962583286024404::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/maroon minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::4306352603584905958::1714554547::1714554549::1::::<><>::
+minislime_maroon_front.png::CompressedTexture2D::6708003491075068804::1714554547::1714554549::1::::<><>::
+minislime_maroon_side.png::CompressedTexture2D::4994184068780673863::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/orange minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::1031832792071339709::1714554547::1714554549::1::::<><>::
+minislime_orange_front.png::CompressedTexture2D::6322582401667711888::1714554547::1714554549::1::::<><>::
+minislime_orange_side.png::CompressedTexture2D::8922495561537039211::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/pale green minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::6079971333218778618::1714554547::1714554549::1::::<><>::
+minislime_palegreen_front.png::CompressedTexture2D::1996603161159598011::1714554547::1714554549::1::::<><>::
+minislime_palegreen_side.png::CompressedTexture2D::1874697866442032539::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/pink minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::614401574268363949::1714554547::1714554549::1::::<><>::
+minislime_pink_front.png::CompressedTexture2D::387766560324793808::1714554547::1714554549::1::::<><>::
+minislime_pink_side.png::CompressedTexture2D::3923879230555242318::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/purple minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::2617239005251791810::1714554547::1714554549::1::::<><>::
+minislime_purple_front.png::CompressedTexture2D::7040233809430883959::1714554547::1714554549::1::::<><>::
+minislime_purple_side.png::CompressedTexture2D::2855356673175627354::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Mini Slimes/red minislime/::1714554549
+minislime_hurt.png::CompressedTexture2D::7669603661423708142::1714554547::1714554549::1::::<><>::
+minislime_red_front.png::CompressedTexture2D::1283855565387042572::1714554547::1714554549::1::::<><>::
+minislime_red_side.png::CompressedTexture2D::662570040863169144::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Seedaling/::1714554547
+::res://Assets/PocketWitch-Slimes/Seedaling/green seedaling/::1714554549
+seedaling_front_green.png::CompressedTexture2D::4563009721744791292::1714554547::1714554549::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::8079498514328170241::1714554547::1714554549::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::1913363308940433846::1714554547::1714554549::1::::<><>::
+seedaling_side_green.png::CompressedTexture2D::8736083820003473706::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Seedaling/paleblue seedaling/::1714554549
+seedaling_front_paleblue.png::CompressedTexture2D::577008001047006608::1714554547::1714554549::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::8329585937793269579::1714554547::1714554549::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::5629019589341616641::1714554547::1714554549::1::::<><>::
+seedaling_side_paleblue.png::CompressedTexture2D::3671776752192302892::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Seedaling/pink seedaling/::1714554548
+seedaling_front_pink.png::CompressedTexture2D::5258471268404237753::1714554547::1714554548::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::9186789214509352531::1714554547::1714554548::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::4166287218618381171::1714554547::1714554548::1::::<><>::
+seedaling_side_pink.png::CompressedTexture2D::2500130303406688180::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Seedaling/red seedaling/::1714554548
+seedaling_front_red.png::CompressedTexture2D::8776481257818112000::1714554547::1714554548::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::5645337743082132411::1714554547::1714554548::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::5296318121783726516::1714554547::1714554548::1::::<><>::
+seedaling_side_red.png::CompressedTexture2D::8518272366301252721::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/::1714554547
+::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/::1714668552
+slime_aquamarine_front.png::CompressedTexture2D::1381169915392975024::1714666875::1714666912::1::::<><>::
+slime_aquamarine_side.png::CompressedTexture2D::1327502099010880432::1714668522::1714668552::1::::<><>::
+slime_aquamarine_side_original.png::CompressedTexture2D::43177508040647499::1714554547::1714668552::1::::<><>::
+slime_hurt.png::CompressedTexture2D::4620055482176556740::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/blue slime/::1714554548
+slime_blue_front.png::CompressedTexture2D::4446291496943807034::1714554547::1714554548::1::::<><>::
+slime_blue_side.png::CompressedTexture2D::4621146555972612857::1714554547::1714554548::1::::<><>::
+slime_hurt.png::CompressedTexture2D::3981334316367285699::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/bluegreen slime/::1714554548
+slime_bluegreen_front.png::CompressedTexture2D::677200461436219430::1714554547::1714554548::1::::<><>::
+slime_bluegreen_side.png::CompressedTexture2D::3845997595255458925::1714554547::1714554548::1::::<><>::
+slime_hurt.png::CompressedTexture2D::2640592051680031124::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/dark blue slime/::1714554548
+slime_darkblue_front.png::CompressedTexture2D::1392760472604714195::1714554547::1714554548::1::::<><>::
+slime_darkblue_side.png::CompressedTexture2D::7961617047100587234::1714554547::1714554548::1::::<><>::
+slime_hurt.png::CompressedTexture2D::1412047176445508285::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/gold slime/::1714554548
+gold_slime_shinyeffect.png::CompressedTexture2D::5652445445446804485::1714554547::1714554548::1::::<><>::
+slime_gold_front.png::CompressedTexture2D::923056389413966239::1714554547::1714554548::1::::<><>::
+slime_gold_side.png::CompressedTexture2D::3938693323992876786::1714554547::1714554548::1::::<><>::
+slime_hurt.png::CompressedTexture2D::3156293651477327711::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/green slime/::1714554549
+slime_green_front.png::CompressedTexture2D::5986560211638867444::1714554547::1714554549::1::::<><>::
+slime_green_side.png::CompressedTexture2D::2155653716410408619::1714554547::1714554549::1::::<><>::
+slime_hurt.png::CompressedTexture2D::3901256642475787701::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/lightblue slime/::1714554549
+slime_hurt.png::CompressedTexture2D::2029304717354186638::1714554547::1714554549::1::::<><>::
+slime_lightblue_front.png::CompressedTexture2D::7038512583636471231::1714554547::1714554549::1::::<><>::
+slime_lightblue_side.png::CompressedTexture2D::7015434317720707257::1714554547::1714554549::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/maroon slime/::1714554549
+slime_hurt.png::CompressedTexture2D::2380010893426980125::1714554547::1714554549::1::::<><>::
+slime_maroon_front.png::CompressedTexture2D::8207220688220597492::1714554547::1714554548::1::::<><>::
+slime_maroon_side.png::CompressedTexture2D::5014560509855871069::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/orange slime/::1714554548
+slime_hurt.png::CompressedTexture2D::5585068077491286489::1714554547::1714554548::1::::<><>::
+slime_orange_front.png::CompressedTexture2D::473146940608512803::1714554547::1714554548::1::::<><>::
+slime_orange_side.png::CompressedTexture2D::1547730962786858272::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/pale green slime/::1714554548
+slime_hurt.png::CompressedTexture2D::6347562722177532842::1714554547::1714554548::1::::<><>::
+slime_palegreen_front.png::CompressedTexture2D::2901053278515726655::1714554547::1714554548::1::::<><>::
+slime_palegreen_side.png::CompressedTexture2D::2397576094454512700::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/pink slime/::1714554548
+slime_hurt.png::CompressedTexture2D::1120162019760862114::1714554547::1714554548::1::::<><>::
+slime_pink_front.png::CompressedTexture2D::7779816707539943298::1714554547::1714554548::1::::<><>::
+slime_pink_side.png::CompressedTexture2D::6399859090979329882::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/purple slime/::1714554548
+slime_hurt.png::CompressedTexture2D::1063783187932897238::1714554547::1714554548::1::::<><>::
+slime_purple_front.png::CompressedTexture2D::6340488354617550853::1714554547::1714554548::1::::<><>::
+slime_purple_side.png::CompressedTexture2D::3818392381416087840::1714554547::1714554548::1::::<><>::
+::res://Assets/PocketWitch-Slimes/Slimes/red slime/::1714554548
+slime_hurt.png::CompressedTexture2D::1270781605453544042::1714554547::1714554548::1::::<><>::
+slime_red_front.png::CompressedTexture2D::649128927502363263::1714554547::1714554548::1::::<><>::
+slime_red_side.png::CompressedTexture2D::3683723901600623642::1714554547::1714554548::1::::<><>::
 ::res://Assets/Solaria/::1713254799
 ::res://Assets/Solaria/Sprites/::1713254799
 ::res://Assets/Solaria/Sprites/New/::1713254812
@@ -461,8 +729,9 @@ Solaria Demo Tiles.png::CompressedTexture2D::7260131402706736807::1713254799::17
 Solaria Demo Update 01.png::CompressedTexture2D::8883392310322171228::1713254799::1713254812::1::::<><>::
 ::res://Assets/Top Down Lava Tileset 16x16 Free/::1713040937
 Terms.txt::TextFile::-1::1713040937::0::1::::<><>::
-::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/::1713040974
+::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/::1714662580
 freelavatileset-Sheet.png::CompressedTexture2D::369053104737260704::1713040936::1713040974::1::::<><>::
+freelavatileset.aseprite::PackedDataContainer::5260698284329698840::1713040936::1714662580::1::::<><>::
 ::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/::1713040936
 ::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/Environment ( With Animations )/Burning Lava/::1713040974
 burninglava1.png::CompressedTexture2D::6998024181361101512::1713040936::1713040974::1::::<><>::
@@ -572,61 +841,195 @@ item_armour_silver.png::CompressedTexture2D::1560561598343858558::1713027990::17
 item_book_blue.png::CompressedTexture2D::843337291627351538::1713027990::1713032305::1::::<><>::
 item_key.png::CompressedTexture2D::3061303305556543008::1713027990::1713032305::1::::<><>::
 item_scroll_blue.png::CompressedTexture2D::4770035527959100396::1713027990::1713032305::1::::<><>::
-::res://Levels/::1714490225
-test2.tscn::PackedScene::3657146341057451376::1714490225::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
-test.tscn::PackedScene::6892108887029408187::1714490223::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd<>uid://bs81wqai4al4f::::res://Prefabs/world/scenes/portal_to_next.tscn<>uid://cbobkuuklg6a1::::res://Prefabs/world/scenes/item_on_floor.tscn
+::res://Levels/::1714668966
+test2.tscn::PackedScene::3657146341057451376::1714668966::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd
+test.tscn::PackedScene::6892108887029408187::1714668663::0::1::::<><>::uid://0uvy3mownaa0::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Tiles.png<>uid://di20p4si6o1p8::::res://Prefabs/player/scenes/PlayableCharacter.tscn<>uid://ckeqfgk5j7fcd::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/Props.png<>uid://cr4yhx125hxxw::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Tiles.png<>uid://bov0bauls0w3g::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Props.png<>uid://ciladlciffpq6::::res://Assets/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/Trees.png<>uid://fi1ir3env7x1::::res://Assets/Top Down Lava Tileset 16x16 Free/FREE TILESET FILES/freelavatileset-Sheet.png<>uid://ceemkt8hx6nvy::::res://Prefabs/world/scenes/game_button.tscn<>uid://ddgq7jusp7uu3::::res://Prefabs/world/scenes/MovableObject.tscn<>uid://dcwdkac8laxq7::::res://Prefabs/Ui/Game_UI.tscn<>uid://blq86fw4nf0ch::::res://Prefabs/world/scenes/game_openable_by_button.tscn<>res://addons/maaacks_game_template/base/scripts/UISoundController.gd<>uid://bs81wqai4al4f::::res://Prefabs/world/scenes/portal_to_next.tscn<>uid://cbobkuuklg6a1::::res://Prefabs/world/scenes/item_on_floor.tscn
 ::res://misc/::1713349144
 m6x11.ttf::FontFile::7665568899331821131::1713349143::1713349144::1::::<><>::
 m6x11plus.ttf::FontFile::8260783108339331848::1713346414::1713346414::1::::<><>::
 ::res://Prefabs/::1713438391
-::res://Prefabs/player/::1713437678
-::res://Prefabs/player/scenes/::1714497652
+::res://Prefabs/player/::1714663138
+shade.tscn::PackedScene::1974242550219615176::1714663138::0::1::::<><>::uid://jtyelcdutobg::::res://Assets/PocketWitch-Slimes/shadow.png
+::res://Prefabs/player/scenes/::1714668664
 moveModule.tscn::PackedScene::2240820904471505383::1713450754::0::1::::<><>::res://Prefabs/player/scripts/moveModule.gd
-PlayableCharacter.tscn::PackedScene::7778057262660035559::1714490224::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://cxwuxkrmc2gyv::::res://Prefabs/SlimeAbilities/swap_module.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://c6u3ue4d1ycin::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png<>uid://etc0s1mw212y::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png<>uid://c32x3tyv5phtw::::res://Prefabs/player/scenes/slime_spawner.tscn<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn
-PlayableCharacterMinion.tscn::PackedScene::1187580773684364869::1714497652::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://coqk337g2ho1d::::res://Assets/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/Idle-Sheet.png<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn
-player_cam.tscn::PackedScene::2156300237599004541::1713450754::0::1::::<><>::
-slime_spawner.tscn::PackedScene::6795314717687479600::1714490225::0::1::::<><>::res://Prefabs/player/scripts/slime_spawner.gd
+PlayableCharacter.tscn::PackedScene::7778057262660035559::1714668663::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://cxwuxkrmc2gyv::::res://Prefabs/SlimeAbilities/swap_module.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://c6u3ue4d1ycin::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/Idle-Sheet.png<>uid://etc0s1mw212y::::res://Assets/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/Run-Sheet.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://c32x3tyv5phtw::::res://Prefabs/player/scenes/slime_spawner.tscn<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn
+PlayableCharacterMinion.tscn::PackedScene::1187580773684364869::1714668663::0::1::::<><>::res://Prefabs/player/scripts/PlayableCharacterMove.gd<>uid://duji0lax32cdf::::res://Prefabs/SlimeAbilities/earth_module.tscn<>uid://txbwwytl82qm::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_front.png<>uid://3elqsh7uytym::::res://Prefabs/player/shade.tscn<>uid://s6b1bb64s625::::res://Assets/PocketWitch-Slimes/Slimes/aquamarine slime/slime_aquamarine_side.png<>uid://66p802jr5bhv::::res://Prefabs/player/scenes/moveModule.tscn<>uid://5yr7kb3vbkft::::res://Prefabs/player/scenes/player_cam.tscn<>uid://b3tcs1802gkem::::res://Prefabs/player/scenes/walk_particles.tscn<>uid://bsyu4faa8kvyo::::res://Prefabs/SlimeAbilities/fire_module.tscn
+player_cam.tscn::PackedScene::2156300237599004541::1714668664::0::1::::<><>::
+slime_spawner.tscn::PackedScene::6795314717687479600::1714668664::0::1::::<><>::res://Prefabs/player/scripts/slime_spawner.gd
 walk_particles.tscn::PackedScene::4391086478918828284::1713450754::0::1::::<><>::
-::res://Prefabs/player/scripts/::1714497653
-moveModule.gd::GDScript::-1::1714461416::0::1::::<>Node2D<>::
-PlayableCharacterMove.gd::GDScript::-1::1714490221::0::1::::<>Area2D<>::
-slime_spawner.gd::GDScript::-1::1714497653::0::1::::<>Node2D<>::
-::res://Prefabs/SlimeAbilities/::1714497792
+::res://Prefabs/player/scenes/PocketWitch-Slimes/::1714554518
+READ ME.txt::TextFile::-1::1714554518::0::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/::1714554518
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/aquamarine minislime/::1714554520
+minislime_aquamarine_front.png::CompressedTexture2D::7354934253050981420::1714554518::1714554520::1::::<><>::
+minislime_aquamarine_side.png::CompressedTexture2D::7695196464360998436::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::3781749210833863380::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/blue minislime/::1714554520
+minislime_blue_front.png::CompressedTexture2D::2677622381026695805::1714554518::1714554520::1::::<><>::
+minislime_blue_side.png::CompressedTexture2D::640938236147134343::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::377327877372479935::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/bluegreen minislime/::1714554520
+minislime_bluegreen_front.png::CompressedTexture2D::4184551338493557116::1714554518::1714554520::1::::<><>::
+minislime_bluegreen_side.png::CompressedTexture2D::2483225013786251614::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::3756982468583616232::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/dark blue minislime/::1714554520
+minislime_darkblue_front.png::CompressedTexture2D::8246910947472914114::1714554518::1714554520::1::::<><>::
+minislime_darkblue_side.png::CompressedTexture2D::2339867121547117969::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::7581275993068049902::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/gold minislime/::1714554520
+gold_slime_shinyeffect.png::CompressedTexture2D::6431333502028561325::1714554518::1714554520::1::::<><>::
+minislime_gold_front.png::CompressedTexture2D::4006605776667600744::1714554518::1714554520::1::::<><>::
+minislime_gold_side.png::CompressedTexture2D::3225526694469888146::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::8612297071759851486::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/green minislime/::1714554520
+minislime_green_front.png::CompressedTexture2D::3147445347042046276::1714554518::1714554520::1::::<><>::
+minislime_green_side.png::CompressedTexture2D::7573439878313498799::1714554518::1714554520::1::::<><>::
+minislime_hurt.png::CompressedTexture2D::2705792999270873455::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/lightblue minislime/::1714554519
+minislime_hurt.png::CompressedTexture2D::4445615152826172434::1714554518::1714554519::1::::<><>::
+minislime_lightblue_front.png::CompressedTexture2D::7584792866474727654::1714554518::1714554519::1::::<><>::
+minislime_lightblue_side.png::CompressedTexture2D::8170995450517519704::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/maroon minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::1861296416892024604::1714554518::1714554519::1::::<><>::
+minislime_maroon_front.png::CompressedTexture2D::8864758442763534012::1714554518::1714554519::1::::<><>::
+minislime_maroon_side.png::CompressedTexture2D::1297254327437157071::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/orange minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::2727226596630968278::1714554518::1714554520::1::::<><>::
+minislime_orange_front.png::CompressedTexture2D::1672288349750500498::1714554518::1714554520::1::::<><>::
+minislime_orange_side.png::CompressedTexture2D::3170141764665360938::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/pale green minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::8949313199246640752::1714554518::1714554520::1::::<><>::
+minislime_palegreen_front.png::CompressedTexture2D::7162493837447168114::1714554518::1714554520::1::::<><>::
+minislime_palegreen_side.png::CompressedTexture2D::6374812770680336793::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/pink minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::21789785328654557::1714554518::1714554520::1::::<><>::
+minislime_pink_front.png::CompressedTexture2D::7669560516614991847::1714554518::1714554520::1::::<><>::
+minislime_pink_side.png::CompressedTexture2D::5807971805056210968::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/purple minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::4032755391547766585::1714554518::1714554520::1::::<><>::
+minislime_purple_front.png::CompressedTexture2D::1442488299784709850::1714554518::1714554520::1::::<><>::
+minislime_purple_side.png::CompressedTexture2D::7920931671443229443::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Mini Slimes/red minislime/::1714554520
+minislime_hurt.png::CompressedTexture2D::3003650781212472899::1714554518::1714554520::1::::<><>::
+minislime_red_front.png::CompressedTexture2D::5634343024176427456::1714554518::1714554520::1::::<><>::
+minislime_red_side.png::CompressedTexture2D::8474690940939056492::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Seedaling/::1714554518
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Seedaling/green seedaling/::1714554520
+seedaling_front_green.png::CompressedTexture2D::686510480937383285::1714554518::1714554520::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::3248826364506019025::1714554518::1714554520::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::796835557984400977::1714554518::1714554520::1::::<><>::
+seedaling_side_green.png::CompressedTexture2D::8298548552850290881::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Seedaling/paleblue seedaling/::1714554520
+seedaling_front_paleblue.png::CompressedTexture2D::6858004806840216394::1714554518::1714554520::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::1312359294137511428::1714554518::1714554520::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::1211680625129242728::1714554518::1714554520::1::::<><>::
+seedaling_side_paleblue.png::CompressedTexture2D::3816178900851643589::1714554518::1714554520::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Seedaling/pink seedaling/::1714554519
+seedaling_front_pink.png::CompressedTexture2D::2548602026006258864::1714554518::1714554519::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::1589972634820381940::1714554518::1714554519::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::8645358093065001105::1714554518::1714554519::1::::<><>::
+seedaling_side_pink.png::CompressedTexture2D::3705132387530667279::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Seedaling/red seedaling/::1714554519
+seedaling_front_red.png::CompressedTexture2D::4178714531221561580::1714554518::1714554519::1::::<><>::
+seedaling_hurt.png::CompressedTexture2D::4347977375551832098::1714554518::1714554519::1::::<><>::
+seedaling_musicnotes.png::CompressedTexture2D::8780689735271731653::1714554518::1714554519::1::::<><>::
+seedaling_side_red.png::CompressedTexture2D::6028506842781622233::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/::1714554518
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/aquamarine slime/::1714554519
+slime_aquamarine_front.png::CompressedTexture2D::3237368704455713098::1714554518::1714554519::1::::<><>::
+slime_aquamarine_side.png::CompressedTexture2D::5197598951929127724::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::5093348442894716184::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/blue slime/::1714554519
+slime_blue_front.png::CompressedTexture2D::6226376661271533449::1714554518::1714554519::1::::<><>::
+slime_blue_side.png::CompressedTexture2D::6014940920176293272::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::8193542984861999776::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/bluegreen slime/::1714554519
+slime_bluegreen_front.png::CompressedTexture2D::5869144816970555866::1714554518::1714554519::1::::<><>::
+slime_bluegreen_side.png::CompressedTexture2D::6912857009669975346::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::5169411615530987215::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/dark blue slime/::1714554519
+slime_darkblue_front.png::CompressedTexture2D::4122589530307875943::1714554518::1714554519::1::::<><>::
+slime_darkblue_side.png::CompressedTexture2D::1795472172167188566::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::336653460012315819::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/gold slime/::1714554519
+gold_slime_shinyeffect.png::CompressedTexture2D::3695799517218961324::1714554518::1714554519::1::::<><>::
+slime_gold_front.png::CompressedTexture2D::2993003276409108856::1714554518::1714554519::1::::<><>::
+slime_gold_side.png::CompressedTexture2D::6570023300466059250::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::5008839995395956431::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/green slime/::1714554519
+slime_green_front.png::CompressedTexture2D::3649511713952337142::1714554518::1714554519::1::::<><>::
+slime_green_side.png::CompressedTexture2D::711322674732803504::1714554518::1714554519::1::::<><>::
+slime_hurt.png::CompressedTexture2D::7998177913366017272::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/lightblue slime/::1714554519
+slime_hurt.png::CompressedTexture2D::9107675461017044108::1714554518::1714554519::1::::<><>::
+slime_lightblue_front.png::CompressedTexture2D::5680659292990354173::1714554518::1714554519::1::::<><>::
+slime_lightblue_side.png::CompressedTexture2D::3215536819297237208::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/maroon slime/::1714554519
+slime_hurt.png::CompressedTexture2D::1966379763494308829::1714554518::1714554519::1::::<><>::
+slime_maroon_front.png::CompressedTexture2D::3023673803482838026::1714554518::1714554519::1::::<><>::
+slime_maroon_side.png::CompressedTexture2D::1369584904748241473::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/orange slime/::1714554519
+slime_hurt.png::CompressedTexture2D::4638950368473564454::1714554518::1714554519::1::::<><>::
+slime_orange_front.png::CompressedTexture2D::6469670383088741263::1714554518::1714554519::1::::<><>::
+slime_orange_side.png::CompressedTexture2D::4914392871294920300::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/pale green slime/::1714554519
+slime_hurt.png::CompressedTexture2D::1961448419572682344::1714554518::1714554519::1::::<><>::
+slime_palegreen_front.png::CompressedTexture2D::5488646616268467819::1714554518::1714554519::1::::<><>::
+slime_palegreen_side.png::CompressedTexture2D::7631794276824704760::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/pink slime/::1714554519
+slime_hurt.png::CompressedTexture2D::7956950257607331076::1714554518::1714554519::1::::<><>::
+slime_pink_front.png::CompressedTexture2D::7192416542286975507::1714554518::1714554519::1::::<><>::
+slime_pink_side.png::CompressedTexture2D::3519951392053096321::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/purple slime/::1714554519
+slime_hurt.png::CompressedTexture2D::6151048859545805568::1714554518::1714554519::1::::<><>::
+slime_purple_front.png::CompressedTexture2D::4867426619206048822::1714554518::1714554519::1::::<><>::
+slime_purple_side.png::CompressedTexture2D::1473514110261691425::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scenes/PocketWitch-Slimes/Slimes/red slime/::1714554519
+slime_hurt.png::CompressedTexture2D::8224751305882781453::1714554518::1714554519::1::::<><>::
+slime_red_front.png::CompressedTexture2D::5805475295551350143::1714554518::1714554519::1::::<><>::
+slime_red_side.png::CompressedTexture2D::5607873331652396977::1714554518::1714554519::1::::<><>::
+::res://Prefabs/player/scripts/::1714664487
+moveModule.gd::GDScript::-1::1714664487::0::1::::<>Node2D<>::
+PlayableCharacterMove.gd::GDScript::-1::1714664134::0::1::::<>Area2D<>::
+slime_spawner.gd::GDScript::-1::1714660706::0::1::::<>Node2D<>::
+::res://Prefabs/SlimeAbilities/::1714668663
 abilityModule.gd::GDScript::-1::1713256726::0::1::::<>Node2D<>::
 ability_module.tscn::PackedScene::614975834498962990::1713450754::0::1::::<><>::res://Prefabs/SlimeAbilities/abilityModule.gd
+earth_module.gd::GDScript::-1::1714660888::0::1::::<>Node2D<>::
+earth_module.tscn::PackedScene::8582149283256590315::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/earth_module.gd
+fire_module.gd::GDScript::-1::1714660881::0::1::::<>Node2D<>::
+fire_module.tscn::PackedScene::3700631325814957810::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/fire_module.gd
 moveBoxModule.gd::GDScript::-1::1713780036::0::1::::<>Node2D<>::
-moveBoxModule.tscn::PackedScene::6620075011334015169::1714490223::0::1::::<><>::res://Prefabs/SlimeAbilities/moveBoxModule.gd
+moveBoxModule.tscn::PackedScene::6620075011334015169::1714558266::0::1::::<><>::res://Prefabs/SlimeAbilities/moveBoxModule.gd
 pushModule.gd::GDScript::-1::1713178193::0::1::::<>Node2D<>::
 push_module.tscn::PackedScene::6791102129625916786::1713438406::0::1::::<><>::res://Prefabs/SlimeAbilities/pushModule.gd
-fire_module.tscn::PackedScene::3700631325814957810::1714497792::0::1::::<><>::res://Prefabs/SlimeAbilities/fire_module.gd
-fire_module.gd::GDScript::-1::1714497580::0::1::::<>Node2D<>::
 sticky_module.gd::GDScript::-1::1713620841::0::1::::<>Node2D<>::
-sticky_module.tscn::PackedScene::4037442200805190239::1714490223::0::1::::<><>::res://Prefabs/SlimeAbilities/sticky_module.gd
+sticky_module.tscn::PackedScene::4037442200805190239::1714668663::0::1::::<><>::res://Prefabs/SlimeAbilities/sticky_module.gd
 swap_module.gd::GDScript::-1::1713954267::0::1::::<>Node2D<>::
-swap_module.tscn::PackedScene::6433857046809547157::1714490224::0::1::::<><>::res://Prefabs/SlimeAbilities/swap_module.gd
-::res://Prefabs/Ui/::1714490224
-Game_UI.tscn::PackedScene::7345256062465736044::1714490224::0::1::::<><>::uid://mlxr8vbq6j7h::::res://Prefabs/Ui/inventory.tscn<>res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd<>uid://qeqh1euot2d0::::res://addons/maaacks_game_template/examples/scenes/Menus/PauseMenu/PauseMenuWithScenes.tscn
-inventory.tscn::PackedScene::866402894060552259::1714490224::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://d2uikxt5vgnfb::::res://icon.svg<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>uid://d3qajhvbxfn0u::::res://addons/gloot/images/icon_ctrl_inventory.svg<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd
+swap_module.tscn::PackedScene::6433857046809547157::1714558266::0::1::::<><>::res://Prefabs/SlimeAbilities/swap_module.gd
+::res://Prefabs/Ui/::1714663067
+Game_UI.tscn::PackedScene::7345256062465736044::1714558266::0::1::::<><>::uid://mlxr8vbq6j7h::::res://Prefabs/Ui/inventory.tscn<>res://addons/maaacks_game_template/extras/scripts/PauseMenuController.gd<>uid://qeqh1euot2d0::::res://addons/maaacks_game_template/examples/scenes/Menus/PauseMenu/PauseMenuWithScenes.tscn
+inventory.tscn::PackedScene::866402894060552259::1714558266::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://d2uikxt5vgnfb::::res://icon.svg<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>uid://cq6ldjm8nms0g::::res://Prefabs/Ui/TextTheme.tres<>uid://d3qajhvbxfn0u::::res://addons/gloot/images/icon_ctrl_inventory.svg<>res://addons/gloot/core/inventory_grid.gd<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres<>res://addons/gloot/core/inventory_item.gd
 inventoryReference.tscn::PackedScene::9083939541269386277::1713438399::0::1::::<><>::res://Prefabs/Ui/inventory_grid_stacked_transfer.gd<>res://addons/gloot/ui/ctrl_inventory_grid_ex.gd<>uid://bpmdtgysdm2tp::::res://images/field_background.png<>uid://cdhuw0juxw3up::::res://images/field_highlighted_background.png<>res://addons/gloot/core/inventory_grid_stacked.gd<>res://addons/gloot/core/item_protoset.gd
 inventory_grid_stacked_transfer.gd::GDScript::-1::1714483716::0::1::::<>Control<>::
-invProtoset.tres::Resource/ItemProtoset::4663913956447249267::1714490111::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
+invProtoset.tres::Resource/Resource::4663913956447249267::1714490111::0::1::::<><>::res://addons/gloot/core/item_protoset.gd
 MainCamera.gd::GDScript::-1::1713256225::0::1::::<>Camera2D<>::
-TextTheme.tres::Theme::5960532313037758064::1714461416::0::1::::<><>::uid://dhhi2guccowqd::::res://misc/m6x11.ttf
-::res://Prefabs/world/::1714490224
+TextTheme.tres::Theme::5960532313037758064::1714663067::0::1::::<><>::uid://dhhi2guccowqd::::res://misc/m6x11.ttf
+::res://Prefabs/world/::1714558266
 level_container.gd::GDScript::-1::1713611499::0::1::::<>Node2D<>::
-level_container.tscn::PackedScene::5091565869295272084::1714490224::0::1::::<><>::res://Prefabs/world/level_container.gd<>uid://d2ycscfevkmfr::::res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn
-::res://Prefabs/world/scenes/::1714490225
-game_button.tscn::PackedScene::5062601764079033630::1714490225::0::1::::<><>::res://Prefabs/world/scripts/game_button.gd<>uid://b87v12g1icu3u::::res://images/item_scroll_blue.png
-game_openable_by_button.tscn::PackedScene::3193587326086431815::1714490224::0::1::::<><>::res://Prefabs/world/scripts/game_openable_by_button.gd<>uid://marv3em7xope::::res://images/item_book_blue.png
-MovableObject.tscn::PackedScene::7383243970252382916::1714490224::0::1::::<><>::res://Prefabs/world/scripts/MovableObject.gd<>uid://c1k2wyqf7of58::::res://Prefabs/SlimeAbilities/moveBoxModule.tscn<>uid://d2uikxt5vgnfb::::res://icon.svg
-portal_to_next.tscn::PackedScene::3719563105115345499::1714490224::0::1::::<><>::res://Prefabs/world/scripts/portal.gd<>uid://bju6hohmp15ua::::res://images/item_key.png
-item_on_floor.tscn::PackedScene::4872011156345303606::1714490224::0::1::::<><>::res://Prefabs/world/scripts/item_on_floor.gd<>uid://qlt0i7muj2tj::::res://addons/gloot/images/icon_item.svg<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres
+level_container.tscn::PackedScene::5091565869295272084::1714558266::0::1::::<><>::res://Prefabs/world/level_container.gd<>uid://d2ycscfevkmfr::::res://addons/maaacks_game_template/extras/scenes/Autoloads/ProjectLevelLoader.tscn
+::res://Prefabs/world/scenes/::1714668664
+game_button.tscn::PackedScene::5062601764079033630::1714558267::0::1::::<><>::res://Prefabs/world/scripts/game_button.gd<>uid://b87v12g1icu3u::::res://images/item_scroll_blue.png
+game_openable_by_button.tscn::PackedScene::3193587326086431815::1714668664::0::1::::<><>::res://Prefabs/world/scripts/game_openable_by_button.gd<>uid://marv3em7xope::::res://images/item_book_blue.png
+item_on_floor.tscn::PackedScene::4872011156345303606::1714558266::0::1::::<><>::res://Prefabs/world/scripts/item_on_floor.gd<>uid://qlt0i7muj2tj::::res://addons/gloot/images/icon_item.svg<>uid://b7ph8mtfopx0n::::res://Prefabs/Ui/invProtoset.tres
+MovableObject.tscn::PackedScene::7383243970252382916::1714558266::0::1::::<><>::res://Prefabs/world/scripts/MovableObject.gd<>uid://c1k2wyqf7of58::::res://Prefabs/SlimeAbilities/moveBoxModule.tscn<>uid://d2uikxt5vgnfb::::res://icon.svg
+portal_to_next.tscn::PackedScene::3719563105115345499::1714558266::0::1::::<><>::res://Prefabs/world/scripts/portal.gd<>uid://bju6hohmp15ua::::res://images/item_key.png
 ::res://Prefabs/world/scripts/::1714488837
 game_button.gd::GDScript::-1::1714488837::0::1::::<>Area2D<>::
 game_openable_by_button.gd::GDScript::-1::1713447102::0::1::::<>Area2D<>::
+item_on_floor.gd::GDScript::-1::1714468849::0::1::::<>Node2D<>::
 MovableObject.gd::GDScript::-1::1713620940::0::1::::<>Area2D<>::
 portal.gd::GDScript::-1::1713615640::0::1::::<>Area2D<>::
-item_on_floor.gd::GDScript::-1::1714468849::0::1::::<>Node2D<>::
-::res://Resources/::1714490224
+::res://Resources/::1714668664
 SignalBus.gd::GDScript::-1::1714468265::0::1::::<>Node2D<>::
-SignalBus.tscn::PackedScene::381170119793915404::1714490224::0::1::::<><>::res://Resources/SignalBus.gd
+SignalBus.tscn::PackedScene::381170119793915404::1714668664::0::1::::<><>::res://Resources/SignalBus.gd
